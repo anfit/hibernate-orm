@@ -34,7 +34,7 @@ dependencies {
 	implementation libraries.byteBuddy
 	implementation gradleApi()
 	// for Gradle
-	implementation libraries.jakarta_inject
+	implementation libraries.inject
 	implementation localGroovy()
 }
 

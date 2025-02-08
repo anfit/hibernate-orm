@@ -136,10 +136,10 @@ dependencies {
     javadocSources project( path: ':hibernate-jpamodelgen', configuration: 'javadocSources' )
 
     javadocClasspath libraries.logging_annotations
-    javadocClasspath libraries.jakarta_validation
-    javadocClasspath libraries.jakarta_cdi
-    javadocClasspath libraries.jakarta_jacc
-    javadocClasspath libraries.jakarta_jsonb
+    javadocClasspath libraries.validation
+    javadocClasspath libraries.cdi
+    javadocClasspath libraries.jacc
+    javadocClasspath libraries.jsonb
     javadocClasspath libraries.ant
     javadocClasspath libraries.postgresql
     javadocClasspath libraries.jackson

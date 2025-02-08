@@ -19,6 +19,6 @@ public class XmlMetaSingleAttribute extends XmlMetaAttribute implements MetaSing
 
 	@Override
 	public String getMetaType() {
-		return "jakarta.persistence.metamodel.SingularAttribute";
+		return "javax.persistence.metamodel.SingularAttribute";
 	}
 }

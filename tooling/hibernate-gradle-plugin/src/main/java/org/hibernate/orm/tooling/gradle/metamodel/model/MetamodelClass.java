@@ -117,7 +117,7 @@ public class MetamodelClass {
 			final JavaVersion javaVersion = spec.getTargetJavaVersionAccess().getOrElse( JavaVersion.current() );
 			final String qualifiedAnnotationName = javaVersion.isJava9Compatible()
 					? "javax.annotation.processing.Generated"
-					: "jakarta.annotation.Generated";
+					: "javax.annotation.Generated";
 			final String generatedAnnotationFragment = String.format(
 					Locale.ROOT,
 					"@%s( value=\"%s\", date=\"%s\", comments=\"%s\" )",

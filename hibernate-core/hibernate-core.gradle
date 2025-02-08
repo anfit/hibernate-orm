@@ -25,27 +25,27 @@ configurations {
 
 
 dependencies {
-    api libraries.jakarta_jpa
-    api libraries.jakarta_jta
+    api libraries.jpa
+    api libraries.jta
 
     implementation libraries.jandex
     implementation libraries.classmate
     implementation libraries.commons_annotations
 
     implementation libraries.byteBuddy
-    implementation libraries.jakarta_activation
-    implementation libraries.jakarta_jaxb_api
+    implementation libraries.activation
+    implementation libraries.jaxb_api
     implementation libraries.jakarta_jaxb_runtime
-    implementation libraries.jakarta_inject
+    implementation libraries.inject
 
     implementation libraries.antlr4_runtime
 
-    compileOnly libraries.jakarta_jacc
-    compileOnly libraries.jakarta_validation
-    compileOnly libraries.jakarta_cdi
+    compileOnly libraries.jacc
+    compileOnly libraries.validation
+    compileOnly libraries.cdi
 
     compileOnly libraries.jackson
-    compileOnly libraries.jakarta_jsonb
+    compileOnly libraries.jsonb
 
     testImplementation project(':hibernate-testing')
     testImplementation project(':hibernate-ant')
@@ -53,21 +53,21 @@ dependencies {
     testImplementation libraries.shrinkwrap
     testImplementation libraries.shrinkwrap_descriptors_api_javaee
     testImplementation libraries.shrinkwrap_descriptors_impl_javaee
-    testImplementation libraries.jakarta_jacc
-    testImplementation libraries.jakarta_validation
-    testImplementation libraries.jakarta_el
-    testImplementation( libraries.jakarta_validator ) {
+    testImplementation libraries.jacc
+    testImplementation libraries.validation
+    testImplementation libraries.expression_language
+    testImplementation( libraries.validator ) {
         // for test runtime
         transitive = true
     }
-    testImplementation libraries.jakarta_cdi
+    testImplementation libraries.cdi
     testImplementation libraries.mockito
     testImplementation libraries.mockito_inline
     testImplementation libraries.jodaTime
     testImplementation libraries.assertj
 
     testRuntimeOnly libraries.byteBuddy
-    testRuntimeOnly libraries.jakarta_weld
+    testRuntimeOnly libraries.weld
     testRuntimeOnly libraries.wildfly_transaction_client
     testRuntimeOnly libraries.jackson
 
@@ -163,6 +163,22 @@ task testJar(type: Jar, dependsOn: testClasses) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     archiveClassifier.set( 'test' )
     from sourceSets.test.output
+}
+
+compileJava {
+    doFirst {
+        def dir = file(rootProject.projectDir)
+        if (dir.exists()) {
+            dir.eachFileRecurse { file ->
+                if (file.isFile() && file.name.endsWith('.java')) {
+                    def content = file.text
+                    if (content.contains('import jakarta.xml.bind')) {
+                        file.text = content.replace('import jakarta.xml.bind', 'import javax.xml.bind')
+                    }
+                }
+            }
+        }
+    }
 }
 
 artifacts {

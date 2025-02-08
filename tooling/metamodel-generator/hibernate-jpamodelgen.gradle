@@ -28,9 +28,9 @@ dependencies {
 
     testImplementation project( ':hibernate-core' )
     testImplementation libraries.junit
-//    testImplementation libraries.jakarta_jpa
+//    testImplementation libraries.jpa
 
-    testImplementation libraries.jakarta_validation
+    testImplementation libraries.validation
 }
 
 sourceSets.main {

@@ -44,7 +44,7 @@ import org.hibernate.jpamodelgen.xml.JpaDescriptorParser;
  * @author Emmanuel Bernard
  */
 @SupportedAnnotationTypes({
-		"jakarta.persistence.Entity", "jakarta.persistence.MappedSuperclass", "jakarta.persistence.Embeddable"
+		"javax.persistence.Entity", "javax.persistence.MappedSuperclass", "javax.persistence.Embeddable"
 })
 @SupportedOptions({
 		JPAMetaModelEntityProcessor.DEBUG_OPTION,

@@ -101,6 +101,8 @@ ext {
             validation:     "javax.validation:validation-api:${validationApiVersion}",
             jacc:           'org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.4_spec:1.0.2.Final',
             interceptor:    'javax.interceptor:javax.interceptor-api:1.2',
+            inject:         'javax.inject:javax.inject:1',
+            jsonb:          'javax.json.bind:javax.json.bind-api:1.0',
             // required by JAXB from JDK 9 as it is not available anymore in JDK 9
             activation:     'javax.activation:javax.activation-api:1.2.0',
             cdi: "javax.enterprise:cdi-api:${cdiVersion}",

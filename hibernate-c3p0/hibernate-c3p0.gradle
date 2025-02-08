@@ -16,8 +16,8 @@ dependencies {
     testImplementation libraries.mockito
     testImplementation libraries.mockito_inline
 
-    testImplementation libraries.jakarta_validator
-    testRuntimeOnly libraries.jakarta_el
+    testImplementation libraries.validator
+    testRuntimeOnly libraries.expression_language
 
     if ( db.equalsIgnoreCase( 'oracle' ) ) {
         testRuntimeOnly libraries.oracle

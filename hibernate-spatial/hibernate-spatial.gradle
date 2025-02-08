@@ -20,16 +20,16 @@ dependencies {
 	testImplementation project( ':hibernate-testing' )
 	testImplementation project( ':hibernate-ant' )
 	testImplementation project( path: ':hibernate-core', configuration: 'tests' )
-	testImplementation libraries.jakarta_validation
+	testImplementation libraries.validation
 	testImplementation libraries.jandex
 	testImplementation libraries.classmate
-	testImplementation libraries.jakarta_validator
+	testImplementation libraries.validator
 	testImplementation libraries.dom4j
 
 	testImplementation libraries.postgresql
 	testImplementation libraries.h2gis
 
-	testRuntimeOnly libraries.jakarta_el
+	testRuntimeOnly libraries.expression_language
 	testRuntimeOnly 'jaxen:jaxen:1.1'
 	testRuntimeOnly libraries.byteBuddy
 }

@@ -22,8 +22,8 @@ processResources {
 
 dependencies {
     implementation( project(':hibernate-core') ) { transitive = false }
-    implementation( libraries.jakarta_jpa ) { transitive = false }
-    implementation( libraries.jakarta_jta ) { transitive = false }
+    implementation( libraries.jpa ) { transitive = false }
+    implementation( libraries.jta ) { transitive = false }
     implementation( libraries.maven_core ) { transitive = false }
     implementation( libraries.maven_artifact ) { transitive = false }
     implementation( libraries.maven_plugin ) { transitive = false }
@@ -47,9 +47,9 @@ task processPluginXml(type: Copy) {
     from "src/main/resources/META-INF/maven/plugin.xml"
     into "$processResources.destinationDir/META-INF/maven"
     filter(ReplaceTokens, tokens: ['version' : project.version, 'generated-dependencies' :\
-            generateMavenDependency(libraries.jakarta_jpa)\
+            generateMavenDependency(libraries.jpa)\
             + generateMavenDependency(libraries.antlr)\
-            + generateMavenDependency(libraries.jakarta_jta)\
+            + generateMavenDependency(libraries.jta)\
             + generateMavenDependency(libraries.commons_annotations)\
             + generateMavenDependency(libraries.byteBuddy)\
             + generateMavenDependency(libraries.logging)\
