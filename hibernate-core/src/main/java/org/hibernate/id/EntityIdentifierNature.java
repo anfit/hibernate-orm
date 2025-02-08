@@ -36,7 +36,7 @@ public enum EntityIdentifierNature {
 	 *
 	 * NOTE : May or may not have a related "lookup identifier class" as indicated by a {@code @IdClass} annotation.
 	 *
-	 * @see jakarta.persistence.IdClass
+	 * @see javax.persistence.IdClass
 	 */
 	NON_AGGREGATED_COMPOSITE,
 
@@ -52,7 +52,7 @@ public enum EntityIdentifierNature {
 	 *     </li>
 	 * </ul>
 	 *
-	 * @see jakarta.persistence.EmbeddedId
+	 * @see javax.persistence.EmbeddedId
 	 */
 	AGGREGATED_COMPOSITE
 }

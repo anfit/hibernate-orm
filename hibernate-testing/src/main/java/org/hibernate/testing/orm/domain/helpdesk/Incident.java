@@ -7,10 +7,10 @@
 package org.hibernate.testing.orm.domain.helpdesk;
 
 import java.time.Instant;
-import jakarta.persistence.ColumnResult;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.SqlResultSetMapping;
+import javax.persistence.ColumnResult;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.SqlResultSetMapping;
 
 /**
  * @author Steve Ebersole

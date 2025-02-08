@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 
 /**
  * Specifies whether updating the annotated attribute should trigger an increment
- * to the {@link jakarta.persistence.Version version} of the entity instance.
+ * to the {@link javax.persistence.Version version} of the entity instance.
  * <p>
  * If this annotation is not present, updating an attribute does cause the version
  * to be incremented.

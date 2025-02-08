@@ -58,12 +58,12 @@ import org.hibernate.type.descriptor.java.JavaType;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Index;
-import jakarta.persistence.SequenceGenerator;
-import jakarta.persistence.TableGenerator;
-import jakarta.persistence.UniqueConstraint;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Index;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.TableGenerator;
+import javax.persistence.UniqueConstraint;
 
 import static org.hibernate.cfg.AnnotatedColumn.buildColumnOrFormulaFromAnnotation;
 
@@ -797,7 +797,7 @@ public class BinderHelper {
 	}
 
 	public static Any buildAnyValue(
-			jakarta.persistence.Column discriminatorColumn,
+			javax.persistence.Column discriminatorColumn,
 			Formula discriminatorFormula,
 			AnnotatedJoinColumn[] keyColumns,
 			PropertyData inferredData,

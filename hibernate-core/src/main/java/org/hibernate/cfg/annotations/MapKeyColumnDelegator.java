@@ -6,8 +6,8 @@
  */
 package org.hibernate.cfg.annotations;
 import java.lang.annotation.Annotation;
-import jakarta.persistence.Column;
-import jakarta.persistence.MapKeyColumn;
+import javax.persistence.Column;
+import javax.persistence.MapKeyColumn;
 
 /**
  * @author Emmanuel Bernard

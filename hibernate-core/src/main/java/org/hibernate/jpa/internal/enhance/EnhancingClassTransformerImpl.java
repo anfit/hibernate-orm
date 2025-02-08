@@ -28,7 +28,7 @@ public class EnhancingClassTransformerImpl implements ClassTransformer {
 	static {
 		Constructor<Exception> constructor = null;
 		try {
-			final Class<?> transformerException = Class.forName( "jakarta.persistence.spi.TransformerException" );
+			final Class<?> transformerException = Class.forName("javax.persistence.spi.TransformerException");
 			//noinspection unchecked
 			constructor = (Constructor<Exception>) transformerException.getConstructor( String.class, Throwable.class );
 		}

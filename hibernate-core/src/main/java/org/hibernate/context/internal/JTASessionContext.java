@@ -8,9 +8,9 @@ package org.hibernate.context.internal;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import jakarta.transaction.Synchronization;
-import jakarta.transaction.Transaction;
-import jakarta.transaction.TransactionManager;
+import javax.transaction.Synchronization;
+import javax.transaction.Transaction;
+import javax.transaction.TransactionManager;
 
 import org.hibernate.FlushMode;
 import org.hibernate.HibernateException;

@@ -6,7 +6,7 @@
  */
 package org.hibernate.cfg;
 import java.util.Map;
-import jakarta.persistence.OrderColumn;
+import javax.persistence.OrderColumn;
 
 import org.hibernate.annotations.ListIndexBase;
 import org.hibernate.boot.spi.MetadataBuildingContext;

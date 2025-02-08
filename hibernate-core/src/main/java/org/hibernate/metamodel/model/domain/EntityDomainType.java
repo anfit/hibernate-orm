@@ -6,7 +6,7 @@
  */
 package org.hibernate.metamodel.model.domain;
 
-import jakarta.persistence.metamodel.EntityType;
+import javax.persistence.metamodel.EntityType;
 
 import org.hibernate.query.sqm.SqmPathSource;
 

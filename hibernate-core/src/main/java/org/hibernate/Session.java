@@ -12,12 +12,12 @@ import org.hibernate.graph.RootGraph;
 import org.hibernate.query.Query;
 import org.hibernate.stat.SessionStatistics;
 
-import jakarta.persistence.EntityGraph;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.criteria.CriteriaDelete;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.CriteriaUpdate;
+import javax.persistence.EntityGraph;
+import javax.persistence.EntityManager;
+import javax.persistence.FlushModeType;
+import javax.persistence.criteria.CriteriaDelete;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.CriteriaUpdate;
 
 /**
  * The main runtime interface between a Java application and Hibernate. Represents the
@@ -291,7 +291,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * Remove this instance from the session cache. Changes to the instance will
 	 * not be synchronized with the database. This operation cascades to associated
 	 * instances if the association is mapped with
-	 * {@link jakarta.persistence.CascadeType#DETACH}.
+	 * {@link javax.persistence.CascadeType#DETACH}.
 	 *
 	 * @param object the managed instance to detach
 	 */
@@ -302,7 +302,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * Remove this instance from the session cache. Changes to the instance will
 	 * not be synchronized with the database. This operation cascades to associated
 	 * instances if the association is mapped with
-	 * {@link jakarta.persistence.CascadeType#DETACH}.
+	 * {@link javax.persistence.CascadeType#DETACH}.
 	 * <p>
 	 * This operation is a synonym for {@link #detach(Object)}.
 	 *
@@ -564,7 +564,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * given instance is unsaved, save a copy and return it as a newly persistent
 	 * instance. The given instance does not become associated with the session.
 	 * This operation cascades to associated instances if the association is mapped
-	 * with {@link jakarta.persistence.CascadeType#MERGE}.
+	 * with {@link javax.persistence.CascadeType#MERGE}.
 	 *
 	 * @param object a detached instance with state to be copied
 	 *
@@ -579,7 +579,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * given instance is unsaved, save a copy and return it as a newly persistent
 	 * instance. The given instance does not become associated with the session.
 	 * This operation cascades to associated instances if the association is mapped
-	 * with {@link jakarta.persistence.CascadeType#MERGE}.
+	 * with {@link javax.persistence.CascadeType#MERGE}.
 	 *
 	 * @param entityName the entity name
 	 * @param object a detached instance with state to be copied
@@ -591,9 +591,9 @@ public interface Session extends SharedSessionContract, EntityManager {
 	/**
 	 * Make a transient instance persistent and mark it for later insertion in the
 	 * database. This operation cascades to associated instances if the association
-	 * is mapped with {@link jakarta.persistence.CascadeType#PERSIST}.
+	 * is mapped with {@link javax.persistence.CascadeType#PERSIST}.
 	 * <p>
-	 * For entities with a {@link jakarta.persistence.GeneratedValue generated id},
+	 * For entities with a {@link javax.persistence.GeneratedValue generated id},
 	 * {@code persist()} ultimately results in generation of an identifier for the
 	 * given instance. But this may happen asynchronously, when the session is
 	 * {@linkplain #flush() flushed}, depending on the identifier generation strategy.
@@ -605,9 +605,9 @@ public interface Session extends SharedSessionContract, EntityManager {
 	/**
 	 * Make a transient instance persistent and mark it for later insertion in the
 	 * database. This operation cascades to associated instances if the association
-	 * is mapped with {@link jakarta.persistence.CascadeType#PERSIST}.
+	 * is mapped with {@link javax.persistence.CascadeType#PERSIST}.
 	 * <p>
-	 * For entities with a {@link jakarta.persistence.GeneratedValue generated id},
+	 * For entities with a {@link javax.persistence.GeneratedValue generated id},
 	 * {@code persist()} ultimately results in generation of an identifier for the
 	 * given instance. But this may happen asynchronously, when the session is
 	 * {@linkplain #flush() flushed}, depending on the identifier generation strategy.
@@ -622,7 +622,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * an instance associated with the receiving {@code Session} or a transient
 	 * instance with an identifier associated with existing persistent state.
 	 * This operation cascades to associated instances if the association is
-	 * mapped with {@link jakarta.persistence.CascadeType#REMOVE}.
+	 * mapped with {@link javax.persistence.CascadeType#REMOVE}.
 	 *
 	 * @param object the instance to be removed
 	 *
@@ -636,7 +636,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * be an instance associated with the receiving {@code Session} or a transient
 	 * instance with an identifier associated with existing persistent state.
 	 * This operation cascades to associated instances if the association is
-	 * mapped with {@link jakarta.persistence.CascadeType#REMOVE}.
+	 * mapped with {@link javax.persistence.CascadeType#REMOVE}.
 	 *
 	 * @param entityName the entity name for the instance to be removed.
 	 * @param object the instance to be removed
@@ -721,7 +721,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * <li>after inserting a {@link java.sql.Blob} or {@link java.sql.Clob}
 	 * </ul>
 	 * This operation cascades to associated instances if the association is mapped
-	 * with {@link jakarta.persistence.CascadeType#REFRESH}.
+	 * with {@link javax.persistence.CascadeType#REFRESH}.
 	 *
 	 * @param object a persistent or detached instance
 	 */
@@ -737,7 +737,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * <li>after inserting a {@link java.sql.Blob} or {@link java.sql.Clob}
 	 * </ul>
 	 * This operation cascades to associated instances if the association is mapped
-	 * with {@link jakarta.persistence.CascadeType#REFRESH}.
+	 * with {@link javax.persistence.CascadeType#REFRESH}.
 	 *
 	 * @param entityName a persistent class
 	 * @param object a persistent or detached instance
@@ -785,7 +785,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	/**
 	 * Mark a persistence instance associated with this session for removal from
 	 * the underlying database. Ths operation cascades to associated instances if
-	 * the association is mapped {@link jakarta.persistence.CascadeType#REMOVE}.
+	 * the association is mapped {@link javax.persistence.CascadeType#REMOVE}.
 	 *
 	 * @param object the managed persistent instance to remove
 	 */
@@ -831,7 +831,7 @@ public interface Session extends SharedSessionContract, EntityManager {
 	 * <p>
 	 * Convenient form of {@link #get(Class, Object, LockOptions)}.
 	 * <p>
-	 * This operation is very similar to {@link #find(Class, Object, jakarta.persistence.LockModeType)}.
+	 * This operation is very similar to {@link #find(Class, Object, javax.persistence.LockModeType)}.
 	 *
 	 * @param entityType the entity type
 	 * @param id an identifier

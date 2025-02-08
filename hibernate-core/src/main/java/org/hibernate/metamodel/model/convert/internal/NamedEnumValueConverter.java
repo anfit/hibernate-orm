@@ -23,7 +23,7 @@ import org.hibernate.type.descriptor.jdbc.JdbcType;
 
 /**
  * BasicValueConverter handling the conversion of an enum based on
- * JPA {@link jakarta.persistence.EnumType#STRING} strategy (storing the name)
+ * JPA {@link javax.persistence.EnumType#STRING} strategy (storing the name)
  *
  * @author Steve Ebersole
  */

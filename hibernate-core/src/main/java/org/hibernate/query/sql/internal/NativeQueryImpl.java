@@ -89,16 +89,16 @@ import org.hibernate.transform.ResultTransformer;
 import org.hibernate.type.BasicType;
 import org.hibernate.type.BasicTypeReference;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.PersistenceException;
-import jakarta.persistence.TemporalType;
-import jakarta.persistence.Tuple;
-import jakarta.persistence.metamodel.SingularAttribute;
+import javax.persistence.AttributeConverter;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.FlushModeType;
+import javax.persistence.LockModeType;
+import javax.persistence.Parameter;
+import javax.persistence.PersistenceException;
+import javax.persistence.TemporalType;
+import javax.persistence.Tuple;
+import javax.persistence.metamodel.SingularAttribute;
 
 import static org.hibernate.jpa.HibernateHints.HINT_NATIVE_LOCK_MODE;
 

@@ -6,8 +6,8 @@
  */
 package org.hibernate.jpa.internal;
 
-import jakarta.persistence.PersistenceException;
-import jakarta.transaction.SystemException;
+import javax.persistence.PersistenceException;
+import javax.transaction.SystemException;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SessionImplementor;

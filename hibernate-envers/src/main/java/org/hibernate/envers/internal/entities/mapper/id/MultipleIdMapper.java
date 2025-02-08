@@ -17,8 +17,8 @@ import org.hibernate.mapping.Component;
 import org.hibernate.service.ServiceRegistry;
 
 /**
- * An implementation of an identifier mapper for {@link jakarta.persistence.IdClass} or multiple
- * {@link jakarta.persistence.Id} identifier mappings.
+ * An implementation of an identifier mapper for {@link javax.persistence.IdClass} or multiple
+ * {@link javax.persistence.Id} identifier mappings.
  *
  * @author Adam Warski (adam at warski dot org)
  * @author Chris Cranford

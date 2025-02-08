@@ -7,8 +7,8 @@
 package org.hibernate.type.descriptor.jdbc;
 
 import java.sql.Types;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.TemporalType;
+import javax.persistence.EnumType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.TimeZoneStorageStrategy;
 import org.hibernate.type.SqlTypes;

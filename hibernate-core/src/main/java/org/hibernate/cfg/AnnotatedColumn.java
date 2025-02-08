@@ -565,7 +565,7 @@ public class AnnotatedColumn {
 	}
 
 	public static AnnotatedColumn[] buildColumnFromAnnotation(
-			jakarta.persistence.Column column,
+			javax.persistence.Column column,
 			Comment commentAnn,
 			Nullability nullability,
 			PropertyHolder propertyHolder,
@@ -585,7 +585,7 @@ public class AnnotatedColumn {
 	}
 
 	public static AnnotatedColumn[] buildColumnsFromAnnotations(
-			jakarta.persistence.Column[] columns,
+			javax.persistence.Column[] columns,
 			Comment commentAnn,
 			Nullability nullability,
 			PropertyHolder propertyHolder,
@@ -606,7 +606,7 @@ public class AnnotatedColumn {
 	}
 
 	public static AnnotatedColumn[] buildColumnsFromAnnotations(
-			jakarta.persistence.Column[] columns,
+			javax.persistence.Column[] columns,
 			Comment commentAnn,
 			Nullability nullability,
 			PropertyHolder propertyHolder,
@@ -628,7 +628,7 @@ public class AnnotatedColumn {
 	}
 
 	public static AnnotatedColumn[] buildColumnOrFormulaFromAnnotation(
-			jakarta.persistence.Column column,
+			javax.persistence.Column column,
 			org.hibernate.annotations.Formula formulaAnn,
 			Comment commentAnn,
 			Nullability nullability,
@@ -637,7 +637,7 @@ public class AnnotatedColumn {
 			Map<String, Join> secondaryTables,
 			MetadataBuildingContext context) {
 		return buildColumnsOrFormulaFromAnnotation(
-				new jakarta.persistence.Column[] { column },
+				new javax.persistence.Column[] { column },
 				formulaAnn,
 				commentAnn,
 				nullability,
@@ -650,7 +650,7 @@ public class AnnotatedColumn {
 	}
 
 	public static AnnotatedColumn[] buildColumnsOrFormulaFromAnnotation(
-			jakarta.persistence.Column[] columnAnns,
+			javax.persistence.Column[] columnAnns,
 			org.hibernate.annotations.Formula formulaAnn,
 			Comment commentAnn,
 			Nullability nullability,
@@ -670,8 +670,8 @@ public class AnnotatedColumn {
 			return new AnnotatedColumn[] { formulaColumn };
 		}
 		else {
-			jakarta.persistence.Column[] actualCols = columnAnns;
-			jakarta.persistence.Column[] overriddenCols = propertyHolder.getOverriddenColumn(
+			javax.persistence.Column[] actualCols = columnAnns;
+			javax.persistence.Column[] overriddenCols = propertyHolder.getOverriddenColumn(
 					StringHelper.qualify( propertyHolder.getPath(), inferredData.getPropertyName() )
 			);
 			if ( overriddenCols != null ) {
@@ -703,7 +703,7 @@ public class AnnotatedColumn {
 					final ObjectNameNormalizer normalizer = context.getObjectNameNormalizer();
 					final Database database = context.getMetadataCollector().getDatabase();
 
-					jakarta.persistence.Column col = actualCols[index];
+					javax.persistence.Column col = actualCols[index];
 
 					final String sqlType;
 					if ( col.columnDefinition().isEmpty() ) {

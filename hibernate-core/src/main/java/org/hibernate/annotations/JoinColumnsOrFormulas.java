@@ -6,7 +6,7 @@
  */
 
 package org.hibernate.annotations;
-import jakarta.persistence.JoinColumn;
+import javax.persistence.JoinColumn;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -23,7 +23,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * @author Sharath Reddy
  *
  * @see JoinColumnOrFormula
- * @see jakarta.persistence.JoinColumns
+ * @see javax.persistence.JoinColumns
  */
 @Target({METHOD, FIELD})
 @Retention(RUNTIME)

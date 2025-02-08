@@ -31,9 +31,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.metamodel.Bindable;
-import jakarta.persistence.metamodel.SingularAttribute;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.metamodel.Bindable;
+import javax.persistence.metamodel.SingularAttribute;
 
 import org.hibernate.NotYetImplementedFor6Exception;
 import org.hibernate.QueryException;

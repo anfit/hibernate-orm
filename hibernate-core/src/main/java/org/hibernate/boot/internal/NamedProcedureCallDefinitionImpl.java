@@ -26,9 +26,9 @@ import org.hibernate.procedure.spi.ParameterStrategy;
 import org.hibernate.query.internal.ResultSetMappingResolutionContext;
 import org.hibernate.query.results.ResultSetMappingImpl;
 
-import jakarta.persistence.NamedStoredProcedureQuery;
-import jakarta.persistence.ParameterMode;
-import jakarta.persistence.StoredProcedureParameter;
+import javax.persistence.NamedStoredProcedureQuery;
+import javax.persistence.ParameterMode;
+import javax.persistence.StoredProcedureParameter;
 
 import static org.hibernate.procedure.spi.NamedCallableQueryMemento.ParameterMemento;
 
@@ -38,7 +38,7 @@ import static org.hibernate.procedure.spi.NamedCallableQueryMemento.ParameterMem
  *
  * @author Steve Ebersole
  *
- * @see jakarta.persistence.NamedStoredProcedureQuery
+ * @see javax.persistence.NamedStoredProcedureQuery
  */
 public class NamedProcedureCallDefinitionImpl implements NamedProcedureCallDefinition {
 	private final String registeredName;

@@ -27,10 +27,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.dialect.Dialect;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.FlushModeType;
+import javax.persistence.LockModeType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 
 /**
  * Models a selection query returning results.  It is a slimmed down version
@@ -129,8 +129,8 @@ public interface SelectionQuery<R> extends CommonQueryContract {
 	 *
 	 * @return the single result, only if there is exactly one
 	 *
-	 * @throws jakarta.persistence.NonUniqueResultException if there is more than one matching result
-	 * @throws jakarta.persistence.NoResultException if there is no result to return
+	 * @throws javax.persistence.NonUniqueResultException if there is more than one matching result
+	 * @throws javax.persistence.NoResultException if there is no result to return
 	 */
 	R getSingleResult();
 
@@ -140,7 +140,7 @@ public interface SelectionQuery<R> extends CommonQueryContract {
 	 *
 	 * @return the single result or {@code null} if there is no result to return
 	 *
-	 * @throws jakarta.persistence.NonUniqueResultException if there is more than one matching result
+	 * @throws javax.persistence.NonUniqueResultException if there is more than one matching result
 	 */
 	R getSingleResultOrNull();
 

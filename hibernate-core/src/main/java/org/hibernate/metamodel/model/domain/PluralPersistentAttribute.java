@@ -6,7 +6,7 @@
  */
 package org.hibernate.metamodel.model.domain;
 
-import jakarta.persistence.metamodel.PluralAttribute;
+import javax.persistence.metamodel.PluralAttribute;
 
 import org.hibernate.metamodel.CollectionClassification;
 import org.hibernate.query.NotIndexedCollectionException;

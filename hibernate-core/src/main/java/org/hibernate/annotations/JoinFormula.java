@@ -15,7 +15,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Specifies a join condition based on an arbitrary native SQL formula
- * instead of a {@linkplain jakarta.persistence.JoinColumn column name}.
+ * instead of a {@linkplain javax.persistence.JoinColumn column name}.
  *
  * @author Sharath Reddy
  */

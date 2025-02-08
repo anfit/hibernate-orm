@@ -8,7 +8,7 @@ package org.hibernate.type.descriptor.java;
 
 import java.util.Comparator;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.type.spi.TypeConfiguration;
 

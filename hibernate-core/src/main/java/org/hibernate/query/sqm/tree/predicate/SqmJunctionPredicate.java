@@ -11,11 +11,9 @@ import java.util.List;
 
 import org.hibernate.query.sqm.NodeBuilder;
 import org.hibernate.query.sqm.SemanticQueryWalker;
-import org.hibernate.query.sqm.SqmExpressible;
 import org.hibernate.query.sqm.tree.SqmCopyContext;
-import org.hibernate.sql.ast.tree.predicate.Junction;
 
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 /**
  * @author Steve Ebersole

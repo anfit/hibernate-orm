@@ -6,7 +6,7 @@
  */
 package org.hibernate.resource.beans.container.internal;
 
-import jakarta.enterprise.inject.spi.BeanManager;
+import javax.enterprise.inject.spi.BeanManager;
 
 import org.hibernate.resource.beans.container.spi.AbstractCdiBeanContainer;
 import org.hibernate.resource.beans.container.spi.BeanLifecycleStrategy;

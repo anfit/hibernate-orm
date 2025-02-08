@@ -39,7 +39,7 @@ import org.hibernate.query.sqm.tree.domain.SqmTreatedPath;
 import org.hibernate.sql.ast.tree.from.TableGroup;
 import org.hibernate.type.BasicType;
 
-import jakarta.persistence.metamodel.Bindable;
+import javax.persistence.metamodel.Bindable;
 
 /**
  * Helper for dealing with Hibernate's "mapping model" while processing an SQM which is defined

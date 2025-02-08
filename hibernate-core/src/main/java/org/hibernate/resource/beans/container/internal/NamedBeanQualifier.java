@@ -6,7 +6,7 @@
  */
 package org.hibernate.resource.beans.container.internal;
 
-import jakarta.inject.Named;
+import javax.inject.Named;
 
 /**
  * Used to locate named CDI beans.
@@ -14,7 +14,7 @@ import jakarta.inject.Named;
  * @author Yoann Rodière
  * @author Steve Ebersole
  */
-public class NamedBeanQualifier extends jakarta.enterprise.util.AnnotationLiteral<Named> implements Named {
+public class NamedBeanQualifier extends javax.enterprise.util.AnnotationLiteral<Named> implements Named {
 	private final String name;
 
 	NamedBeanQualifier(String name) {

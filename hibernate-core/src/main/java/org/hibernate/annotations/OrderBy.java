@@ -21,16 +21,16 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * or {@link java.util.Map}, the order is maintained using a {@link java.util.LinkedHashSet} or
  * {@link java.util.LinkedHashMap}.
  * <ul>
- * <li>Use {@link jakarta.persistence.OrderBy} to order using an expression written in HQL.
+ * <li>Use {@link javax.persistence.OrderBy} to order using an expression written in HQL.
  * <li>Use {@link SortComparator} to sort the collection in memory using a {@link java.util.Comparator}.
  * <li>Use {@link SortNatural} to sort the collection in its {@link java.util.Comparator natural order}.
- * <li>Use {@link jakarta.persistence.OrderColumn} to maintain the order of a {@link java.util.List}
+ * <li>Use {@link javax.persistence.OrderColumn} to maintain the order of a {@link java.util.List}
  *     with a dedicated index column.
  * </ul>
  * <p>
- * It is illegal to use both {@code OrderBy} and {@link jakarta.persistence.OrderBy}.
+ * It is illegal to use both {@code OrderBy} and {@link javax.persistence.OrderBy}.
  *
- * @see jakarta.persistence.OrderBy
+ * @see javax.persistence.OrderBy
  * @see SortComparator
  * @see SortNatural
  *

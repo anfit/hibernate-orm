@@ -6,7 +6,7 @@
  */
 package org.hibernate.query.criteria;
 
-import jakarta.persistence.TupleElement;
+import javax.persistence.TupleElement;
 
 import org.hibernate.type.descriptor.java.JavaType;
 

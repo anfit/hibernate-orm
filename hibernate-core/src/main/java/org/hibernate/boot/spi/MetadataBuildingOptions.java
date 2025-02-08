@@ -8,7 +8,7 @@ package org.hibernate.boot.spi;
 
 import java.util.List;
 
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.SharedCacheMode;
 
 import org.hibernate.TimeZoneStorageStrategy;
 import org.hibernate.boot.model.IdGeneratorStrategyInterpreter;
@@ -153,7 +153,7 @@ public interface MetadataBuildingOptions {
 	/**
 	 * Should we create constraint by default?
 	 *
-	 * @see jakarta.persistence.ConstraintMode#PROVIDER_DEFAULT
+	 * @see javax.persistence.ConstraintMode#PROVIDER_DEFAULT
 	 * @see org.hibernate.cfg.AvailableSettings#HBM2DDL_DEFAULT_CONSTRAINT_MODE
 	 *
 	 * @return {@code true} if not create constraint by default; {@code false} otherwise.

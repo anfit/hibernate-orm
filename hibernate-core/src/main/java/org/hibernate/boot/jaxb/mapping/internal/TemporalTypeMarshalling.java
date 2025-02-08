@@ -6,7 +6,7 @@
  */
 package org.hibernate.boot.jaxb.mapping.internal;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 /**
  * Marshalling support for dealing with JPA TemporalType enums.  Plugged into JAXB for binding

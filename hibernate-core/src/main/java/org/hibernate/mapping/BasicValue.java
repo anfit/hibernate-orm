@@ -59,9 +59,9 @@ import org.hibernate.type.spi.TypeConfigurationAware;
 import org.hibernate.usertype.DynamicParameterizedType;
 import org.hibernate.usertype.UserType;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.TemporalType;
+import javax.persistence.AttributeConverter;
+import javax.persistence.EnumType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.mapping.MappingHelper.injectParameters;
 

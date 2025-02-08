@@ -59,7 +59,7 @@ import java.sql.Types;
 import java.util.Iterator;
 import java.util.Map;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.exception.spi.TemplatedViolatedConstraintNameExtractor.extractUsingTemplate;
 import static org.hibernate.type.SqlTypes.BIGINT;

@@ -9,8 +9,8 @@ package org.hibernate.metamodel.model.domain;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
-import jakarta.persistence.metamodel.IdentifiableType;
-import jakarta.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.IdentifiableType;
+import javax.persistence.metamodel.SingularAttribute;
 
 import org.hibernate.query.sqm.SqmPathSource;
 

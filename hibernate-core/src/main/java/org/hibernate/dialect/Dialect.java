@@ -162,7 +162,7 @@ import org.hibernate.type.descriptor.sql.internal.DdlTypeImpl;
 import org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry;
 import org.hibernate.type.spi.TypeConfiguration;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static java.lang.Math.ceil;
 import static java.lang.Math.log;

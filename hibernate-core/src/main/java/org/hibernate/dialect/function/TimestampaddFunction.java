@@ -6,7 +6,7 @@
  */
 package org.hibernate.dialect.function;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 import org.hibernate.dialect.Dialect;
 import org.hibernate.query.ReturnableType;
 import org.hibernate.query.sqm.IntervalType;

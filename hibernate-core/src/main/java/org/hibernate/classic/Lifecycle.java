@@ -41,14 +41,14 @@ import java.io.Serializable;
  * to the object, except when identity column key generation is used.
  *
  * @see CallbackException
- * @see jakarta.persistence.EntityListeners
- * @see jakarta.persistence.PrePersist
- * @see jakarta.persistence.PreRemove
- * @see jakarta.persistence.PreUpdate
- * @see jakarta.persistence.PostLoad
- * @see jakarta.persistence.PostPersist
- * @see jakarta.persistence.PostRemove
- * @see jakarta.persistence.PostUpdate
+ * @see javax.persistence.EntityListeners
+ * @see javax.persistence.PrePersist
+ * @see javax.persistence.PreRemove
+ * @see javax.persistence.PreUpdate
+ * @see javax.persistence.PostLoad
+ * @see javax.persistence.PostPersist
+ * @see javax.persistence.PostRemove
+ * @see javax.persistence.PostUpdate
  *
  * @author Gavin King
  */

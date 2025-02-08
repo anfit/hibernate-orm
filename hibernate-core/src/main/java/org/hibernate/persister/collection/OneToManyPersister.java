@@ -33,7 +33,7 @@ import org.hibernate.sql.ast.tree.from.TableGroup;
 import org.hibernate.sql.ast.tree.predicate.Predicate;
 
 /**
- * A {@link CollectionPersister} for {@link jakarta.persistence.OneToMany one-to-one
+ * A {@link CollectionPersister} for {@link javax.persistence.OneToMany one-to-one
  * associations}.
  *
  * @see BasicCollectionPersister

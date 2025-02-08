@@ -8,14 +8,14 @@
 /**
  * Support for Jakarta Persistence entity listeners.
  *
- * @see jakarta.persistence.EntityListeners
- * @see jakarta.persistence.PrePersist
- * @see jakarta.persistence.PreUpdate
- * @see jakarta.persistence.PreRemove
- * @see jakarta.persistence.PostPersist
- * @see jakarta.persistence.PostUpdate
- * @see jakarta.persistence.PostRemove
- * @see jakarta.persistence.PostLoad
+ * @see javax.persistence.EntityListeners
+ * @see javax.persistence.PrePersist
+ * @see javax.persistence.PreUpdate
+ * @see javax.persistence.PreRemove
+ * @see javax.persistence.PostPersist
+ * @see javax.persistence.PostUpdate
+ * @see javax.persistence.PostRemove
+ * @see javax.persistence.PostLoad
  *
  * @author Steve Ebersole
  */

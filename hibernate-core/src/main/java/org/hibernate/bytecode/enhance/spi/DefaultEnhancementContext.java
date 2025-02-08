@@ -6,15 +6,15 @@
  */
 package org.hibernate.bytecode.enhance.spi;
 
-import jakarta.persistence.Basic;
-import jakarta.persistence.Convert;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Transient;
+import javax.persistence.Basic;
+import javax.persistence.Convert;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
 /**
  * default implementation of EnhancementContext. May be sub-classed as needed.

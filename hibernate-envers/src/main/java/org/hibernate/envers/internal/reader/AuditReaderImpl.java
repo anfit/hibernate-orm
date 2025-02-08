@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import jakarta.persistence.NoResultException;
+import javax.persistence.NoResultException;
 
 import org.hibernate.HibernateException;
 import org.hibernate.NonUniqueResultException;

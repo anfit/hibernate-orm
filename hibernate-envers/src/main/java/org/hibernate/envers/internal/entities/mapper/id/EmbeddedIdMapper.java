@@ -19,7 +19,7 @@ import org.hibernate.property.access.spi.Setter;
 import org.hibernate.service.ServiceRegistry;
 
 /**
- * An identifier mapper implementation for {@link jakarta.persistence.EmbeddedId} mappings.
+ * An identifier mapper implementation for {@link javax.persistence.EmbeddedId} mappings.
  *
  * @author Adam Warski (adam at warski dot org)
  * @author Chris Cranford

@@ -8,7 +8,7 @@ package org.hibernate.boot.jaxb.mapping.spi;
 
 import java.io.Serializable;
 import java.util.List;
-import jakarta.persistence.LockModeType;
+import javax.persistence.LockModeType;
 
 public interface NamedQuery extends Serializable {
 	String getDescription();

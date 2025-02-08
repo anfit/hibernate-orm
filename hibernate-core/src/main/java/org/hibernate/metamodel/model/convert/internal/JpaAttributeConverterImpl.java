@@ -6,8 +6,8 @@
  */
 package org.hibernate.metamodel.model.convert.internal;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.PersistenceException;
+import javax.persistence.AttributeConverter;
+import javax.persistence.PersistenceException;
 
 import org.hibernate.boot.model.convert.spi.JpaAttributeConverterCreationContext;
 import org.hibernate.metamodel.model.convert.spi.JpaAttributeConverter;

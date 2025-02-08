@@ -36,7 +36,7 @@ import org.hibernate.proxy.HibernateProxy;
 import org.hibernate.proxy.LazyInitializer;
 import org.hibernate.tuple.entity.EntityMetamodel;
 
-import jakarta.transaction.SystemException;
+import javax.transaction.SystemException;
 
 /**
  * @author Gavin King

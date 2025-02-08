@@ -10,8 +10,8 @@ import org.hibernate.envers.internal.entities.PropertyData;
 import org.hibernate.mapping.Component;
 
 /**
- * An identifier mapper that is meant to support nested {@link jakarta.persistence.Embeddable} instances
- * inside an existing {@link jakarta.persistence.EmbeddedId} identifier hierarchy.
+ * An identifier mapper that is meant to support nested {@link javax.persistence.Embeddable} instances
+ * inside an existing {@link javax.persistence.EmbeddedId} identifier hierarchy.
  *
  * @author Chris Cranford
  */

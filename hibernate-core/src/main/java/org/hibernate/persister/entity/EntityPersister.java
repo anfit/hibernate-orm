@@ -50,7 +50,7 @@ import org.hibernate.type.Type;
 import org.hibernate.type.descriptor.java.VersionJavaType;
 
 /**
- * A strategy for persisting a mapped {@linkplain jakarta.persistence.Entity
+ * A strategy for persisting a mapped {@linkplain javax.persistence.Entity
  * entity class}. An {@code EntityPersister} orchestrates rendering of the
  * SQL statements corresponding to basic lifecycle events, including
  * {@code insert}, {@code update}, and {@code delete} statements, and their

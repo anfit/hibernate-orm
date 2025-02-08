@@ -6,7 +6,7 @@
  */
 package org.hibernate.query.criteria;
 
-import jakarta.persistence.criteria.ParameterExpression;
+import javax.persistence.criteria.ParameterExpression;
 
 /**
  * @author Steve Ebersole

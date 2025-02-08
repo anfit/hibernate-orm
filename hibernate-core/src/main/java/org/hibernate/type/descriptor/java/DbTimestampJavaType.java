@@ -24,7 +24,7 @@ import org.hibernate.type.spi.TypeConfiguration;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 /**
  * Wrapper Java type descriptor for that uses the database timestamp as seed value for versions.

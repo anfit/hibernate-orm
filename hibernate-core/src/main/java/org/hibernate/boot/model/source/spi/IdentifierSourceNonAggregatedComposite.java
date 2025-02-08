@@ -12,7 +12,7 @@ import java.util.List;
  * Additional contract describing the source of an identifier mapping whose {@linkplain #getNature() nature} is
  * {@link org.hibernate.id.EntityIdentifierNature#NON_AGGREGATED_COMPOSITE}.
  * <p/>
- * Think {@link jakarta.persistence.IdClass}
+ * Think {@link javax.persistence.IdClass}
  *
  * @author Steve Ebersole
  */
@@ -25,7 +25,7 @@ public interface IdentifierSourceNonAggregatedComposite extends CompositeIdentif
 	List<SingularAttributeSource> getAttributeSourcesMakingUpIdentifier();
 
 	/**
-	 * Retrieve the source information for the {@link jakarta.persistence.IdClass} definition
+	 * Retrieve the source information for the {@link javax.persistence.IdClass} definition
 	 *
 	 * @return The IdClass source information, or {@code null} if none.
 	 */

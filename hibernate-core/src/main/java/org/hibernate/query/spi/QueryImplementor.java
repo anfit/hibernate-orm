@@ -20,8 +20,8 @@ import org.hibernate.query.BindableType;
 import org.hibernate.query.Query;
 import org.hibernate.query.QueryParameter;
 
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 import org.hibernate.query.ResultListTransformer;
 import org.hibernate.query.TupleTransformer;
 import org.hibernate.transform.ResultTransformer;

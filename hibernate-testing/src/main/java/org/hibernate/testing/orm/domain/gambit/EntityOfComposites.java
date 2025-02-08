@@ -6,9 +6,9 @@
  */
 package org.hibernate.testing.orm.domain.gambit;
 
-import jakarta.persistence.Embedded;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @author Steve Ebersole

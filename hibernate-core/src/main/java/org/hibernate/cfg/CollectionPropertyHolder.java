@@ -28,16 +28,16 @@ import org.hibernate.mapping.PersistentClass;
 import org.hibernate.mapping.Property;
 import org.hibernate.mapping.Table;
 
-import jakarta.persistence.Convert;
-import jakarta.persistence.Converts;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.MapKeyClass;
-import jakarta.persistence.MapKeyEnumerated;
-import jakarta.persistence.MapKeyTemporal;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Temporal;
+import javax.persistence.Convert;
+import javax.persistence.Converts;
+import javax.persistence.Enumerated;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.MapKeyClass;
+import javax.persistence.MapKeyEnumerated;
+import javax.persistence.MapKeyTemporal;
+import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
 
 /**
  * @author Emmanuel Bernard

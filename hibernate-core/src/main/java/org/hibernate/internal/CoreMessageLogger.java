@@ -19,8 +19,8 @@ import java.util.ServiceConfigurationError;
 import java.util.Set;
 import javax.naming.NameNotFoundException;
 import javax.naming.NamingException;
-import jakarta.transaction.Synchronization;
-import jakarta.transaction.SystemException;
+import javax.transaction.Synchronization;
+import javax.transaction.SystemException;
 
 import org.hibernate.HibernateException;
 import org.hibernate.LockMode;
@@ -33,8 +33,6 @@ import org.hibernate.engine.jndi.JndiNameException;
 import org.hibernate.engine.spi.CollectionKey;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.id.IntegralDataTypeHolder;
-import org.hibernate.query.QueryLogging;
-import org.hibernate.type.BasicType;
 import org.hibernate.type.SerializationException;
 import org.hibernate.type.Type;
 

@@ -8,7 +8,7 @@ package org.hibernate.id.factory.spi;
 
 import org.hibernate.boot.model.IdentifierGeneratorDefinition;
 
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 /**
  * Access to resolve IdentifierGeneratorDefinition instances

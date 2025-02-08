@@ -18,7 +18,7 @@ import org.hibernate.sql.ast.tree.select.SortSpecification;
 /**
  * Represents a self rendering expression i.e. usually a literal used in an order-by fragment
  *
- * @apiNote This is Hibernate-specific feature.  For {@link jakarta.persistence.OrderBy} (JPA)
+ * @apiNote This is Hibernate-specific feature.  For {@link javax.persistence.OrderBy} (JPA)
  * all path references are expected to be domain paths (attributes).
  *
  * @author Christian Beikov

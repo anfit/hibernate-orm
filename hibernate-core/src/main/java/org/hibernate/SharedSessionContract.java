@@ -9,7 +9,7 @@ package org.hibernate;
 import java.io.Closeable;
 import java.io.Serializable;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaBuilder;
 
 import org.hibernate.jdbc.ReturningWork;
 import org.hibernate.jdbc.Work;
@@ -76,7 +76,7 @@ public interface SharedSessionContract extends QueryProducer, Closeable, Seriali
 	 *
 	 * @return The ProcedureCall
 	 *
-	 * @see jakarta.persistence.NamedStoredProcedureQuery
+	 * @see javax.persistence.NamedStoredProcedureQuery
 	 */
 	ProcedureCall getNamedProcedureCall(String name);
 
@@ -118,7 +118,7 @@ public interface SharedSessionContract extends QueryProducer, Closeable, Seriali
 	 *
 	 * @return The ProcedureCall
 	 *
-	 * @see jakarta.persistence.NamedStoredProcedureQuery
+	 * @see javax.persistence.NamedStoredProcedureQuery
 	 */
 	ProcedureCall createNamedStoredProcedureQuery(String name);
 

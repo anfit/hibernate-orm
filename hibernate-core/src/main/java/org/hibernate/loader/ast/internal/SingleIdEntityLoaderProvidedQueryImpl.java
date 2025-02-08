@@ -15,7 +15,7 @@ import org.hibernate.metamodel.mapping.EntityMappingType;
 import org.hibernate.query.named.NamedQueryMemento;
 import org.hibernate.query.spi.QueryImplementor;
 
-import jakarta.persistence.Parameter;
+import javax.persistence.Parameter;
 
 /**
  * Implementation of SingleIdEntityLoader for cases where the application has

@@ -26,8 +26,8 @@ import org.hibernate.type.descriptor.java.spi.JavaTypeRegistry;
 import org.hibernate.type.spi.TypeConfiguration;
 import org.hibernate.usertype.UserType;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.ColumnResult;
+import javax.persistence.AttributeConverter;
+import javax.persistence.ColumnResult;
 
 /**
  * Implementation of ResultMappingMemento for scalar (basic) results.

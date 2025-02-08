@@ -8,7 +8,7 @@ package org.hibernate.query.results.dynamic;
 
 import java.util.Objects;
 import java.util.function.BiFunction;
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.metamodel.mapping.BasicValuedMapping;

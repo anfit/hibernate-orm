@@ -19,7 +19,7 @@ import org.hibernate.metamodel.mapping.JdbcMapping;
 
 import org.jboss.logging.Logger;
 
-import jakarta.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBElement;
 
 /**
  * @author Steve Ebersole

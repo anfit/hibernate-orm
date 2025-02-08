@@ -73,7 +73,7 @@ import static java.util.Collections.emptyMap;
 
 /**
  * An {@link EntityPersister} implementing the normalized
- * {@link jakarta.persistence.InheritanceType#JOINED} inheritance
+ * {@link javax.persistence.InheritanceType#JOINED} inheritance
  * mapping strategy for an entity and its inheritance hierarchy.
  * <p>
  * This is implemented as a separate table for each subclass,

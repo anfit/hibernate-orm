@@ -7,7 +7,7 @@
 package org.hibernate.id.factory.spi;
 
 import java.util.function.BiConsumer;
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 import org.hibernate.service.ServiceRegistry;
 

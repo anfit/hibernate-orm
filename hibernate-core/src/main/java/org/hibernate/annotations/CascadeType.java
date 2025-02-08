@@ -6,8 +6,8 @@
  */
 package org.hibernate.annotations;
 
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import org.hibernate.Internal;
 
@@ -21,22 +21,22 @@ public enum CascadeType {
 	ALL,
 
 	/**
-	 * Corresponds to {@link jakarta.persistence.CascadeType#PERSIST}.
+	 * Corresponds to {@link javax.persistence.CascadeType#PERSIST}.
 	 */
 	PERSIST,
 
 	/**
-	 * Corresponds to {@link jakarta.persistence.CascadeType#MERGE}.
+	 * Corresponds to {@link javax.persistence.CascadeType#MERGE}.
 	 */
 	MERGE,
 
 	/**
-	 * Corresponds to {@link jakarta.persistence.CascadeType#REMOVE}.
+	 * Corresponds to {@link javax.persistence.CascadeType#REMOVE}.
 	 */
 	REMOVE,
 
 	/**
-	 * Corresponds to {@link jakarta.persistence.CascadeType#REFRESH}.
+	 * Corresponds to {@link javax.persistence.CascadeType#REFRESH}.
 	 */
 	REFRESH,
 
@@ -70,7 +70,7 @@ public enum CascadeType {
 	LOCK,
 
 	/**
-	 * Corresponds to {@link jakarta.persistence.CascadeType#DETACH}.
+	 * Corresponds to {@link javax.persistence.CascadeType#DETACH}.
 	 */
 	DETACH
 }

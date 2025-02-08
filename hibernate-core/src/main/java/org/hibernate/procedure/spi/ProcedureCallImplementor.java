@@ -15,10 +15,10 @@ import org.hibernate.query.spi.ProcedureParameterMetadataImplementor;
 import org.hibernate.query.spi.QueryImplementor;
 import org.hibernate.type.BasicTypeReference;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.ParameterMode;
-import jakarta.persistence.TemporalType;
+import javax.persistence.FlushModeType;
+import javax.persistence.Parameter;
+import javax.persistence.ParameterMode;
+import javax.persistence.TemporalType;
 
 /**
  * @author Steve Ebersole

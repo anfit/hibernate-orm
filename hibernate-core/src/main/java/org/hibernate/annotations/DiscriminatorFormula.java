@@ -17,7 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * entity inheritance hierarchy. Must be used to annotate the root entity of
  * the hierarchy.
  * <p>
- * Used in place of the JPA {@link jakarta.persistence.DiscriminatorColumn}.
+ * Used in place of the JPA {@link javax.persistence.DiscriminatorColumn}.
  *
  * @see Formula
  *

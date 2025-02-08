@@ -16,7 +16,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import jakarta.persistence.EnumType;
+import javax.persistence.EnumType;
 
 import org.hibernate.envers.boot.model.Attribute;
 import org.hibernate.envers.boot.model.AttributeContainer;

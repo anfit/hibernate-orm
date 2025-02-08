@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 
 /**
  * Specifies a restriction written in native SQL to add to the generated
- * SQL when querying the {@link jakarta.persistence.JoinTable join table}
+ * SQL when querying the {@link javax.persistence.JoinTable join table}
  * of a collection.
  * <p>
  * For example, {@code @Where("deleted = false")} could be used to hide

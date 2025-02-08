@@ -8,7 +8,7 @@ package org.hibernate.query;
 
 import org.hibernate.MappingException;
 
-import jakarta.persistence.NamedNativeQuery;
+import javax.persistence.NamedNativeQuery;
 
 /**
  * Indicates a request for named ResultSet mapping which could not be found

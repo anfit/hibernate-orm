@@ -7,7 +7,7 @@
 package org.hibernate.testing.orm.junit;
 
 import java.util.Optional;
-import jakarta.persistence.EntityManagerFactory;
+import javax.persistence.EntityManagerFactory;
 
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;

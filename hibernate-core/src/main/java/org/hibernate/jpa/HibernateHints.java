@@ -88,7 +88,7 @@ public interface HibernateHints {
 	 * the SQL sent to the database.
 	 *
 	 * @implSpec Not valid for {@link org.hibernate.procedure.ProcedureCall}
-	 * nor {@link jakarta.persistence.StoredProcedureQuery} scenarios
+	 * nor {@link javax.persistence.StoredProcedureQuery} scenarios
 	 *
 	 * @see Query#setComment
 	 */
@@ -110,10 +110,10 @@ public interface HibernateHints {
 	 * native-query.
 	 *
 	 * While Hibernate supports applying lock-mode to a natove-query, the specification
-	 * requires that {@link jakarta.persistence.Query#setLockMode} throw an
+	 * requires that {@link javax.persistence.Query#setLockMode} throw an
 	 * {@link IllegalStateException} if called for a native query.
 	 *
-	 * Accepts a {@link jakarta.persistence.LockModeType} or a {@link org.hibernate.LockMode}
+	 * Accepts a {@link javax.persistence.LockModeType} or a {@link org.hibernate.LockMode}
 	 */
 	String HINT_NATIVE_LOCK_MODE = "org.hibernate.lockMode";
 
@@ -139,7 +139,7 @@ public interface HibernateHints {
 
 	/**
 	 * Whether to treat a {@link org.hibernate.procedure.ProcedureCall}
-	 * or {@link jakarta.persistence.StoredProcedureQuery} as a call
+	 * or {@link javax.persistence.StoredProcedureQuery} as a call
 	 * to a function rather than a call to a procedure
 	 */
 	String HINT_CALLABLE_FUNCTION = "org.hibernate.callableFunction";

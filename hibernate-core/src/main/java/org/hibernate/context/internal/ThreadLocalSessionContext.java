@@ -17,7 +17,7 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-import jakarta.transaction.Synchronization;
+import javax.transaction.Synchronization;
 
 import org.hibernate.FlushMode;
 import org.hibernate.HibernateException;

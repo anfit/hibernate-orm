@@ -9,11 +9,10 @@ package org.hibernate.query.criteria;
 import java.util.Set;
 
 import org.hibernate.metamodel.model.domain.EntityDomainType;
-import org.hibernate.metamodel.model.domain.PluralPersistentAttribute;
 
-import jakarta.persistence.criteria.Expression;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.criteria.SetJoin;
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.SetJoin;
 
 /**
  * Specialization of {@link JpaJoin} for {@link java.util.Set} typed attribute joins

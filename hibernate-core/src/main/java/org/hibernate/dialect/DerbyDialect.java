@@ -71,7 +71,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.sql.Types;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.type.SqlTypes.*;
 

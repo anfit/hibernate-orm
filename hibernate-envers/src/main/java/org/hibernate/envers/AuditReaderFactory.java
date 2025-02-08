@@ -6,7 +6,7 @@
  */
 package org.hibernate.envers;
 
-import jakarta.persistence.EntityManager;
+import javax.persistence.EntityManager;
 
 import org.hibernate.Session;
 import org.hibernate.engine.spi.SessionImplementor;

@@ -25,8 +25,8 @@ import org.hibernate.usertype.UserType;
 
 import org.jboss.jandex.IndexView;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.AttributeConverter;
+import javax.persistence.SharedCacheMode;
 
 /**
  * Contract for specifying various overrides to be used in metamodel building.
@@ -120,7 +120,7 @@ public interface MetadataBuilder {
 	 * @return {@code this}, for method chaining
 	 *
 	 * @see org.hibernate.cfg.AvailableSettings#DEFAULT_CACHE_CONCURRENCY_STRATEGY
-	 * @see #applySharedCacheMode(jakarta.persistence.SharedCacheMode)
+	 * @see #applySharedCacheMode(javax.persistence.SharedCacheMode)
 	 */
 	MetadataBuilder applyAccessType(AccessType accessType);
 
@@ -319,7 +319,7 @@ public interface MetadataBuilder {
 	 * Ideally we should avoid accessing ClassLoaders when perform 1st phase of bootstrap.  This
 	 * is a ClassLoader that can be used in cases when we have to.  IN EE managed environments, this
 	 * is the ClassLoader mandated by
-	 * {@link jakarta.persistence.spi.PersistenceUnitInfo#getNewTempClassLoader()}.  This ClassLoader
+	 * {@link javax.persistence.spi.PersistenceUnitInfo#getNewTempClassLoader()}.  This ClassLoader
 	 * is thrown away by the container afterwards.  The idea being that the Class can still be enhanced
 	 * in the application ClassLoader.  In other environments, pass a ClassLoader that performs the
 	 * same function if desired.

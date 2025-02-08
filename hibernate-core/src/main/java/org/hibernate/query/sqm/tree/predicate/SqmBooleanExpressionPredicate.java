@@ -13,9 +13,8 @@ import org.hibernate.query.sqm.NodeBuilder;
 import org.hibernate.query.sqm.SemanticQueryWalker;
 import org.hibernate.query.sqm.tree.SqmCopyContext;
 import org.hibernate.query.sqm.tree.expression.SqmExpression;
-import org.hibernate.sql.ast.tree.predicate.NegatedPredicate;
 
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 /**
  * Represents an expression whose type is boolean, and can therefore be used as a predicate.

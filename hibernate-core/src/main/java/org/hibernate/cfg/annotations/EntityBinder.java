@@ -14,18 +14,18 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import jakarta.persistence.Access;
-import jakarta.persistence.Cacheable;
-import jakarta.persistence.ConstraintMode;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.NamedEntityGraph;
-import jakarta.persistence.NamedEntityGraphs;
-import jakarta.persistence.PrimaryKeyJoinColumn;
-import jakarta.persistence.SecondaryTable;
-import jakarta.persistence.SecondaryTables;
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.Access;
+import javax.persistence.Cacheable;
+import javax.persistence.ConstraintMode;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.NamedEntityGraph;
+import javax.persistence.NamedEntityGraphs;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.SecondaryTable;
+import javax.persistence.SecondaryTables;
+import javax.persistence.SharedCacheMode;
 
 import org.hibernate.AnnotationException;
 import org.hibernate.AssertionFailure;
@@ -934,7 +934,7 @@ public class EntityBinder {
 			( (SimpleValue) join.getKey() ).setForeignKeyName( matchingTable.foreignKey().name() );
 		}
 		else {
-			jakarta.persistence.SecondaryTable jpaSecondaryTable = findMatchingSecondaryTable( join );
+			javax.persistence.SecondaryTable jpaSecondaryTable = findMatchingSecondaryTable( join );
 			if ( jpaSecondaryTable != null ) {
 				final boolean noConstraintByDefault = context.getBuildingOptions().isNoConstraintByDefault();
 				if ( jpaSecondaryTable.foreignKey().value() == ConstraintMode.NO_CONSTRAINT
@@ -1160,7 +1160,7 @@ public class EntityBinder {
 	public void setIgnoreIdAnnotations(boolean ignoreIdAnnotations) {
 		this.ignoreIdAnnotations = ignoreIdAnnotations;
 	}
-	public void processComplementaryTableDefinitions(jakarta.persistence.Table table) {
+	public void processComplementaryTableDefinitions(javax.persistence.Table table) {
 		if ( table == null ) return;
 		TableBinder.addIndexes( persistentClass.getTable(), table.indexes(), context );
 	}

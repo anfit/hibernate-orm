@@ -16,7 +16,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 import org.hibernate.AssertionFailure;
 import org.hibernate.FetchMode;

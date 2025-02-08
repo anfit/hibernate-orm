@@ -22,7 +22,7 @@ import org.hibernate.sql.ast.tree.from.TableGroup;
 import org.hibernate.sql.results.graph.DomainResultCreationState;
 
 /**
- * Support for {@link jakarta.persistence.EmbeddedId}
+ * Support for {@link javax.persistence.EmbeddedId}
  *
  * @author Andrea Boriero
  */

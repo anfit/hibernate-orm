@@ -8,7 +8,7 @@ package org.hibernate;
 
 import org.hibernate.jpa.internal.util.FlushModeTypeHelper;
 
-import jakarta.persistence.FlushModeType;
+import javax.persistence.FlushModeType;
 
 /**
  * Represents a flushing strategy. The flush process synchronizes
@@ -65,7 +65,7 @@ public enum FlushMode {
 	 * Interprets an external representation of a flush mode.
 	 *
 	 * @param externalName the name of a {@code FlushMode}, or of a
-	 *                     {@link jakarta.persistence.FlushModeType}
+	 *                     {@link javax.persistence.FlushModeType}
 	 *
 	 * @return a {@code FlushMode}, or null if the argument was null
 	 *

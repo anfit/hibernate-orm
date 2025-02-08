@@ -7,8 +7,8 @@
 package org.hibernate.boot.jaxb.mapping.spi;
 
 import java.util.List;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.TemporalType;
+import javax.persistence.EnumType;
+import javax.persistence.TemporalType;
 
 /**
  * Common interface for Jaxb bindings that represent persistent collection attributes.

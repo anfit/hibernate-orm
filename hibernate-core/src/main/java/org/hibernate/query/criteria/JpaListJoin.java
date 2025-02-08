@@ -10,9 +10,9 @@ import java.util.List;
 
 import org.hibernate.metamodel.model.domain.EntityDomainType;
 
-import jakarta.persistence.criteria.Expression;
-import jakarta.persistence.criteria.ListJoin;
-import jakarta.persistence.criteria.Predicate;
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.ListJoin;
+import javax.persistence.criteria.Predicate;
 
 /**
  * Specialization of {@link JpaJoin} for {@link java.util.List} typed attribute joins

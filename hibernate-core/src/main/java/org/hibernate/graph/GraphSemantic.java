@@ -14,28 +14,28 @@ import static org.hibernate.jpa.SpecHints.HINT_SPEC_FETCH_GRAPH;
 import static org.hibernate.jpa.SpecHints.HINT_SPEC_LOAD_GRAPH;
 
 /**
- * JPA specifies two distinct ways to apply an {@link jakarta.persistence.EntityGraph} -
+ * JPA specifies two distinct ways to apply an {@link javax.persistence.EntityGraph} -
  * as a {@link #FETCH "fetch graph"} or as a {@link #LOAD "load graph"}.
  *
  * @author Steve Ebersole
  */
 public enum GraphSemantic {
 	/**
-	 * Indicates that an {@link jakarta.persistence.EntityGraph} should be interpreted as a JPA "fetch graph".
+	 * Indicates that an {@link javax.persistence.EntityGraph} should be interpreted as a JPA "fetch graph".
 	 * <ul>
 	 * <li>Attributes explicitly specified using an {@link org.hibernate.graph.AttributeNode}s are treated as
-	 * {@link jakarta.persistence.FetchType#EAGER} and fetched via a join or subsequent select.
-	 * <li>Attributes not explicitly specified are treated as {@link jakarta.persistence.FetchType#LAZY} and
+	 * {@link javax.persistence.FetchType#EAGER} and fetched via a join or subsequent select.
+	 * <li>Attributes not explicitly specified are treated as {@link javax.persistence.FetchType#LAZY} and
 	 * are not fetched.
 	 * </ul>
 	 */
 	FETCH( HINT_SPEC_FETCH_GRAPH, LegacySpecHints.HINT_JAVAEE_FETCH_GRAPH ),
 
 	/**
-	 * Indicates that an {@link jakarta.persistence.EntityGraph} should be interpreted as a JPA "load graph".
+	 * Indicates that an {@link javax.persistence.EntityGraph} should be interpreted as a JPA "load graph".
 	 * <ul>
 	 * <li>Attributes explicitly specified using an {@link org.hibernate.graph.AttributeNode}s are treated as
-	 * {@link jakarta.persistence.FetchType#EAGER} and fetched via a join or subsequent select.
+	 * {@link javax.persistence.FetchType#EAGER} and fetched via a join or subsequent select.
 	 * <li>Attributes not explicitly specified are treated as {@code FetchType.LAZY} or {@code FetchType.EAGER}
 	 * depending on the mapping of the attribute, instead of forcing {@code FetchType.LAZY}.
 	 * </ul>

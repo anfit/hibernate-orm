@@ -17,7 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Specifies a foreign key name.
  *
- * @deprecated use the JPA 2.1 {@link jakarta.persistence.ForeignKey} annotation
+ * @deprecated use the JPA 2.1 {@link javax.persistence.ForeignKey} annotation
  */
 @Target({FIELD, METHOD, TYPE})
 @Retention(RUNTIME)

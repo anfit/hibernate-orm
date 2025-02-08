@@ -8,7 +8,7 @@ package org.hibernate.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import jakarta.persistence.Column;
+import javax.persistence.Column;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;

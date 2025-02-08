@@ -19,7 +19,7 @@ import org.hibernate.sql.exec.internal.JdbcCallImpl;
 import org.hibernate.sql.exec.spi.JdbcCall;
 import org.hibernate.sql.exec.spi.JdbcCallParameterRegistration;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * @author Steve Ebersole

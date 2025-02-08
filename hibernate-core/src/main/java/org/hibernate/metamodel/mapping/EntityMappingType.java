@@ -49,7 +49,7 @@ import static org.hibernate.bytecode.enhance.spi.LazyPropertyInitializer.UNFETCH
 /**
  * Mapping of an entity
  *
- * @see jakarta.persistence.Entity
+ * @see javax.persistence.Entity
  *
  * @author Steve Ebersole
  */

@@ -23,9 +23,9 @@ import org.hibernate.jpa.HibernateHints;
 import org.hibernate.jpa.LegacySpecHints;
 import org.hibernate.jpa.SpecHints;
 
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.QueryHint;
+import javax.persistence.LockModeType;
+import javax.persistence.NamedQuery;
+import javax.persistence.QueryHint;
 
 /**
  * @author <a href="mailto:stliu@hibernate.org">Strong Liu</a>

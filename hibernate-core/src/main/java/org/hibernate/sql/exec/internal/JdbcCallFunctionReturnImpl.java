@@ -9,7 +9,7 @@ package org.hibernate.sql.exec.internal;
 import org.hibernate.query.BindableType;
 import org.hibernate.sql.exec.spi.JdbcCallFunctionReturn;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * @author Steve Ebersole

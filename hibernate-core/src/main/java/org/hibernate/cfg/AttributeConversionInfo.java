@@ -6,13 +6,13 @@
  */
 package org.hibernate.cfg;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Convert;
+import javax.persistence.AttributeConverter;
+import javax.persistence.Convert;
 
 import org.hibernate.annotations.common.reflection.XAnnotatedElement;
 
 /**
- * Describes a {@link jakarta.persistence.Convert} conversion
+ * Describes a {@link javax.persistence.Convert} conversion
  *
  * @author Steve Ebersole
  */

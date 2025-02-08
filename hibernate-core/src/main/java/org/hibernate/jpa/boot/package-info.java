@@ -7,7 +7,7 @@
 
 /**
  * Support for bootstrapping a Jakarta Persistence
- * {@link jakarta.persistence.EntityManagerFactory}
+ * {@link javax.persistence.EntityManagerFactory}
  *
  * @author Steve Ebersole
  */

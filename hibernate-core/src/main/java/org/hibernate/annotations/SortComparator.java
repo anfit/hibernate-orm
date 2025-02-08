@@ -21,14 +21,14 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * and is maintained by any operation that mutates the collection.
  * <ul>
  * <li>Use {@link SortNatural} in its {@link java.util.Comparator natural order}.
- * <li>Use {@link jakarta.persistence.OrderBy} to order using an expression written in HQL.
+ * <li>Use {@link javax.persistence.OrderBy} to order using an expression written in HQL.
  * <li>Use {@link OrderBy} to order using an expression written in native SQL.
  * </ul>
  * <p>
  * It is illegal to use both {@code SortComparator} and {@link SortNatural}.
  *
  * @see SortComparator
- * @see jakarta.persistence.OrderBy
+ * @see javax.persistence.OrderBy
  * @see OrderBy
  *
  * @author Steve Ebersole

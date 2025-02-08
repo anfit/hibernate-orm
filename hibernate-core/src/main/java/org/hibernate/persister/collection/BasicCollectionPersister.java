@@ -34,8 +34,8 @@ import org.hibernate.sql.Update;
 import org.hibernate.sql.ast.tree.from.TableGroup;
 
 /**
- * A {@link CollectionPersister} for {@linkplain jakarta.persistence.ElementCollection
- * collections of values} and {@linkplain jakarta.persistence.ManyToMany many-to-many
+ * A {@link CollectionPersister} for {@linkplain javax.persistence.ElementCollection
+ * collections of values} and {@linkplain javax.persistence.ManyToMany many-to-many
  * associations}.
  *
  * @see OneToManyPersister

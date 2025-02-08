@@ -8,7 +8,7 @@ package org.hibernate.metamodel;
 
 import org.hibernate.Incubating;
 
-import jakarta.persistence.metamodel.Attribute.PersistentAttributeType;
+import javax.persistence.metamodel.Attribute.PersistentAttributeType;
 
 /**
  * An extended set of {@link PersistentAttributeType} adding {@link #ANY}
@@ -19,12 +19,12 @@ import jakarta.persistence.metamodel.Attribute.PersistentAttributeType;
 @Incubating
 public enum AttributeClassification {
 	/**
-	 * @see jakarta.persistence.Basic
+	 * @see javax.persistence.Basic
 	 */
 	BASIC( PersistentAttributeType.BASIC ),
 
 	/**
-	 * @see jakarta.persistence.Embedded
+	 * @see javax.persistence.Embedded
 	 */
 
 	EMBEDDED( PersistentAttributeType.EMBEDDED ),
@@ -35,27 +35,27 @@ public enum AttributeClassification {
 	ANY( null ),
 
 	/**
-	 * @see jakarta.persistence.OneToOne
+	 * @see javax.persistence.OneToOne
 	 */
 	ONE_TO_ONE( PersistentAttributeType.ONE_TO_ONE ),
 
 	/**
-	 * @see jakarta.persistence.ManyToOne
+	 * @see javax.persistence.ManyToOne
 	 */
 	MANY_TO_ONE( PersistentAttributeType.MANY_TO_ONE ),
 
 	/**
-	 * @see jakarta.persistence.ElementCollection
+	 * @see javax.persistence.ElementCollection
 	 */
 	ELEMENT_COLLECTION( PersistentAttributeType.ELEMENT_COLLECTION ),
 
 	/**
-	 * @see jakarta.persistence.OneToMany
+	 * @see javax.persistence.OneToMany
 	 */
 	ONE_TO_MANY( PersistentAttributeType.ONE_TO_MANY ),
 
 	/**
-	 * @see jakarta.persistence.ManyToMany
+	 * @see javax.persistence.ManyToMany
 	 */
 	MANY_TO_MANY( PersistentAttributeType.MANY_TO_MANY );
 

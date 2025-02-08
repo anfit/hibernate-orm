@@ -17,7 +17,7 @@ import org.hibernate.query.BindableType;
 import org.hibernate.type.descriptor.java.JavaType;
 
 /**
- * Standard Hibernate implementation of JPA's {@link jakarta.persistence.metamodel.EmbeddableType}
+ * Standard Hibernate implementation of JPA's {@link javax.persistence.metamodel.EmbeddableType}
  * contract
  *
  * @author Emmanuel Bernard

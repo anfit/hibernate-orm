@@ -7,7 +7,7 @@
 package org.hibernate.engine.transaction.spi;
 
 import java.io.Serializable;
-import jakarta.transaction.Synchronization;
+import javax.transaction.Synchronization;
 
 /**
  * Manages a registry of {@link Synchronization}s.
@@ -34,7 +34,7 @@ public interface SynchronizationRegistry extends Serializable {
 	 * Delegate {@link Synchronization#afterCompletion} calls to {@linkplain #registerSynchronization registered}
 	 * {@link Synchronization}s
 	 *
-	 * @param status The transaction status (if known) per {@link jakarta.transaction.Status}
+	 * @param status The transaction status (if known) per {@link javax.transaction.Status}
 	 */
 	void notifySynchronizationsAfterTransactionCompletion(int status);
 }

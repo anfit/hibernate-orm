@@ -25,13 +25,13 @@ import org.hibernate.sql.results.jdbc.spi.JdbcValuesMetadata;
 import org.hibernate.type.descriptor.java.BasicJavaType;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 import static org.hibernate.query.results.ResultsHelper.impl;
 
 /**
  * ResultBuilder for scalar results defined via:<ul>
- *     <li>JPA {@link jakarta.persistence.ColumnResult}</li>
+ *     <li>JPA {@link javax.persistence.ColumnResult}</li>
  *     <li>`<return-scalar/>` as part of a `<resultset/>` stanza in `hbm.xml`</li>
  * </ul>
  *

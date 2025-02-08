@@ -83,15 +83,15 @@ import org.hibernate.type.spi.TypeConfiguration;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.NoResultException;
-import jakarta.persistence.NonUniqueResultException;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.ParameterMode;
-import jakarta.persistence.PersistenceException;
-import jakarta.persistence.TemporalType;
-import jakarta.persistence.TransactionRequiredException;
+import javax.persistence.FlushModeType;
+import javax.persistence.LockModeType;
+import javax.persistence.NoResultException;
+import javax.persistence.NonUniqueResultException;
+import javax.persistence.Parameter;
+import javax.persistence.ParameterMode;
+import javax.persistence.PersistenceException;
+import javax.persistence.TemporalType;
+import javax.persistence.TransactionRequiredException;
 
 import static org.hibernate.jpa.HibernateHints.HINT_CALLABLE_FUNCTION;
 

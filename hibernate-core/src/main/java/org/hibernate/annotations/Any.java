@@ -9,8 +9,8 @@ package org.hibernate.annotations;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
+import javax.persistence.Column;
+import javax.persistence.FetchType;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
@@ -19,8 +19,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Maps a discriminated to-one style association pointing to one of several entity types
  * depending on a local discriminator, as opposed to discriminated inheritance where the
- * discriminator is kept as part of the entity hierarchy (see {@link jakarta.persistence.Inheritance}
- * and {@link jakarta.persistence.InheritanceType#SINGLE_TABLE} for details about discriminated
+ * discriminator is kept as part of the entity hierarchy (see {@link javax.persistence.Inheritance}
+ * and {@link javax.persistence.InheritanceType#SINGLE_TABLE} for details about discriminated
  * inheritance mappings).
  * <p/>
  * For example, if you consider an {@code Order} entity containing {@code Payment} information
@@ -32,7 +32,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * <ul>
  *     <li>Use {@link Column} or {@link Formula} to define the "column" to which the
  *         discriminator is mapped.
- *     <li>Use {@link jakarta.persistence.JoinColumn} to describe the key column
+ *     <li>Use {@link javax.persistence.JoinColumn} to describe the key column
  *     <li>Use {@link AnyDiscriminator}, {@link JdbcType} or {@link JdbcTypeCode} to
  *         describe the mapping for the discriminator
  *     <li>Use {@link AnyKeyJavaType}, {@link AnyKeyJavaClass}, {@link AnyKeyJdbcType}

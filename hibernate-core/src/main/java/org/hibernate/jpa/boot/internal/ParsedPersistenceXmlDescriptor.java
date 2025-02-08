@@ -11,16 +11,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-import jakarta.persistence.SharedCacheMode;
-import jakarta.persistence.ValidationMode;
-import jakarta.persistence.spi.PersistenceUnitTransactionType;
+import javax.persistence.SharedCacheMode;
+import javax.persistence.ValidationMode;
+import javax.persistence.spi.PersistenceUnitTransactionType;
 
 import org.hibernate.bytecode.enhance.spi.EnhancementContext;
 
 /**
  * Describes the information gleaned from a {@code <persistence-unit/>} element in a {@code persistence.xml} file
  * whether parsed directly by Hibernate or passed to us by an EE container as a
- * {@link jakarta.persistence.spi.PersistenceUnitInfo}.
+ * {@link javax.persistence.spi.PersistenceUnitInfo}.
  *
  * Easier to consolidate both views into a single contract and extract information through that shared contract.
  *

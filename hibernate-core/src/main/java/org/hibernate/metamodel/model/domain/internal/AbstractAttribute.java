@@ -10,7 +10,7 @@ import java.io.ObjectStreamException;
 import java.io.Serializable;
 import java.lang.reflect.Member;
 
-import jakarta.persistence.metamodel.Attribute;
+import javax.persistence.metamodel.Attribute;
 
 import org.hibernate.metamodel.AttributeClassification;
 import org.hibernate.metamodel.internal.MetadataContext;

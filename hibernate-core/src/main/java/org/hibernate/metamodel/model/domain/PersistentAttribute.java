@@ -6,7 +6,7 @@
  */
 package org.hibernate.metamodel.model.domain;
 
-import jakarta.persistence.metamodel.Attribute;
+import javax.persistence.metamodel.Attribute;
 
 import org.hibernate.metamodel.AttributeClassification;
 import org.hibernate.type.descriptor.java.JavaType;

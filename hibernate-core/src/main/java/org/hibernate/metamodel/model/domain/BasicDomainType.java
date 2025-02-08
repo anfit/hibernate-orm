@@ -7,7 +7,7 @@
 package org.hibernate.metamodel.model.domain;
 
 import java.util.Objects;
-import jakarta.persistence.metamodel.BasicType;
+import javax.persistence.metamodel.BasicType;
 
 import org.hibernate.HibernateException;
 import org.hibernate.query.ReturnableType;

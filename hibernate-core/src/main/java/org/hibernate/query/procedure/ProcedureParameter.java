@@ -9,7 +9,7 @@ package org.hibernate.query.procedure;
 import org.hibernate.Incubating;
 import org.hibernate.query.QueryParameter;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * NOTE: Consider this contract (and its sub-contracts) as incubating as we transition to 6.0 and SQM

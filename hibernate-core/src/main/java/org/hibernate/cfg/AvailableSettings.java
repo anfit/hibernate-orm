@@ -7,9 +7,9 @@
 package org.hibernate.cfg;
 
 import java.util.function.Supplier;
-import jakarta.persistence.criteria.CriteriaDelete;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.CriteriaUpdate;
+import javax.persistence.criteria.CriteriaDelete;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.CriteriaUpdate;
 
 import org.hibernate.CustomEntityDirtinessStrategy;
 import org.hibernate.Incubating;
@@ -46,7 +46,7 @@ public interface AvailableSettings {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	/**
-	 * Specifies a class implementing {@link jakarta.persistence.spi.PersistenceProvider}.
+	 * Specifies a class implementing {@link javax.persistence.spi.PersistenceProvider}.
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.4
 	 */
@@ -127,7 +127,7 @@ public interface AvailableSettings {
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.7
 	 *
-	 * @see jakarta.persistence.SharedCacheMode
+	 * @see javax.persistence.SharedCacheMode
 	 */
 	String JAKARTA_SHARED_CACHE_MODE = "jakarta.persistence.sharedCache.mode";
 
@@ -146,12 +146,12 @@ public interface AvailableSettings {
 	 * rules defined in JPA 2 section 3.6.1.1.
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.8
-	 * @see jakarta.persistence.ValidationMode
+	 * @see javax.persistence.ValidationMode
 	 */
 	String JAKARTA_VALIDATION_MODE = "jakarta.persistence.validation.mode";
 
 	/**
-	 * Used to pass along any discovered {@link jakarta.validation.ValidatorFactory}.
+	 * Used to pass along any discovered {@link javax.validation.ValidatorFactory}.
 	 * 
 	 * @see org.hibernate.boot.SessionFactoryBuilder#applyValidatorFactory(Object) 
 	 */
@@ -196,7 +196,7 @@ public interface AvailableSettings {
 	String JAKARTA_LOCK_TIMEOUT = "jakarta.persistence.lock.timeout";
 
 	/**
-	 * Used to pass a CDI {@link jakarta.enterprise.inject.spi.BeanManager} to
+	 * Used to pass a CDI {@link javax.enterprise.inject.spi.BeanManager} to
 	 * Hibernate.
 	 * <p>
 	 * According to the JPA specification, the {@code BeanManager} should be
@@ -539,8 +539,8 @@ public interface AvailableSettings {
 	String JTA_PLATFORM = "hibernate.transaction.jta.platform";
 
 	/**
-	 * When enabled, specifies that the {@link jakarta.transaction.UserTransaction} should
-	 * be used in preference to the {@link jakarta.transaction.TransactionManager} for JTA
+	 * When enabled, specifies that the {@link javax.transaction.UserTransaction} should
+	 * be used in preference to the {@link javax.transaction.TransactionManager} for JTA
 	 * transaction management.
 	 * <p>
 	 * By default, the {@code TransactionManager} is preferred.
@@ -566,7 +566,7 @@ public interface AvailableSettings {
 	String JTA_PLATFORM_RESOLVER = "hibernate.transaction.jta.platform_resolver";
 
 	/**
-	 * When enabled, indicates that it is safe to cache {@link jakarta.transaction.TransactionManager}
+	 * When enabled, indicates that it is safe to cache {@link javax.transaction.TransactionManager}
 	 * references.
 	 *
 	 * @since 4.0
@@ -574,7 +574,7 @@ public interface AvailableSettings {
 	String JTA_CACHE_TM = "hibernate.jta.cacheTransactionManager";
 
 	/**
-	 * When enabled, indicates that it is safe to cache {@link jakarta.transaction.UserTransaction}
+	 * When enabled, indicates that it is safe to cache {@link javax.transaction.UserTransaction}
 	 * references.
 	 *
 	 * @since 4.0
@@ -602,7 +602,7 @@ public interface AvailableSettings {
 
 	/**
 	 * Specifies the {@link org.hibernate.annotations.CacheConcurrencyStrategy} to use by
-	 * default when an entity is marked {@link jakarta.persistence.Cacheable @Cacheable},
+	 * default when an entity is marked {@link javax.persistence.Cacheable @Cacheable},
 	 * but no concurrency strategy is explicitly specified via the
 	 * {@link org.hibernate.annotations.Cache} annotation.
 	 * <p>
@@ -645,7 +645,7 @@ public interface AvailableSettings {
 	 * capability has been added to Hibernate.
 	 * <p/>
 	 * Existing applications rely (implicitly or explicitly) on Hibernate ignoring any
-	 * {@link jakarta.persistence.DiscriminatorColumn} declarations on joined inheritance
+	 * {@link javax.persistence.DiscriminatorColumn} declarations on joined inheritance
 	 * hierarchies. This setting allows these applications to maintain the legacy behavior
 	 * of {@code @DiscriminatorColumn} annotations being ignored when paired with joined
 	 * inheritance.
@@ -682,7 +682,7 @@ public interface AvailableSettings {
 	 *     <li>when generating DDL, the schema export tool uses {@code nchar},
 	 *         {@code nvarchar}, or {@code nclob} as the generated column
 	 *         type when no column type is explicitly specified using
-	 *         {@link jakarta.persistence.Column#columnDefinition()}.
+	 *         {@link javax.persistence.Column#columnDefinition()}.
 	 * </ol>
 	 * This setting is <em>disabled</em> by default, and so Unicode character data
 	 * may not be persisted correctly for databases with explicit nationalization
@@ -963,7 +963,7 @@ public interface AvailableSettings {
 	String BATCH_STRATEGY = "hibernate.jdbc.factory_class";
 
 	/**
-	 * When enabled, specifies that {@link jakarta.persistence.Version versioned}
+	 * When enabled, specifies that {@link javax.persistence.Version versioned}
 	 * data should be included in batching.
 	 *
 	 * @see org.hibernate.boot.SessionFactoryBuilder#applyJdbcBatchingForVersionedEntities(boolean)
@@ -993,7 +993,7 @@ public interface AvailableSettings {
 
 	/**
 	 * When enabled, specifies that automatic flushing should occur during the JTA
-	 * {@link jakarta.transaction.Synchronization#beforeCompletion()} callback.
+	 * {@link javax.transaction.Synchronization#beforeCompletion()} callback.
 	 * 
 	 * @see org.hibernate.boot.SessionFactoryBuilder#applyAutoFlushing(boolean) 
 	 */
@@ -1031,7 +1031,7 @@ public interface AvailableSettings {
 	/**
 	 * When enabled, specifies that Hibernate should attempt to map parameter names
 	 * given in a {@link org.hibernate.procedure.ProcedureCall} or
-	 * {@link jakarta.persistence.StoredProcedureQuery} to named parameters of the
+	 * {@link javax.persistence.StoredProcedureQuery} to named parameters of the
 	 * JDBC {@link java.sql.CallableStatement}.
 	 *
 	 * @see org.hibernate.boot.spi.SessionFactoryOptions#isUseOfJdbcNamedParametersEnabled()
@@ -1127,7 +1127,7 @@ public interface AvailableSettings {
 	 * to be used.
 	 * <p>
 	 * Note that for CDI-based containers setting this is not necessary - simply
-	 * pass the {@link jakarta.enterprise.inject.spi.BeanManager} to use via
+	 * pass the {@link javax.enterprise.inject.spi.BeanManager} to use via
 	 * {@link #CDI_BEAN_MANAGER} and optionally specify {@link #DELAY_CDI_ACCESS}.
 	 * This setting useful to integrate non-CDI bean containers such as Spring.
 	 *
@@ -1139,7 +1139,7 @@ public interface AvailableSettings {
 	 * Used in conjunction with {@value #BEAN_CONTAINER} when CDI is used.
 	 * <p>
 	 * By default, to be JPA spec compliant, Hibernate should access the CDI
-	 * {@link jakarta.enterprise.inject.spi.BeanManager} while bootstrapping the
+	 * {@link javax.enterprise.inject.spi.BeanManager} while bootstrapping the
 	 * {@link org.hibernate.SessionFactory}.  In some cases however this can lead
 	 * to a chicken/egg situation where the JPA provider immediately accesses the
 	 * {@code BeanManager} when managed beans are awaiting JPA PU injection.
@@ -1314,9 +1314,9 @@ public interface AvailableSettings {
 
 	/**
 	 * Enables the automatic eviction of a bidirectional association's collection
-	 * cache when an element in the {@link jakarta.persistence.ManyToOne} collection
+	 * cache when an element in the {@link javax.persistence.ManyToOne} collection
 	 * is added, updated, or removed without properly managing the change on the
-	 * {@link jakarta.persistence.OneToMany} side.
+	 * {@link javax.persistence.OneToMany} side.
 	 *
 	 * @see org.hibernate.boot.SessionFactoryBuilder#applyAutomaticEvictionOfCollectionCaches(boolean)
 	 */
@@ -1346,8 +1346,8 @@ public interface AvailableSettings {
 
 	/**
 	 * Assuming {@link #GLOBALLY_QUOTED_IDENTIFIERS}, this allows global quoting
-	 * to skip column definitions defined by {@link jakarta.persistence.Column},
-	 * {@link jakarta.persistence.JoinColumn}, etc.
+	 * to skip column definitions defined by {@link javax.persistence.Column},
+	 * {@link javax.persistence.JoinColumn}, etc.
 	 * <p>
 	 * JPA states that column definitions are subject to global quoting, so by default
 	 * this setting is {@code false} for JPA compliance. Set to {@code true} to avoid
@@ -1358,7 +1358,7 @@ public interface AvailableSettings {
 
 	/**
 	 * Enable nullability checking, raises an exception if an attribute marked as
-	 * {@linkplain jakarta.persistence.Basic#optional() not null} is null at runtime.
+	 * {@linkplain javax.persistence.Basic#optional() not null} is null at runtime.
 	 * <p>
 	 * Defaults to disabled if Bean Validation is present in the classpath and
 	 * annotations are used, or enabled otherwise.
@@ -1846,13 +1846,13 @@ public interface AvailableSettings {
 	String HBM2DDL_HALT_ON_ERROR = "hibernate.hbm2ddl.halt_on_error";
 
 	/**
-	 * Used with the {@link jakarta.persistence.ConstraintMode#PROVIDER_DEFAULT}
+	 * Used with the {@link javax.persistence.ConstraintMode#PROVIDER_DEFAULT}
 	 * strategy for foreign key mapping.
 	 * <p>
-	 * Valid values are {@link jakarta.persistence.ConstraintMode#CONSTRAINT} and
-	 * {@link jakarta.persistence.ConstraintMode#NO_CONSTRAINT}.
+	 * Valid values are {@link javax.persistence.ConstraintMode#CONSTRAINT} and
+	 * {@link javax.persistence.ConstraintMode#NO_CONSTRAINT}.
 	 * <p>
-	 * The default value is {@link jakarta.persistence.ConstraintMode#CONSTRAINT}.
+	 * The default value is {@link javax.persistence.ConstraintMode#CONSTRAINT}.
 	 *
 	 * @since 5.4
 	 */
@@ -1872,15 +1872,15 @@ public interface AvailableSettings {
 	 * elements.
 	 * <p>
 	 * This setting controls whether the restriction is applied when loading a
-	 * {@link jakarta.persistence.OneToMany one-to-many} or
-	 * or {@link jakarta.persistence.ManyToMany many-to-many} association whose target
+	 * {@link javax.persistence.OneToMany one-to-many} or
+	 * or {@link javax.persistence.ManyToMany many-to-many} association whose target
 	 * type defines the restriction.
 	 * <p>
 	 * By default, the restriction is not applied. When this setting is enabled, the
 	 * restriction is applied.
 	 * <p>
-	 * The setting has no effect on a collection of {@link jakarta.persistence.Embeddable
-	 * embeddable} values containing a {@link jakarta.persistence.ManyToOne many-to-one}
+	 * The setting has no effect on a collection of {@link javax.persistence.Embeddable
+	 * embeddable} values containing a {@link javax.persistence.ManyToOne many-to-one}
 	 * association to the entity.
 	 *
 	 */
@@ -2135,7 +2135,7 @@ public interface AvailableSettings {
 	String ALLOW_UPDATE_OUTSIDE_TRANSACTION = "hibernate.allow_update_outside_transaction";
 
 	/**
-	 * When enabled, allows calls to {@link jakarta.persistence.EntityManager#refresh(Object)}
+	 * When enabled, allows calls to {@link javax.persistence.EntityManager#refresh(Object)}
 	 * and {@link org.hibernate.Session#refresh(Object)} on a detached entity instance.
 	 * <p>
 	 * Values are {@code true}, which allows refreshing a detached instance and {@code false},
@@ -2170,8 +2170,8 @@ public interface AvailableSettings {
 	 * When this property is set to {@code allow} or {@code log}, Hibernate will merge
 	 * each entity copy detected while cascading the merge operation. In the process of
 	 * merging each entity copy, Hibernate will cascade the merge operation from each
-	 * entity copy to its associations with {@link jakarta.persistence.CascadeType#MERGE}
-	 * or {@link jakarta.persistence.CascadeType#ALL}. The entity state resulting from
+	 * entity copy to its associations with {@link javax.persistence.CascadeType#MERGE}
+	 * or {@link javax.persistence.CascadeType#ALL}. The entity state resulting from
 	 * merging an entity copy will be overwritten when another entity copy is merged.
 	 *
 	 * @since 4.3
@@ -2180,7 +2180,7 @@ public interface AvailableSettings {
 	String MERGE_ENTITY_COPY_OBSERVER = "hibernate.event.merge.entity_copy_observer";
 
 	/**
-	 * By default, {@linkplain jakarta.persistence.criteria.CriteriaBuilder criteria}
+	 * By default, {@linkplain javax.persistence.criteria.CriteriaBuilder criteria}
 	 * queries use bind parameters for any value passed via the JPA Criteria API.
 	 * <ul>
 	 *     <li>The {@link org.hibernate.query.criteria.ValueHandlingMode#BIND "bind"}
@@ -2198,10 +2198,10 @@ public interface AvailableSettings {
 
 	/**
 	 * When enabled, specifies that {@linkplain org.hibernate.query.Query queries}
-	 * created through {@link jakarta.persistence.EntityManager#createQuery(CriteriaQuery)},
-	 * {@link jakarta.persistence.EntityManager#createQuery(CriteriaUpdate)} or
-	 * {@link jakarta.persistence.EntityManager#createQuery(CriteriaDelete)}
-	 * must create a copy of the passed object such that the resulting {@link jakarta.persistence.Query}
+	 * created through {@link javax.persistence.EntityManager#createQuery(CriteriaQuery)},
+	 * {@link javax.persistence.EntityManager#createQuery(CriteriaUpdate)} or
+	 * {@link javax.persistence.EntityManager#createQuery(CriteriaDelete)}
+	 * must create a copy of the passed object such that the resulting {@link javax.persistence.Query}
 	 * is not affected by any mutations to the original criteria query.
 	 * <p>
 	 * If disabled, it is assumed that users do not mutate the criteria query afterwards
@@ -2238,7 +2238,7 @@ public interface AvailableSettings {
 	/**
 	 * When enabled, specifies that the Hibernate {@link org.hibernate.Transaction}
 	 * should behave according to the semantics defined by the JPA specification for
-	 * an {@link jakarta.persistence.EntityTransaction}.
+	 * an {@link javax.persistence.EntityTransaction}.
 	 *
 	 * @see org.hibernate.jpa.spi.JpaCompliance#isJpaTransactionComplianceEnabled()
 	 * @see org.hibernate.boot.SessionFactoryBuilder#enableJpaTransactionCompliance(boolean)
@@ -2249,7 +2249,7 @@ public interface AvailableSettings {
 
 	/**
 	 * When enabled, specifies that every {@linkplain org.hibernate.query.Query query}
-	 * must strictly follow the specified behavior of {@link jakarta.persistence.Query}.
+	 * must strictly follow the specified behavior of {@link javax.persistence.Query}.
 	 * The affects JPQL queries, criteria queries, and native SQL queries.
 	 * <p>
 	 * This setting modifies the behavior of the JPQL query translator, and of the
@@ -2275,7 +2275,7 @@ public interface AvailableSettings {
 	 * and a persistent element order.
 	 * <p>
 	 * If enabled, Hibernate will recognize it as a list where the
-	 * {@link jakarta.persistence.OrderColumn} annotation is simply missing
+	 * {@link javax.persistence.OrderColumn} annotation is simply missing
 	 * (and its defaults will apply).
 	 *
 	 * @see org.hibernate.jpa.spi.JpaCompliance#isJpaListComplianceEnabled()
@@ -2292,7 +2292,7 @@ public interface AvailableSettings {
 	String JPA_LIST_COMPLIANCE	= "hibernate.jpa.compliance.list";
 
 	/**
-	 * JPA specifies that items occurring in {@link jakarta.persistence.OrderBy}
+	 * JPA specifies that items occurring in {@link javax.persistence.OrderBy}
 	 * lists must be references to entity attributes, whereas Hibernate, by default,
 	 * allows more complex expressions.
 	 * <p>
@@ -2308,8 +2308,8 @@ public interface AvailableSettings {
 
 	/**
 	 * JPA specifies that an {@link IllegalStateException} must be thrown by
-	 * {@link jakarta.persistence.EntityManager#close()} and
-	 * {@link jakarta.persistence.EntityManagerFactory#close()} if the object has
+	 * {@link javax.persistence.EntityManager#close()} and
+	 * {@link javax.persistence.EntityManagerFactory#close()} if the object has
 	 * already been closed. By default, Hibernate treats any additional call to
 	 * {@code close()} as a noop.
 	 * <p>
@@ -2325,7 +2325,7 @@ public interface AvailableSettings {
 
 	/**
 	 * The JPA specification insists that an
-	 * {@link jakarta.persistence.EntityNotFoundException} must be thrown whenever
+	 * {@link javax.persistence.EntityNotFoundException} must be thrown whenever
 	 * an uninitialized entity proxy with no corresponding row in the database is
 	 * accessed. For most programs, this results in many completely unnecessary
 	 * round trips to the database.
@@ -2346,7 +2346,7 @@ public interface AvailableSettings {
 
 	/**
 	 * By default, Hibernate uses second-level cache invalidation for entities
-	 * with {@linkplain jakarta.persistence.SecondaryTable secondary tables}
+	 * with {@linkplain javax.persistence.SecondaryTable secondary tables}
 	 * in order to avoid the possibility of inconsistent cached data in the
 	 * case where different transactions simultaneously update different table
 	 * rows corresponding to the same entity instance.
@@ -2369,8 +2369,8 @@ public interface AvailableSettings {
 
 	/**
 	 * Determines whether the scope of any identifier generator name specified
-	 * via {@link jakarta.persistence.TableGenerator#name()} or
-	 * {@link jakarta.persistence.SequenceGenerator#name()} is considered global
+	 * via {@link javax.persistence.TableGenerator#name()} or
+	 * {@link javax.persistence.SequenceGenerator#name()} is considered global
 	 * to the persistence unit, or local to the entity in which identifier generator
 	 * is defined.
 	 * <p>
@@ -2386,8 +2386,8 @@ public interface AvailableSettings {
 
 	/**
 	 * Determines if an identifier value passed to
-	 * {@link jakarta.persistence.EntityManager#find} or
-	 * {@link jakarta.persistence.EntityManager#getReference} may be
+	 * {@link javax.persistence.EntityManager#find} or
+	 * {@link javax.persistence.EntityManager#getReference} may be
 	 * {@linkplain  org.hibernate.type.descriptor.java.JavaType#coerce coerced} to
 	 * the identifier type declared by the entity. For example, an {@link Integer}
 	 * argument might be widened to {@link Long}.
@@ -2403,7 +2403,7 @@ public interface AvailableSettings {
 
 	/**
 	 * Determines if the identifier value stored in the database table backing a
-	 * {@linkplain jakarta.persistence.TableGenerator table generator} is the last
+	 * {@linkplain javax.persistence.TableGenerator table generator} is the last
 	 * value returned by the identifier generator, or the next value to be returned.
 	 * <p>
 	 * By default, the value stored in the database table is the last generated value.
@@ -2591,7 +2591,7 @@ public interface AvailableSettings {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	/**
-	 * Specifies a class implementing {@link jakarta.persistence.spi.PersistenceProvider}.
+	 * Specifies a class implementing {@link javax.persistence.spi.PersistenceProvider}.
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.4
 	 *
@@ -2700,7 +2700,7 @@ public interface AvailableSettings {
 	 * caching is enabled as per the rules defined in JPA 2 section 3.1.7.
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.7
-	 * @see jakarta.persistence.SharedCacheMode
+	 * @see javax.persistence.SharedCacheMode
 	 *
 	 * @deprecated Use {@link #JAKARTA_SHARED_CACHE_MODE} instead
 	 */
@@ -2712,7 +2712,7 @@ public interface AvailableSettings {
 	 * Used to indicate if the provider should attempt to retrieve requested
 	 * data in the shared cache.
 	 *
-	 * @see jakarta.persistence.CacheRetrieveMode
+	 * @see javax.persistence.CacheRetrieveMode
 	 *
 	 * @deprecated Use {@link #JAKARTA_SHARED_CACHE_RETRIEVE_MODE} instead
 	 */
@@ -2725,7 +2725,7 @@ public interface AvailableSettings {
 	 * Used to indicate if the provider should attempt to store data loaded from the database
 	 * in the shared cache.
 	 *
-	 * @see jakarta.persistence.CacheStoreMode
+	 * @see javax.persistence.CacheStoreMode
 	 *
 	 * @deprecated Use {@link #JAKARTA_SHARED_CACHE_STORE_MODE} instead
 	 */
@@ -2740,7 +2740,7 @@ public interface AvailableSettings {
 	 * <p/>
 	 * See JPA 2 sections 9.4.3 and 8.2.1.8
 	 *
-	 * @see jakarta.persistence.ValidationMode
+	 * @see javax.persistence.ValidationMode
 	 *
 	 * @deprecated Use {@link #JAKARTA_VALIDATION_MODE} instead
 	 */
@@ -2810,7 +2810,7 @@ public interface AvailableSettings {
 	String JPA_LOCK_TIMEOUT = LegacySpecHints.HINT_JAVAEE_LOCK_TIMEOUT;
 
 	/**
-	 * Used to pass a CDI {@link jakarta.enterprise.inject.spi.BeanManager} to
+	 * Used to pass a CDI {@link javax.enterprise.inject.spi.BeanManager} to
 	 * Hibernate.
 	 * <p>
 	 * According to the JPA specification, the {@code BeanManager} should be
@@ -2912,7 +2912,7 @@ public interface AvailableSettings {
 
 	/**
 	 * When enabled, specifies that the persistent context should be discarded when either
-	 * {@link org.hibernate.Session#close()} or {@link jakarta.persistence.EntityManager#close()}
+	 * {@link org.hibernate.Session#close()} or {@link javax.persistence.EntityManager#close()}
 	 * is called.
 	 * <p>
 	 * By default, the persistent context is not discarded, as per the JPA specification.

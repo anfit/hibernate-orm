@@ -15,7 +15,7 @@ import java.util.List;
 import org.hibernate.envers.AuditJoinTable;
 import org.hibernate.envers.configuration.internal.metadata.ColumnNameIterator;
 
-import jakarta.persistence.JoinColumn;
+import javax.persistence.JoinColumn;
 
 /**
  * A data class that represents an {@link AuditJoinTable} annotation.

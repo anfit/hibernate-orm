@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Set;
-import jakarta.persistence.Column;
+import javax.persistence.Column;
 
 import org.hibernate.annotations.common.reflection.ReflectionManager;
 import org.hibernate.annotations.common.reflection.XClass;

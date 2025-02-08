@@ -30,14 +30,14 @@ import org.hibernate.graph.RootGraph;
 import org.hibernate.query.spi.QueryOptions;
 import org.hibernate.transform.ResultTransformer;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
-import jakarta.persistence.TypedQuery;
+import javax.persistence.FlushModeType;
+import javax.persistence.LockModeType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
+import javax.persistence.TypedQuery;
 
 /**
- * Represents a {@link jakarta.persistence.criteria.CriteriaBuilder criteria query}
+ * Represents a {@link javax.persistence.criteria.CriteriaBuilder criteria query}
  * or a query written in HQL. The subtype {@link NativeQuery} represents a query
  * written in native SQL.
  * <p>
@@ -174,8 +174,8 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	 *
 	 * @return the single result, only if there is exactly one
 	 *
-	 * @throws jakarta.persistence.NonUniqueResultException if there is more than one matching result
-	 * @throws jakarta.persistence.NoResultException if there is no result to return
+	 * @throws javax.persistence.NonUniqueResultException if there is more than one matching result
+	 * @throws javax.persistence.NoResultException if there is no result to return
 	 */
 	@Override
 	R getSingleResult();
@@ -199,8 +199,8 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	 * {@link QueryProducer#createMutationQuery(String)},
 	 * {@link QueryProducer#createNamedMutationQuery(String)},
 	 * {@link QueryProducer#createNativeMutationQuery(String)},
-	 * {@link QueryProducer#createQuery(jakarta.persistence.criteria.CriteriaUpdate)}, or
-	 * {@link QueryProducer#createQuery(jakarta.persistence.criteria.CriteriaDelete)}.
+	 * {@link QueryProducer#createQuery(javax.persistence.criteria.CriteriaUpdate)}, or
+	 * {@link QueryProducer#createQuery(javax.persistence.criteria.CriteriaDelete)}.
 	 *
 	 * @return the number of affected entity instances
 	 *         (may differ from the number of affected rows)
@@ -210,10 +210,10 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	 * @see QueryProducer#createNamedMutationQuery(String)
 	 * @see QueryProducer#createNativeMutationQuery(String)
 	 *
-	 * @see jakarta.persistence.Query#executeUpdate()
+	 * @see javax.persistence.Query#executeUpdate()
 	 *
 	 * @apiNote This method is needed because this interface extends
-	 * {@link jakarta.persistence.Query}, which defines this method.
+	 * {@link javax.persistence.Query}, which defines this method.
 	 * See {@link MutationQuery} and {@link SelectionQuery}.
 	 *
 	 * @see QueryProducer#createMutationQuery
@@ -303,7 +303,7 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	 * Add a database query hint to the SQL query.
 	 * <p>
 	 * A database hint is a completely different concept to a JPA hint
-	 * specified using {@link jakarta.persistence.QueryHint} or
+	 * specified using {@link javax.persistence.QueryHint} or
 	 * {@link #getHints()}. These are hints to the JPA provider.
 	 * <p>
 	 * Multiple query hints may be specified. The operation
@@ -431,13 +431,13 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	Query<R> setParameter(String parameter, Instant argument, TemporalType temporalType);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(String parameter, Calendar argument, TemporalType temporalType);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(String parameter, Date argument, TemporalType temporalType);
@@ -482,13 +482,13 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	Query<R> setParameter(int parameter, Instant argument, TemporalType temporalType);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(int parameter, Date argument, TemporalType temporalType);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(int parameter, Calendar argument, TemporalType temporalType);
@@ -539,19 +539,19 @@ public interface Query<R> extends SelectionQuery<R>, MutationQuery, TypedQuery<R
 	<P> Query<R> setParameter(QueryParameter<P> parameter, P argument, BindableType<P> type);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	<T> Query<R> setParameter(Parameter<T> parameter, T argument);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(Parameter<Calendar> parameter, Calendar argument, TemporalType temporalType);
 
 	/**
-	 * {@link jakarta.persistence.Query} override
+	 * {@link javax.persistence.Query} override
 	 */
 	@Override
 	Query<R> setParameter(Parameter<Date> parameter, Date argument, TemporalType temporalType);

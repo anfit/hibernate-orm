@@ -107,10 +107,10 @@ import org.hibernate.type.descriptor.jdbc.JdbcType;
 import org.hibernate.type.spi.TypeConfiguration;
 import org.hibernate.usertype.CompositeUserType;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Entity;
-import jakarta.persistence.MapsId;
+import javax.persistence.AttributeConverter;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.MapsId;
 
 /**
  * The implementation of the in-flight Metadata collector contract.
@@ -1191,7 +1191,7 @@ public class InFlightMetadataCollectorImpl implements InFlightMetadataCollector 
 		else if ( clazz.isAnnotationPresent( Embeddable.class ) ) {
 			type = AnnotatedClassType.EMBEDDABLE;
 		}
-		else if ( clazz.isAnnotationPresent( jakarta.persistence.MappedSuperclass.class ) ) {
+		else if ( clazz.isAnnotationPresent( javax.persistence.MappedSuperclass.class ) ) {
 			type = AnnotatedClassType.MAPPED_SUPERCLASS;
 		}
 		else {

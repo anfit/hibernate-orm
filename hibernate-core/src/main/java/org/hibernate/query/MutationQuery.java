@@ -15,8 +15,8 @@ import java.util.Map;
 import org.hibernate.FlushMode;
 import org.hibernate.Incubating;
 
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 
 /**
  * Models a mutation (insert, update, or delete) query.  It is a slimmed
@@ -36,8 +36,8 @@ public interface MutationQuery extends CommonQueryContract {
 	 * {@link QueryProducer#createMutationQuery(String)},
 	 * {@link QueryProducer#createNamedMutationQuery(String)},
 	 * {@link QueryProducer#createNativeMutationQuery(String)},
-	 * {@link QueryProducer#createQuery(jakarta.persistence.criteria.CriteriaUpdate)}, or
-	 * {@link QueryProducer#createQuery(jakarta.persistence.criteria.CriteriaDelete)}.
+	 * {@link QueryProducer#createQuery(javax.persistence.criteria.CriteriaUpdate)}, or
+	 * {@link QueryProducer#createQuery(javax.persistence.criteria.CriteriaDelete)}.
 	 *
 	 * @return the number of affected entity instances
 	 *         (may differ from the number of affected rows)
@@ -46,7 +46,7 @@ public interface MutationQuery extends CommonQueryContract {
 	 * @see QueryProducer#createNamedMutationQuery(String)
 	 * @see QueryProducer#createNativeMutationQuery(String)
 	 *
-	 * @see jakarta.persistence.Query#executeUpdate()
+	 * @see javax.persistence.Query#executeUpdate()
 	 */
 	int executeUpdate();
 

@@ -16,12 +16,10 @@ import javax.naming.Referenceable;
 
 import org.hibernate.boot.spi.SessionFactoryOptions;
 import org.hibernate.engine.spi.FilterDefinition;
-import org.hibernate.metadata.ClassMetadata;
-import org.hibernate.metadata.CollectionMetadata;
 import org.hibernate.stat.Statistics;
 
-import jakarta.persistence.EntityGraph;
-import jakarta.persistence.EntityManagerFactory;
+import javax.persistence.EntityGraph;
+import javax.persistence.EntityManagerFactory;
 
 /**
  * A {@code SessionFactory} represents an "instance" of Hibernate: it maintains

@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 import org.hibernate.MappingException;
 import org.hibernate.NotYetImplementedFor6Exception;

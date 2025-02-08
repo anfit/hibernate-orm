@@ -7,8 +7,8 @@
 package org.hibernate.engine.transaction.jta.platform.internal;
 
 import java.lang.reflect.Method;
-import jakarta.transaction.TransactionManager;
-import jakarta.transaction.UserTransaction;
+import javax.transaction.TransactionManager;
+import javax.transaction.UserTransaction;
 
 import org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformException;
 

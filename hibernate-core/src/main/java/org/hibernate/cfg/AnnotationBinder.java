@@ -161,58 +161,58 @@ import org.hibernate.usertype.UserType;
 import org.hibernate.usertype.internal.OffsetDateTimeCompositeUserType;
 import org.hibernate.usertype.internal.ZonedDateTimeCompositeUserType;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.AttributeOverride;
-import jakarta.persistence.AttributeOverrides;
-import jakarta.persistence.Basic;
-import jakarta.persistence.CollectionTable;
-import jakarta.persistence.Column;
-import jakarta.persistence.ConstraintMode;
-import jakarta.persistence.DiscriminatorColumn;
-import jakarta.persistence.DiscriminatorType;
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinColumns;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.MapKey;
-import jakarta.persistence.MapKeyColumn;
-import jakarta.persistence.MapKeyJoinColumn;
-import jakarta.persistence.MapKeyJoinColumns;
-import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.MapsId;
-import jakarta.persistence.NamedNativeQueries;
-import jakarta.persistence.NamedNativeQuery;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.NamedStoredProcedureQueries;
-import jakarta.persistence.NamedStoredProcedureQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.OrderColumn;
-import jakarta.persistence.PrimaryKeyJoinColumn;
-import jakarta.persistence.PrimaryKeyJoinColumns;
-import jakarta.persistence.SequenceGenerator;
-import jakarta.persistence.SequenceGenerators;
-import jakarta.persistence.SqlResultSetMapping;
-import jakarta.persistence.SqlResultSetMappings;
-import jakarta.persistence.Table;
-import jakarta.persistence.TableGenerator;
-import jakarta.persistence.TableGenerators;
-import jakarta.persistence.UniqueConstraint;
-import jakarta.persistence.Version;
+import javax.persistence.AttributeConverter;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Basic;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ConstraintMode;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.MapKey;
+import javax.persistence.MapKeyColumn;
+import javax.persistence.MapKeyJoinColumn;
+import javax.persistence.MapKeyJoinColumns;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.MapsId;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.NamedStoredProcedureQueries;
+import javax.persistence.NamedStoredProcedureQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.OrderColumn;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.PrimaryKeyJoinColumns;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.SequenceGenerators;
+import javax.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMappings;
+import javax.persistence.Table;
+import javax.persistence.TableGenerator;
+import javax.persistence.TableGenerators;
+import javax.persistence.UniqueConstraint;
+import javax.persistence.Version;
 
 import static org.hibernate.cfg.AnnotatedColumn.buildColumnFromAnnotation;
 import static org.hibernate.cfg.AnnotatedColumn.buildColumnFromNoAnnotation;
@@ -792,16 +792,16 @@ public final class AnnotationBinder {
 	}
 
 	private static void handleSecondaryTables(XClass clazzToProcess, EntityBinder entityBinder) {
-		jakarta.persistence.SecondaryTable secTabAnn = clazzToProcess.getAnnotation(
-				jakarta.persistence.SecondaryTable.class
+		javax.persistence.SecondaryTable secTabAnn = clazzToProcess.getAnnotation(
+				javax.persistence.SecondaryTable.class
 		);
-		jakarta.persistence.SecondaryTables secTabsAnn = clazzToProcess.getAnnotation(
-				jakarta.persistence.SecondaryTables.class
+		javax.persistence.SecondaryTables secTabsAnn = clazzToProcess.getAnnotation(
+				javax.persistence.SecondaryTables.class
 		);
 		entityBinder.firstLevelSecondaryTablesBinding( secTabAnn, secTabsAnn );
 	}
 
-	private static jakarta.persistence.Table handleClassTable(
+	private static javax.persistence.Table handleClassTable(
 			XClass clazzToProcess,
 			MetadataBuildingContext context,
 			InheritanceState inheritanceState,
@@ -809,13 +809,13 @@ public final class AnnotationBinder {
 			EntityBinder entityBinder) {
 
 		List<UniqueConstraintHolder> uniqueConstraints = new ArrayList<>();
-		jakarta.persistence.Table tableAnnotation;
+		javax.persistence.Table tableAnnotation;
 		String schema;
 		String table;
 		String catalog;
 		boolean hasTableAnnotation = clazzToProcess.isAnnotationPresent( Table.class );
 		if ( hasTableAnnotation ) {
-			tableAnnotation = clazzToProcess.getAnnotation( jakarta.persistence.Table.class );
+			tableAnnotation = clazzToProcess.getAnnotation( javax.persistence.Table.class );
 			table = tableAnnotation.name();
 			schema = tableAnnotation.schema();
 			catalog = tableAnnotation.catalog();
@@ -1164,8 +1164,8 @@ public final class AnnotationBinder {
 		final boolean isRoot = !inheritanceState.hasParents();
 
 		AnnotatedDiscriminatorColumn discriminatorColumn = null;
-		jakarta.persistence.DiscriminatorColumn discAnn = clazzToProcess.getAnnotation(
-				jakarta.persistence.DiscriminatorColumn.class
+		javax.persistence.DiscriminatorColumn discAnn = clazzToProcess.getAnnotation(
+				javax.persistence.DiscriminatorColumn.class
 		);
 		DiscriminatorType discriminatorType = discAnn != null
 				? discAnn.discriminatorType()
@@ -2411,7 +2411,7 @@ public final class AnnotationBinder {
 
 		collectionBinder.setBatchSize( property.getAnnotation( BatchSize.class ) );
 
-		collectionBinder.setJpaOrderBy( property.getAnnotation( jakarta.persistence.OrderBy.class ) );
+		collectionBinder.setJpaOrderBy( property.getAnnotation( javax.persistence.OrderBy.class ) );
 		collectionBinder.setSqlOrderBy( getOverridableAnnotation(property, OrderBy.class, context) );
 
 		collectionBinder.setNaturalSort( property.getAnnotation( SortNatural.class ) );
@@ -3091,7 +3091,7 @@ public final class AnnotationBinder {
 			final UniqueConstraint[] uniqueConstraints;
 			final JoinColumn[] joins;
 			final JoinColumn[] inverseJoins;
-			final jakarta.persistence.Index[] jpaIndexes;
+			final javax.persistence.Index[] jpaIndexes;
 
 
 			//JPA 2 has priority
@@ -3921,10 +3921,10 @@ public final class AnnotationBinder {
 		propertyHolder.addProperty( prop, columns, inferredData.getDeclaringClass() );
 	}
 
-	private static EnumSet<CascadeType> convertToHibernateCascadeType(jakarta.persistence.CascadeType[] ejbCascades) {
+	private static EnumSet<CascadeType> convertToHibernateCascadeType(javax.persistence.CascadeType[] ejbCascades) {
 		EnumSet<CascadeType> hibernateCascadeSet = EnumSet.noneOf( CascadeType.class );
 		if ( ejbCascades != null && ejbCascades.length > 0 ) {
-			for ( jakarta.persistence.CascadeType cascade : ejbCascades ) {
+			for ( javax.persistence.CascadeType cascade : ejbCascades ) {
 				switch ( cascade ) {
 					case ALL:
 						hibernateCascadeSet.add( CascadeType.ALL );
@@ -3952,7 +3952,7 @@ public final class AnnotationBinder {
 	}
 
 	private static String getCascadeStrategy(
-			jakarta.persistence.CascadeType[] ejbCascades,
+			javax.persistence.CascadeType[] ejbCascades,
 			Cascade hibernateCascadeAnnotation,
 			boolean orphanRemoval,
 			boolean forcePersist) {
@@ -4021,7 +4021,7 @@ public final class AnnotationBinder {
 	public static void bindForeignKeyNameAndDefinition(
 			SimpleValue value,
 			XProperty property,
-			jakarta.persistence.ForeignKey fkOverride,
+			javax.persistence.ForeignKey fkOverride,
 			JoinColumn joinColumn,
 			JoinColumns joinColumns,
 			MetadataBuildingContext context) {

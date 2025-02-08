@@ -19,8 +19,8 @@ import org.hibernate.query.QueryParameter;
 import org.hibernate.query.SelectionQuery;
 import org.hibernate.query.spi.SqmQuery;
 
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 
 /**
  * @author Steve Ebersole

@@ -13,7 +13,7 @@ import org.hibernate.jpa.SpecHints;
 import org.hibernate.query.Query;
 
 /**
- * List of hints that may be passed to {@link jakarta.persistence.Query#setHint(String, Object)}
+ * List of hints that may be passed to {@link javax.persistence.Query#setHint(String, Object)}
  * to control execution of a query. Each of these hints corresponds to a typesafe operation of
  * the {@link Query} interface, and so hints are only necessary for programs
  * working with the JPA APIs.
@@ -97,7 +97,7 @@ public final class QueryHints {
 	 * @deprecated Calling stored-procedures and functions via
 	 * {@link org.hibernate.query.NativeQuery} is no longer supported.
 	 * Use {@link org.hibernate.procedure.ProcedureCall} or
-	 * {@link jakarta.persistence.StoredProcedureQuery} instead.
+	 * {@link javax.persistence.StoredProcedureQuery} instead.
 	 */
 	@Deprecated
 	public static final String CALLABLE_FUNCTION = HibernateHints.HINT_CALLABLE_FUNCTION;

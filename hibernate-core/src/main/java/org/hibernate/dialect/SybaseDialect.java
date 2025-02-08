@@ -50,7 +50,7 @@ import org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.sql.Types;
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 
 /**

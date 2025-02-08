@@ -63,7 +63,7 @@ import org.hibernate.type.Type;
 
 /**
  * An {@link EntityPersister} implementing the
- * {@link jakarta.persistence.InheritanceType#TABLE_PER_CLASS}
+ * {@link javax.persistence.InheritanceType#TABLE_PER_CLASS}
  * mapping strategy for an entity and its inheritance hierarchy.
  * <p>
  * This is implemented as a separate table for each concrete class,

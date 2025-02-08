@@ -66,7 +66,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.query.sqm.TemporalUnit.NANOSECOND;
 import static org.hibernate.query.sqm.produce.function.FunctionParameterType.INTEGER;

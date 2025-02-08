@@ -10,11 +10,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.ParameterMode;
-import jakarta.persistence.StoredProcedureQuery;
-import jakarta.persistence.TemporalType;
+import javax.persistence.FlushModeType;
+import javax.persistence.Parameter;
+import javax.persistence.ParameterMode;
+import javax.persistence.StoredProcedureQuery;
+import javax.persistence.TemporalType;
 
 import org.hibernate.MappingException;
 import org.hibernate.query.SynchronizeableQuery;

@@ -10,8 +10,8 @@ import java.io.Serializable;
 import java.lang.reflect.Type;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.TemporalType;
+import javax.persistence.EnumType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.MappingException;
 import org.hibernate.mapping.BasicValue;

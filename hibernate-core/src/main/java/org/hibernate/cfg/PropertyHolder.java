@@ -6,10 +6,10 @@
  */
 package org.hibernate.cfg;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.ForeignKey;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
+import javax.persistence.Column;
+import javax.persistence.ForeignKey;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 
 import org.hibernate.annotations.ColumnTransformer;
 import org.hibernate.annotations.common.reflection.XClass;

@@ -6,8 +6,8 @@
  */
 package org.hibernate.jpa.internal.util;
 
-import jakarta.persistence.PersistenceException;
-import jakarta.persistence.spi.PersistenceUnitTransactionType;
+import javax.persistence.PersistenceException;
+import javax.persistence.spi.PersistenceUnitTransactionType;
 
 /**
  * @author Steve Ebersole

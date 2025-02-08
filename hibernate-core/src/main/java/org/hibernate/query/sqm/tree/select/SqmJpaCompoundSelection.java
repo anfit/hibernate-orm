@@ -19,7 +19,7 @@ import org.hibernate.query.sqm.tree.SqmCopyContext;
 import org.hibernate.query.sqm.tree.expression.AbstractSqmExpression;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.criteria.Selection;
+import javax.persistence.criteria.Selection;
 
 /**
  * @asciidoctor
@@ -28,10 +28,10 @@ import jakarta.persistence.criteria.Selection;
  * JPA Criteria API.
  *
  * @see org.hibernate.query.sqm.internal.SqmCriteriaNodeBuilder#tuple(Selection[])
- * @see jakarta.persistence.criteria.CriteriaBuilder#tuple(jakarta.persistence.criteria.Selection[])
+ * @see javax.persistence.criteria.CriteriaBuilder#tuple(javax.persistence.criteria.Selection[])
  *
  * @see org.hibernate.query.sqm.internal.SqmCriteriaNodeBuilder#array(Selection[])
- * @see jakarta.persistence.criteria.CriteriaBuilder#array(jakarta.persistence.criteria.Selection[])
+ * @see javax.persistence.criteria.CriteriaBuilder#array(javax.persistence.criteria.Selection[])
  *
  * @see org.hibernate.query.sqm.tree.expression.SqmTuple
  *

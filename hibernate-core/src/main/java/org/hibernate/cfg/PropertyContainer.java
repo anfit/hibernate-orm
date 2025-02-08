@@ -10,8 +10,6 @@
 package org.hibernate.cfg;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -34,13 +32,13 @@ import org.hibernate.internal.util.collections.CollectionHelper;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.Access;
-import jakarta.persistence.Basic;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Transient;
+import javax.persistence.Access;
+import javax.persistence.Basic;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 
 /**
  * A helper class to keep the {@code XProperty}s of a class ordered by access type.
@@ -145,7 +143,7 @@ class PropertyContainer {
 			final XProperty xProperty = propertyIterator.next();
 			final Access localAccessAnnotation = xProperty.getAnnotation( Access.class );
 			if ( localAccessAnnotation == null
-					|| localAccessAnnotation.value() != jakarta.persistence.AccessType.FIELD ) {
+					|| localAccessAnnotation.value() != javax.persistence.AccessType.FIELD ) {
 				continue;
 			}
 
@@ -159,7 +157,7 @@ class PropertyContainer {
 			final XProperty xProperty = propertyIterator.next();
 			final Access localAccessAnnotation = xProperty.getAnnotation( Access.class );
 			if ( localAccessAnnotation == null
-					|| localAccessAnnotation.value() != jakarta.persistence.AccessType.PROPERTY ) {
+					|| localAccessAnnotation.value() != javax.persistence.AccessType.PROPERTY ) {
 				continue;
 			}
 

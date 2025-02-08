@@ -6,7 +6,7 @@
  */
 package org.hibernate.boot.jaxb.mapping.internal;
 
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 /**
  * Marshalling support for dealing with JPA GenerationType enums.  Plugged into JAXB for binding

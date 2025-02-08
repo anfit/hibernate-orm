@@ -82,7 +82,7 @@ public interface SessionBuilder<T extends SessionBuilder> {
 	 *
 	 * @return {@code this}, for method chaining
 	 *
-	 * @see jakarta.persistence.SynchronizationType#SYNCHRONIZED
+	 * @see javax.persistence.SynchronizationType#SYNCHRONIZED
 	 */
 	T autoJoinTransactions(boolean autoJoinTransactions);
 
@@ -103,7 +103,7 @@ public interface SessionBuilder<T extends SessionBuilder> {
 	 *
 	 * @return {@code this}, for method chaining
 	 *
-	 * @see jakarta.persistence.PersistenceContextType
+	 * @see javax.persistence.PersistenceContextType
 	 */
 	T flushMode(FlushMode flushMode);
 
@@ -143,7 +143,7 @@ public interface SessionBuilder<T extends SessionBuilder> {
 	 *
 	 * @return {@code this}, for method chaining
 	 *
-	 * @see jakarta.persistence.PersistenceContextType
+	 * @see javax.persistence.PersistenceContextType
 	 */
 	T autoClose(boolean autoClose);
 }

@@ -29,7 +29,7 @@ import org.hibernate.type.spi.TypeConfiguration;
 
 import java.util.List;
 
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 import static java.util.Arrays.asList;
 import static org.hibernate.query.sqm.produce.function.FunctionParameterType.INTEGER;

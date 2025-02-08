@@ -18,9 +18,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Stream;
-import jakarta.persistence.metamodel.EmbeddableType;
-import jakarta.persistence.metamodel.EntityType;
-import jakarta.persistence.metamodel.ManagedType;
+import javax.persistence.metamodel.EmbeddableType;
+import javax.persistence.metamodel.EntityType;
+import javax.persistence.metamodel.ManagedType;
 
 import org.hibernate.EntityNameResolver;
 import org.hibernate.HibernateException;
@@ -82,7 +82,7 @@ import static org.hibernate.metamodel.internal.JpaMetaModelPopulationSetting.det
 import static org.hibernate.metamodel.internal.JpaStaticMetaModelPopulationSetting.determineJpaStaticMetaModelPopulationSetting;
 
 /**
- * Hibernate implementation of the JPA {@link jakarta.persistence.metamodel.Metamodel} contract.
+ * Hibernate implementation of the JPA {@link javax.persistence.metamodel.Metamodel} contract.
  *
  * Really more of the mapping model then the domain model, though it does have reference to the `JpaMetamodel`
  *

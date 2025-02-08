@@ -9,13 +9,13 @@ package org.hibernate;
 /**
  * Defines a list of useful constant values that may be used
  * to specify long column lengths in the JPA
- * {@link jakarta.persistence.Column} annotation.
+ * {@link javax.persistence.Column} annotation.
  * <p>
  * For example, {@code @Column(length=LONG16)} would specify
  * that Hibernate should generate DDL with a column type
  * capable of holding strings with 16-bit lengths.
  *
- * @see jakarta.persistence.Column#length()
+ * @see javax.persistence.Column#length()
  *
  * @author Gavin King
  */
@@ -23,7 +23,7 @@ public final class Length {
 	/**
 	 * The default length for a column in JPA.
 	 *
-	 * @see jakarta.persistence.Column#length()
+	 * @see javax.persistence.Column#length()
 	 * @see org.hibernate.type.descriptor.java.JavaType#getDefaultSqlLength
 	 */
 	public static final int DEFAULT = 255;

@@ -10,10 +10,10 @@ import org.hibernate.Incubating;
 import org.hibernate.annotations.common.reflection.XProperty;
 import org.hibernate.boot.spi.MetadataBuildingContext;
 
-import jakarta.persistence.Converter;
+import javax.persistence.Converter;
 
 /**
- * Manages resolution of auto-applied {@link jakarta.persistence.AttributeConverter}
+ * Manages resolution of auto-applied {@link javax.persistence.AttributeConverter}
  * references for specific mappings
  *
  * @see Converter#autoApply()

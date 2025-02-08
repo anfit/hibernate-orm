@@ -10,13 +10,13 @@ import org.hibernate.metamodel.CollectionClassification;
 
 /**
  * Used as a SettingProvider to enable backwards compatibility regarding
- * plural {@link java.util.List} mappings when no {@link jakarta.persistence.OrderColumn},
+ * plural {@link java.util.List} mappings when no {@link javax.persistence.OrderColumn},
  * {@link org.hibernate.annotations.ListIndexBase},
  * {@link org.hibernate.annotations.CollectionId} or other annotations hinting at
  * the classification to use.
  *
  * Historically, Hibernate classified these as BAG.  6.0 changes that to LIST (with an
- * implied {@link jakarta.persistence.OrderColumn}).
+ * implied {@link javax.persistence.OrderColumn}).
  *
  * This setting provider is used to enable the legacy classification
  *

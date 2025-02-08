@@ -8,7 +8,7 @@ package org.hibernate.testing.orm.transaction;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
-import jakarta.persistence.EntityManager;
+import javax.persistence.EntityManager;
 
 import org.hibernate.SharedSessionContract;
 import org.hibernate.StatelessSession;

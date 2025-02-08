@@ -7,7 +7,7 @@
 package org.hibernate.id.factory.spi;
 
 import java.util.Properties;
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 import org.hibernate.id.IdentifierGenerator;
 import org.hibernate.service.ServiceRegistry;

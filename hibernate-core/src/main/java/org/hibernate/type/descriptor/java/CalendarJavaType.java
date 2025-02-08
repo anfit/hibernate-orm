@@ -6,13 +6,12 @@
  */
 package org.hibernate.type.descriptor.java;
 
-import java.sql.Timestamp;
 import java.sql.Types;
 import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

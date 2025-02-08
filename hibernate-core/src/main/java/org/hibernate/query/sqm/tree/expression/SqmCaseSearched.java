@@ -17,7 +17,7 @@ import org.hibernate.query.sqm.SqmExpressible;
 import org.hibernate.query.sqm.tree.SqmCopyContext;
 import org.hibernate.query.sqm.tree.predicate.SqmPredicate;
 
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 /**
  * @author Steve Ebersole

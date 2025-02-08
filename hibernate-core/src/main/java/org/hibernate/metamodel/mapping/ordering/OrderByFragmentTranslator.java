@@ -26,7 +26,7 @@ import org.antlr.v4.runtime.misc.ParseCancellationException;
  * with an order set or map.
  *
  * @author Steve Ebersole
- * @see jakarta.persistence.OrderBy
+ * @see javax.persistence.OrderBy
  * @see org.hibernate.annotations.OrderBy
  */
 public class OrderByFragmentTranslator {

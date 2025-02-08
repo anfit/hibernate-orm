@@ -6,7 +6,7 @@
  */
 package org.hibernate.cfg;
 
-import jakarta.persistence.Access;
+import javax.persistence.Access;
 
 import org.hibernate.MappingException;
 import org.hibernate.annotations.Target;

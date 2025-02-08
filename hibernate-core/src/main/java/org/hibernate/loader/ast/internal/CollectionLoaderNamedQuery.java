@@ -15,7 +15,7 @@ import org.hibernate.persister.collection.CollectionPersister;
 import org.hibernate.query.named.NamedQueryMemento;
 import org.hibernate.query.spi.QueryImplementor;
 
-import jakarta.persistence.Parameter;
+import javax.persistence.Parameter;
 
 /**
  * @author Steve Ebersole

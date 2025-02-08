@@ -7,7 +7,7 @@
 package org.hibernate.boot.spi;
 
 import java.util.List;
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.SharedCacheMode;
 import org.hibernate.HibernateException;
 import org.hibernate.TimeZoneStorageStrategy;
 import org.hibernate.boot.model.IdGeneratorStrategyInterpreter;

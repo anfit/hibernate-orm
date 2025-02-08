@@ -15,7 +15,7 @@ import org.hibernate.query.sqm.SqmPathSource;
 import org.hibernate.query.sqm.tree.domain.SqmAnyValuedSimplePath;
 import org.hibernate.query.sqm.tree.domain.SqmPath;
 
-import static jakarta.persistence.metamodel.Bindable.BindableType.SINGULAR_ATTRIBUTE;
+import static javax.persistence.metamodel.Bindable.BindableType.SINGULAR_ATTRIBUTE;
 
 /**
  * @author Steve Ebersole

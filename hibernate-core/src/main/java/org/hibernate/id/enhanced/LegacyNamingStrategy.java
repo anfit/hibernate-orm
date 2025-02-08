@@ -8,7 +8,7 @@ package org.hibernate.id.enhanced;
 
 import java.util.Map;
 
-import jakarta.persistence.GeneratedValue;
+import javax.persistence.GeneratedValue;
 
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.relational.QualifiedName;

@@ -10,7 +10,7 @@ package org.hibernate;
  * An API for directly querying and managing the second level cache.
  * <p>
  * Note that only entities and collection roles explicitly annotated
- * {@link jakarta.persistence.Cacheable} or {@link org.hibernate.annotations.Cache}
+ * {@link javax.persistence.Cacheable} or {@link org.hibernate.annotations.Cache}
  * are eligible for storage in the second-level cache, and so by default the state
  * of an entity is always retrieved from the database when requested.
  * <p>
@@ -48,7 +48,7 @@ package org.hibernate;
  *
  * @author Steve Ebersole
  */
-public interface Cache extends jakarta.persistence.Cache {
+public interface Cache extends javax.persistence.Cache {
 	/**
 	 * The {@link SessionFactory} to which this {@code Cache} belongs.
 	 *

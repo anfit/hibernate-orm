@@ -9,7 +9,7 @@ package org.hibernate.annotations;
 import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import jakarta.persistence.JoinColumn;
+import javax.persistence.JoinColumn;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;

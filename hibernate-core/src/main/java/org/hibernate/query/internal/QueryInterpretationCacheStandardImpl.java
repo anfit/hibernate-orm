@@ -9,7 +9,7 @@ package org.hibernate.query.internal;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import jakarta.persistence.Tuple;
+import javax.persistence.Tuple;
 
 import org.hibernate.internal.util.collections.BoundedConcurrentHashMap;
 import org.hibernate.query.QueryLogging;

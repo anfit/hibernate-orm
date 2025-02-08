@@ -30,9 +30,9 @@ import org.jboss.logging.Logger;
 
 import static org.hibernate.cfg.AvailableSettings.XML_MAPPING_ENABLED;
 
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 
 /**
  * @author Steve Ebersole

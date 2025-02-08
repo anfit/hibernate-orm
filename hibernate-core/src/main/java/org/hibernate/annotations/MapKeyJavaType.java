@@ -11,7 +11,7 @@ import java.lang.annotation.Retention;
 
 import org.hibernate.type.descriptor.java.BasicJavaType;
 
-import jakarta.persistence.MapKeyClass;
+import javax.persistence.MapKeyClass;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;

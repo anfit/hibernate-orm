@@ -29,8 +29,8 @@ import org.hibernate.query.sqm.tree.from.SqmFrom;
 import org.hibernate.query.sqm.tree.select.SqmAliasedNode;
 import org.hibernate.query.sqm.tree.select.SqmSubQuery;
 
-import jakarta.persistence.criteria.Join;
-import jakarta.persistence.criteria.Root;
+import javax.persistence.criteria.Join;
+import javax.persistence.criteria.Root;
 
 /**
  * Container for indexing needed while building an SQM tree.

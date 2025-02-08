@@ -9,7 +9,7 @@ package org.hibernate.metamodel.model.domain;
 import org.hibernate.query.BindableType;
 import org.hibernate.query.sqm.SqmExpressible;
 
-import jakarta.persistence.metamodel.EmbeddableType;
+import javax.persistence.metamodel.EmbeddableType;
 
 /**
  * Hibernate extension to the JPA {@link EmbeddableType} contract.

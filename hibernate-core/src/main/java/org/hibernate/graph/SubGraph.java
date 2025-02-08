@@ -7,7 +7,7 @@
 package org.hibernate.graph;
 
 import java.util.List;
-import jakarta.persistence.metamodel.Attribute;
+import javax.persistence.metamodel.Attribute;
 
 import org.hibernate.metamodel.model.domain.PersistentAttribute;
 
@@ -17,10 +17,10 @@ import org.hibernate.metamodel.model.domain.PersistentAttribute;
  * @author Steve Ebersole
  * @author Andrea Boriero
  */
-public interface SubGraph<J> extends Graph<J>, jakarta.persistence.Subgraph<J> {
+public interface SubGraph<J> extends Graph<J>, javax.persistence.Subgraph<J> {
 	@Override
 	@SuppressWarnings("unchecked")
-	default List<jakarta.persistence.AttributeNode<?>> getAttributeNodes() {
+	default List<javax.persistence.AttributeNode<?>> getAttributeNodes() {
 		return (List) getAttributeNodeList();
 	}
 

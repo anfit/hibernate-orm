@@ -18,7 +18,7 @@ import org.hibernate.sql.ast.tree.expression.JdbcParameter;
 import static org.hibernate.query.sqm.tree.expression.SqmExpressionHelper.toSqmType;
 
 /**
- * Acts as the per-use wrapper for a JpaCriteriaParameter ({@link jakarta.persistence.criteria.CriteriaBuilder#parameter}).
+ * Acts as the per-use wrapper for a JpaCriteriaParameter ({@link javax.persistence.criteria.CriteriaBuilder#parameter}).
  *
  * JpaCriteriaParameter is the "domain query parameter" ({@link org.hibernate.query.QueryParameter}
  * while SqmJpaCriteriaParameterWrapper is the {@link SqmParameter}

@@ -31,7 +31,7 @@ import org.hibernate.query.sqm.tree.predicate.SqmPredicate;
 import org.hibernate.type.descriptor.java.EnumJavaType;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 /**
  * @author Steve Ebersole

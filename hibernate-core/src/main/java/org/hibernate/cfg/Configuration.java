@@ -15,8 +15,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.AttributeConverter;
+import javax.persistence.SharedCacheMode;
 
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.HibernateException;
@@ -844,7 +844,7 @@ public class Configuration {
 	/**
 	 * Sets the {@link SharedCacheMode} to use.
 	 * <p>
-	 * Note that currently only {@link jakarta.persistence.SharedCacheMode#ALL}
+	 * Note that currently only {@link javax.persistence.SharedCacheMode#ALL}
 	 * has any effect in terms of {@code hbm.xml} binding.
 	 *
 	 * @param sharedCacheMode The SharedCacheMode to use

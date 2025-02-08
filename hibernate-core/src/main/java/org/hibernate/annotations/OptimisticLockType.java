@@ -19,7 +19,7 @@ public enum OptimisticLockType {
 	/**
 	 * Perform optimistic locking using a dedicated version column.
 	 *
-	 * @see jakarta.persistence.Version
+	 * @see javax.persistence.Version
 	 */
 	VERSION,
 	/**

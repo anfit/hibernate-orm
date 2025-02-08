@@ -8,7 +8,7 @@ package org.hibernate.query.sql.spi;
 
 import java.util.Set;
 
-import jakarta.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMapping;
 
 import org.hibernate.boot.query.NamedNativeQueryDefinition;
 import org.hibernate.boot.registry.classloading.spi.ClassLoaderService;
@@ -16,7 +16,6 @@ import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.query.named.AbstractNamedQueryMemento;
 import org.hibernate.query.named.NamedQueryMemento;
-import org.hibernate.query.spi.QueryImplementor;
 import org.hibernate.query.sql.internal.NamedNativeQueryMementoImpl;
 
 /**

@@ -8,13 +8,12 @@ package org.hibernate.envers.configuration.internal.metadata.reader;
 
 import org.hibernate.annotations.common.reflection.XClass;
 import org.hibernate.annotations.common.reflection.XProperty;
-import org.hibernate.envers.AuditOverride;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.boot.internal.ModifiedColumnNameResolver;
 import org.hibernate.envers.boot.spi.EnversMetadataBuildingContext;
 import org.hibernate.internal.util.StringHelper;
 
-import jakarta.persistence.MappedSuperclass;
+import javax.persistence.MappedSuperclass;
 
 /**
  * Reads the audited properties for components.

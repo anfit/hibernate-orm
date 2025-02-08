@@ -7,7 +7,7 @@
 package org.hibernate.metamodel.model.domain;
 
 import java.util.Set;
-import jakarta.persistence.metamodel.SetAttribute;
+import javax.persistence.metamodel.SetAttribute;
 
 /**
  * Hibernate extension to the JPA {@link SetAttribute} descriptor

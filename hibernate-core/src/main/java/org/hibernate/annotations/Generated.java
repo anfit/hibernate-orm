@@ -28,14 +28,14 @@ import org.hibernate.tuple.GeneratedValueGeneration;
  * {@code Generated(INSERT)} with {@link ColumnDefault}.
  * <ul>
  *     <li>For identity/autoincrement columns mapped to an identifier property,
- *     use {@link jakarta.persistence.GeneratedValue}.
+ *     use {@link javax.persistence.GeneratedValue}.
  *     <li>For columns with a {@code generated always as} clause, prefer the
  *     {@link GeneratedColumn} annotation.
  * </ul>
  *
  * @author Emmanuel Bernard
  *
- * @see jakarta.persistence.GeneratedValue
+ * @see javax.persistence.GeneratedValue
  * @see ColumnDefault
  * @see GeneratedColumn
  */

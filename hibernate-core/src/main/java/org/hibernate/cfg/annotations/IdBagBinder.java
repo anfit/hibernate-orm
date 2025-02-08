@@ -33,7 +33,7 @@ import org.hibernate.mapping.Table;
 import org.hibernate.resource.beans.spi.ManagedBean;
 import org.hibernate.usertype.UserCollectionType;
 
-import jakarta.persistence.Column;
+import javax.persistence.Column;
 
 /**
  * @author Emmanuel Bernard

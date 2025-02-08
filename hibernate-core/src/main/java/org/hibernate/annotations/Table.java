@@ -14,14 +14,14 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Complementary information for a table declared using the {@link jakarta.persistence.Table},
- * or {@link jakarta.persistence.SecondaryTable} annotation. Usually used only for secondary
+ * Complementary information for a table declared using the {@link javax.persistence.Table},
+ * or {@link javax.persistence.SecondaryTable} annotation. Usually used only for secondary
  * tables.
  *
  * @author Emmanuel Bernard
  *
- * @see jakarta.persistence.Table
- * @see jakarta.persistence.SecondaryTable
+ * @see javax.persistence.Table
+ * @see javax.persistence.SecondaryTable
  */
 @Target(TYPE)
 @Retention(RUNTIME)
@@ -35,8 +35,8 @@ public @interface Table {
 	/**
 	 * Indexes.
 	 *
-	 * @deprecated use {@link jakarta.persistence.Table#indexes()} or
-	 *             {@link jakarta.persistence.SecondaryTable#indexes()}
+	 * @deprecated use {@link javax.persistence.Table#indexes()} or
+	 *             {@link javax.persistence.SecondaryTable#indexes()}
 	 */
 	@Deprecated(since = "6.0")
 	Index[] indexes() default {};
@@ -58,7 +58,7 @@ public @interface Table {
 	/**
 	 * Specifies a foreign key of a secondary table, which points back to the primary table.
 	 *
-	 * @deprecated use {@link jakarta.persistence.SecondaryTable#foreignKey()}
+	 * @deprecated use {@link javax.persistence.SecondaryTable#foreignKey()}
 	 */
 	@Deprecated(since = "6.0")
 	ForeignKey foreignKey() default @ForeignKey( name="" );

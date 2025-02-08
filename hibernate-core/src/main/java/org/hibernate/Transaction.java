@@ -6,8 +6,8 @@
  */
 package org.hibernate;
 
-import jakarta.persistence.EntityTransaction;
-import jakarta.transaction.Synchronization;
+import javax.persistence.EntityTransaction;
+import javax.transaction.Synchronization;
 
 import org.hibernate.resource.transaction.spi.TransactionStatus;
 

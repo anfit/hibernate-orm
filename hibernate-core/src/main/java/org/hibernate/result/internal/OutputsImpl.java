@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 import org.hibernate.JDBCException;
 import org.hibernate.NotYetImplementedFor6Exception;

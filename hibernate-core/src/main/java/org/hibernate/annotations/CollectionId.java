@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 import org.hibernate.id.IdentifierGenerator;
 
-import jakarta.persistence.Column;
+import javax.persistence.Column;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
@@ -42,7 +42,7 @@ public @interface CollectionId {
 	 *
 	 * Can specify either a built-in strategy ("sequence", e.g.)
 	 * or a named generatorIdentifierGenerator
-	 * ({@link jakarta.persistence.SequenceGenerator}, e.g.)
+	 * ({@link javax.persistence.SequenceGenerator}, e.g.)
 	 *
 	 * @apiNote Mutually exclusive with {@link #generatorImplementation()}
 	 */

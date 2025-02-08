@@ -10,7 +10,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
-import java.util.Iterator;
 
 import org.hibernate.AssertionFailure;
 import org.hibernate.PropertyNotFoundException;
@@ -57,10 +56,10 @@ import org.hibernate.type.descriptor.java.JavaType;
 import org.hibernate.type.descriptor.java.spi.JavaTypeRegistry;
 import org.hibernate.type.spi.CompositeTypeImplementor;
 
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.metamodel.Attribute;
-import jakarta.persistence.metamodel.Type;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.metamodel.Attribute;
+import javax.persistence.metamodel.Type;
 
 /**
  * A factory for building {@link Attribute} instances.  Exposes 3 main services for building<ol>

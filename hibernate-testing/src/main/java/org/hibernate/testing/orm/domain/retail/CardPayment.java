@@ -7,7 +7,7 @@
 package org.hibernate.testing.orm.domain.retail;
 
 import javax.money.MonetaryAmount;
-import jakarta.persistence.Entity;
+import javax.persistence.Entity;
 
 /**
  * @author Steve Ebersole

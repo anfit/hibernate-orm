@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * Any basic-typed ValueMapping.  Generally this would be one of<ul>
- *     <li>a {@link jakarta.persistence.Basic} attribute</li>
+ *     <li>a {@link javax.persistence.Basic} attribute</li>
  *     <li>a basic-valued collection part</li>
  *     <li>a {@link org.hibernate.type.BasicType}</li>
  * </ul>

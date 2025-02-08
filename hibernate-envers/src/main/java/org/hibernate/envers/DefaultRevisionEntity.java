@@ -9,10 +9,10 @@ package org.hibernate.envers;
 import java.io.Serializable;
 import java.util.Date;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.Transient;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.Transient;
 
 /**
  * @author Adam Warski (adam at warski dot org)

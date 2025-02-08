@@ -82,11 +82,11 @@ import org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator;
 
 import org.jboss.jandex.Index;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityNotFoundException;
-import jakarta.persistence.PersistenceException;
-import jakarta.persistence.spi.PersistenceUnitTransactionType;
+import javax.persistence.AttributeConverter;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityNotFoundException;
+import javax.persistence.PersistenceException;
+import javax.persistence.spi.PersistenceUnitTransactionType;
 
 import static org.hibernate.cfg.AvailableSettings.ALLOW_REFRESH_DETACHED_ENTITY;
 import static org.hibernate.cfg.AvailableSettings.CFG_XML_FILE;

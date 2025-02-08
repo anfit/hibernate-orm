@@ -6,13 +6,6 @@
  */
 package org.hibernate.boot.query;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
-import org.hibernate.boot.internal.NamedNativeQueryDefinitionImpl;
-import org.hibernate.boot.spi.AbstractNamedQueryDefinition;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.query.sql.spi.NamedNativeQueryMemento;
 
@@ -20,7 +13,7 @@ import org.hibernate.query.sql.spi.NamedNativeQueryMemento;
  * Boot-time descriptor of a named native query, as defined in
  * annotations or xml
  *
- * @see jakarta.persistence.NamedNativeQuery
+ * @see javax.persistence.NamedNativeQuery
  * @see org.hibernate.annotations.NamedNativeQuery
  *
  * @author Steve Ebersole

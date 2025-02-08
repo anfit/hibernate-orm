@@ -381,7 +381,7 @@ import org.hibernate.usertype.internal.AbstractTimeZoneStorageCompositeUserType;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.internal.util.NullnessHelper.coalesceSuppliedValues;
 import static org.hibernate.query.sqm.BinaryArithmeticOperator.ADD;
@@ -5938,7 +5938,7 @@ public abstract class BaseSqmToSqlAstConverter<T extends Statement> extends Base
 
 	@Override
 	public Junction visitJunctionPredicate(SqmJunctionPredicate predicate) {
-		if ( predicate.getOperator() == jakarta.persistence.criteria.Predicate.BooleanOperator.AND ) {
+		if ( predicate.getOperator() == javax.persistence.criteria.Predicate.BooleanOperator.AND ) {
 			final List<Predicate> predicates = new ArrayList<>( predicate.getPredicates().size() );
 			for ( SqmPredicate subPredicate : predicate.getPredicates() ) {
 				predicates.add( (Predicate) subPredicate.accept( this ) );

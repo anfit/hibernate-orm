@@ -6,7 +6,7 @@
  */
 package org.hibernate.testing.orm.junit;
 
-import jakarta.persistence.EntityManagerFactory;
+import javax.persistence.EntityManagerFactory;
 
 /**
  * Contract for something that can build a SessionFactory.

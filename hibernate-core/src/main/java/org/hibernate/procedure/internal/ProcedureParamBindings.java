@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
-import org.hibernate.NotYetImplementedFor6Exception;
 import org.hibernate.cache.spi.QueryKey;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
@@ -23,7 +22,7 @@ import org.hibernate.query.spi.QueryParameterImplementor;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * @author Steve Ebersole

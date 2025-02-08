@@ -12,7 +12,7 @@ import org.hibernate.graph.spi.SubGraphImplementor;
 import org.hibernate.metamodel.RepresentationMode;
 import org.hibernate.query.sqm.SqmExpressible;
 
-import jakarta.persistence.metamodel.ManagedType;
+import javax.persistence.metamodel.ManagedType;
 
 /**
  * Hibernate extension to the JPA {@link ManagedType} contract

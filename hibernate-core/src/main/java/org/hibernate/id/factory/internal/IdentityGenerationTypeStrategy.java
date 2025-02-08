@@ -15,7 +15,7 @@ import org.hibernate.id.factory.spi.GeneratorDefinitionResolver;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 public class IdentityGenerationTypeStrategy implements GenerationTypeStrategy {
 	/**

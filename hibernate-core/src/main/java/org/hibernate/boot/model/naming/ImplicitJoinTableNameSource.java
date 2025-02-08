@@ -13,7 +13,7 @@ import org.hibernate.boot.model.source.spi.AttributePath;
  *
  * @author Steve Ebersole
  *
- * @see jakarta.persistence.JoinTable
+ * @see javax.persistence.JoinTable
  */
 public interface ImplicitJoinTableNameSource extends ImplicitNameSource {
 	/**

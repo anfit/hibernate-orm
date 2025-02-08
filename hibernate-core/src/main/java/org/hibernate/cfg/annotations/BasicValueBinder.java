@@ -80,17 +80,17 @@ import org.hibernate.usertype.UserType;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
-import jakarta.persistence.MapKeyClass;
-import jakarta.persistence.MapKeyEnumerated;
-import jakarta.persistence.MapKeyTemporal;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-import jakarta.persistence.Version;
+import javax.persistence.ElementCollection;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.MapKeyClass;
+import javax.persistence.MapKeyEnumerated;
+import javax.persistence.MapKeyTemporal;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Version;
 
 import static org.hibernate.cfg.annotations.HCANNHelper.findAnnotation;
 

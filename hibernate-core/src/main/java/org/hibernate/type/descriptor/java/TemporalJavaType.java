@@ -11,7 +11,7 @@ import java.sql.Types;
 import org.hibernate.Incubating;
 import org.hibernate.type.spi.TypeConfiguration;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 /**
  * Specialized JavaType for temporal types.

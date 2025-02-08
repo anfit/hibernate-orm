@@ -11,16 +11,16 @@ import java.util.Set;
 
 import org.hibernate.jpa.internal.HintsCollector;
 
-import jakarta.persistence.LockModeType;
+import javax.persistence.LockModeType;
 
 /**
  * Combined set of Hibernate and Jakarta Persistence hints
  *
- * @see jakarta.persistence.EntityManager#setProperty(String, Object)
- * @see jakarta.persistence.EntityManager#find(Class, Object, Map)
- * @see jakarta.persistence.EntityManager#find(Class, Object, LockModeType, Map)
- * @see jakarta.persistence.EntityManager#lock(Object, LockModeType, Map)
- * @see jakarta.persistence.Query#setHint
+ * @see javax.persistence.EntityManager#setProperty(String, Object)
+ * @see javax.persistence.EntityManager#find(Class, Object, Map)
+ * @see javax.persistence.EntityManager#find(Class, Object, LockModeType, Map)
+ * @see javax.persistence.EntityManager#lock(Object, LockModeType, Map)
+ * @see javax.persistence.Query#setHint
  *
  * @author Steve Ebersole
  */

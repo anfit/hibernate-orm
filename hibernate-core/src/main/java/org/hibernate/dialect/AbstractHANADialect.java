@@ -78,7 +78,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.query.sqm.produce.function.FunctionParameterType;
 import org.hibernate.type.spi.TypeConfiguration;

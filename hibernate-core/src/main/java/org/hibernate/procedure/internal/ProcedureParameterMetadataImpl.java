@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import jakarta.persistence.Parameter;
+
+import javax.persistence.Parameter;
 
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.procedure.spi.NamedCallableQueryMemento;

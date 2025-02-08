@@ -8,13 +8,12 @@ package org.hibernate.metamodel.mapping;
 
 import org.hibernate.engine.spi.VersionValue;
 import org.hibernate.metamodel.mapping.internal.BasicAttributeMapping;
-import org.hibernate.type.descriptor.java.JavaType;
 import org.hibernate.type.descriptor.java.VersionJavaType;
 
 /**
  * Describes the mapping of an entity's version
  *
- * @see jakarta.persistence.Version
+ * @see javax.persistence.Version
  */
 public interface EntityVersionMapping extends BasicValuedModelPart {
 	/**

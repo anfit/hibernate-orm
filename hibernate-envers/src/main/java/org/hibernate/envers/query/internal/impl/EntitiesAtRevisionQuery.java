@@ -9,7 +9,7 @@ package org.hibernate.envers.query.internal.impl;
 import java.util.Collection;
 import java.util.List;
 
-import jakarta.persistence.criteria.JoinType;
+import javax.persistence.criteria.JoinType;
 
 import org.hibernate.envers.RevisionType;
 import org.hibernate.envers.boot.internal.EnversService;

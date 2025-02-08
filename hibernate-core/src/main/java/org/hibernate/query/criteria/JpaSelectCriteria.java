@@ -7,10 +7,10 @@
 package org.hibernate.query.criteria;
 
 import java.util.List;
-import jakarta.persistence.criteria.AbstractQuery;
-import jakarta.persistence.criteria.Expression;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.metamodel.EntityType;
+import javax.persistence.criteria.AbstractQuery;
+import javax.persistence.criteria.Expression;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.metamodel.EntityType;
 
 /**
  * Commonality between a JPA {@link JpaCriteriaQuery} and {@link JpaSubQuery},

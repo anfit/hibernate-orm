@@ -12,7 +12,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.SharedCacheMode;
 
 import org.hibernate.boot.model.TypeContributor;
 import org.hibernate.cache.spi.access.AccessType;

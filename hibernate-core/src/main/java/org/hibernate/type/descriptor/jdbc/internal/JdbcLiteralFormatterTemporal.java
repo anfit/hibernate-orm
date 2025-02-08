@@ -8,7 +8,7 @@ package org.hibernate.type.descriptor.jdbc.internal;
 
 import java.time.temporal.TemporalAccessor;
 import java.util.TimeZone;
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.sql.ast.spi.SqlAppender;

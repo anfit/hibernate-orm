@@ -6,7 +6,7 @@
  */
 package org.hibernate.boot.jaxb.mapping.internal;
 
-import jakarta.persistence.AccessType;
+import javax.persistence.AccessType;
 
 /**
  * Marshalling support for dealing with JPA AccessType enums.  Plugged into JAXB for binding

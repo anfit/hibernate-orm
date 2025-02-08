@@ -15,13 +15,13 @@ import java.util.Map;
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.FlushModeType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 
 /**
  * Defines the aspects of query execution and parameter binding that apply to all
- * forms of querying - HQL, {@linkplain jakarta.persistence.criteria.CriteriaBuilder
+ * forms of querying - HQL, {@linkplain javax.persistence.criteria.CriteriaBuilder
  * criteria queries}, and {@link org.hibernate.procedure.ProcedureCall stored
  * procedure calls}.
  *
@@ -159,12 +159,12 @@ public interface CommonQueryContract {
 	CommonQueryContract setParameter(String parameter, Instant value, TemporalType temporalType);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(String, Calendar, TemporalType)
+	 * @see javax.persistence.Query#setParameter(String, Calendar, TemporalType)
 	 */
 	CommonQueryContract setParameter(String parameter, Calendar value, TemporalType temporalType);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(String, Date, TemporalType)
+	 * @see javax.persistence.Query#setParameter(String, Date, TemporalType)
 	 */
 	CommonQueryContract setParameter(String parameter, Date value, TemporalType temporalType);
 
@@ -205,12 +205,12 @@ public interface CommonQueryContract {
 	CommonQueryContract setParameter(int parameter, Instant value, TemporalType temporalType);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(int, Date, TemporalType)
+	 * @see javax.persistence.Query#setParameter(int, Date, TemporalType)
 	 */
 	CommonQueryContract setParameter(int parameter, Date value, TemporalType temporalType);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(int, Calendar, TemporalType)
+	 * @see javax.persistence.Query#setParameter(int, Calendar, TemporalType)
 	 */
 	CommonQueryContract setParameter(int parameter, Calendar value, TemporalType temporalType);
 
@@ -260,17 +260,17 @@ public interface CommonQueryContract {
 	<P> CommonQueryContract setParameter(QueryParameter<P> parameter, P val, BindableType<P> type);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(Parameter, Object)
+	 * @see javax.persistence.Query#setParameter(Parameter, Object)
 	 */
 	<T> CommonQueryContract setParameter(Parameter<T> param, T value);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(Parameter, Calendar, TemporalType)
+	 * @see javax.persistence.Query#setParameter(Parameter, Calendar, TemporalType)
 	 */
 	CommonQueryContract setParameter(Parameter<Calendar> param, Calendar value, TemporalType temporalType);
 
 	/**
-	 * @see jakarta.persistence.Query#setParameter(Parameter, Date, TemporalType)
+	 * @see javax.persistence.Query#setParameter(Parameter, Date, TemporalType)
 	 */
 	CommonQueryContract setParameter(Parameter<Date> param, Date value, TemporalType temporalType);
 

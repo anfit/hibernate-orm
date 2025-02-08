@@ -23,9 +23,9 @@ import org.hibernate.sql.results.graph.FetchableContainer;
 /**
  * Describes the mapping of an embeddable (composite).
  *
- * @see jakarta.persistence.Embedded
- * @see jakarta.persistence.EmbeddedId
- * @see jakarta.persistence.Embeddable
+ * @see javax.persistence.Embedded
+ * @see javax.persistence.EmbeddedId
+ * @see javax.persistence.Embeddable
  */
 public interface EmbeddableValuedModelPart extends ModelPart, Fetchable, FetchableContainer, TableGroupJoinProducer {
 	EmbeddableMappingType getEmbeddableTypeDescriptor();

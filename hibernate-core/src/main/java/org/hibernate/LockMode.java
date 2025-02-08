@@ -8,7 +8,7 @@ package org.hibernate;
 
 import org.hibernate.jpa.internal.util.LockModeTypeHelper;
 
-import jakarta.persistence.LockModeType;
+import javax.persistence.LockModeType;
 
 /**
  * Instances represent a lock mode for a row of a relational

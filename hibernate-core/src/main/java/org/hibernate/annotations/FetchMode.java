@@ -9,7 +9,7 @@ package org.hibernate.annotations;
 /**
  * How the association should be fetched.
  *
- * Defines the "how", compared to {@link jakarta.persistence.FetchType} which defines "when"
+ * Defines the "how", compared to {@link javax.persistence.FetchType} which defines "when"
  *
  * @author Steve Ebersole
  * @author Emmanuel Bernard

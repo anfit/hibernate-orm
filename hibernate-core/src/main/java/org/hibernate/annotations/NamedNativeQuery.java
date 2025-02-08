@@ -17,7 +17,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * Extends {@link jakarta.persistence.NamedNativeQuery} with Hibernate features.
+ * Extends {@link javax.persistence.NamedNativeQuery} with Hibernate features.
  *
  * @author Emmanuel Bernard
  *
@@ -101,7 +101,7 @@ public @interface NamedNativeQuery {
 	 * Does the SQL ({@link #query()}) represent a call to a procedure/function?
 	 *
 	 * @deprecated Calling database procedures and functions through {@link NativeQuery} is
-	 * no longer supported; use {@link jakarta.persistence.NamedStoredProcedureQuery} instead
+	 * no longer supported; use {@link javax.persistence.NamedStoredProcedureQuery} instead
 	 */
 	@Deprecated( since = "6.0" )
 	boolean callable() default false;

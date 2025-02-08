@@ -7,7 +7,7 @@
 package org.hibernate.id;
 
 import java.util.Properties;
-import jakarta.persistence.GeneratedValue;
+import javax.persistence.GeneratedValue;
 
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;

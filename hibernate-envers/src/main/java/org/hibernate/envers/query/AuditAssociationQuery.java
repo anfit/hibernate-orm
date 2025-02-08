@@ -6,7 +6,7 @@
  */
 package org.hibernate.envers.query;
 
-import jakarta.persistence.criteria.JoinType;
+import javax.persistence.criteria.JoinType;
 
 import org.hibernate.CacheMode;
 import org.hibernate.FlushMode;

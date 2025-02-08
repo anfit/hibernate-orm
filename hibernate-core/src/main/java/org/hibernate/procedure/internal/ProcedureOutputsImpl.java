@@ -20,7 +20,7 @@ import org.hibernate.sql.exec.ExecutionException;
 import org.hibernate.sql.exec.spi.JdbcCallParameterRegistration;
 import org.hibernate.sql.exec.spi.JdbcCallRefCursorExtractor;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * Implementation of ProcedureResult.  Defines centralized access to all of the results of a procedure call.

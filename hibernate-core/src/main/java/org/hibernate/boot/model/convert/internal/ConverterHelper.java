@@ -10,7 +10,7 @@ import java.lang.reflect.ParameterizedType;
 
 import org.hibernate.internal.util.GenericsHelper;
 
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 /**
  * Helpers related to handling converters

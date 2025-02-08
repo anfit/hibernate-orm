@@ -16,7 +16,7 @@ import org.hibernate.sql.results.graph.embeddable.EmbeddableValuedFetchable;
 /**
  * A "non-aggregated" composite identifier, which means that the entity itself
  * does not define a singular representation of its identifier like an
- * {@link jakarta.persistence.EmbeddedId} does.
+ * {@link javax.persistence.EmbeddedId} does.
  *
  * An IdClass can be used to provide a simple, singular representation of the
  * identifier for easier reference in API calls.  JPA requires using an IdClass
@@ -24,8 +24,8 @@ import org.hibernate.sql.results.graph.embeddable.EmbeddableValuedFetchable;
  * with or without the IdClass; without, the entity itself is used as the
  * identifier.
  *
- * @see jakarta.persistence.IdClass
- * @see jakarta.persistence.MapsId
+ * @see javax.persistence.IdClass
+ * @see javax.persistence.MapsId
  *
  * @author Steve Ebersole
  */

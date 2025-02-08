@@ -14,7 +14,7 @@ import org.hibernate.Incubating;
  * @author Steve Ebersole
  */
 @Incubating
-public interface QueryParameter<T> extends jakarta.persistence.Parameter<T> {
+public interface QueryParameter<T> extends javax.persistence.Parameter<T> {
 	/**
 	 * Does this parameter allow multi-valued (collection, array, etc) binding?
 	 * <p/>

@@ -7,7 +7,7 @@
 
 package org.hibernate.sql.results.internal;
 
-import jakarta.persistence.TupleElement;
+import javax.persistence.TupleElement;
 
 /**
  * Implementation of the JPA TupleElement contract

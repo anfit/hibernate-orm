@@ -21,7 +21,7 @@ import org.hibernate.type.StandardBasicTypes;
 import org.hibernate.type.descriptor.java.TemporalJavaType;
 import org.hibernate.type.spi.TypeConfiguration;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 /**
  * @author Steve Ebersole

@@ -33,7 +33,7 @@ import org.hibernate.sql.exec.spi.JdbcParameterBinder;
 import org.hibernate.type.BasicType;
 import org.hibernate.type.ProcedureParameterNamedBinder;
 
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 /**
  * @author Steve Ebersole

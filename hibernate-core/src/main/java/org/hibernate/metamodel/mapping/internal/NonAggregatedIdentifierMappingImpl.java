@@ -41,10 +41,10 @@ import org.hibernate.sql.results.graph.DomainResultCreationState;
 /**
  * A "non-aggregated" composite identifier.
  *
- * This is an identifier defined using more than one {@link jakarta.persistence.Id}
- * attribute with zero-or-more {@link jakarta.persistence.MapsId}.
+ * This is an identifier defined using more than one {@link javax.persistence.Id}
+ * attribute with zero-or-more {@link javax.persistence.MapsId}.
  *
- * Can also be a single {@link jakarta.persistence.Id} with {@link jakarta.persistence.MapsId}
+ * Can also be a single {@link javax.persistence.Id} with {@link javax.persistence.MapsId}
  */
 public class NonAggregatedIdentifierMappingImpl extends AbstractCompositeIdentifierMapping implements NonAggregatedIdentifierMapping {
 	private final VirtualIdEmbeddable virtualIdEmbeddable;

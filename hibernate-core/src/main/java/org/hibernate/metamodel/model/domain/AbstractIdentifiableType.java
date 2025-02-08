@@ -13,9 +13,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
-import jakarta.persistence.metamodel.Bindable;
-import jakarta.persistence.metamodel.IdentifiableType;
-import jakarta.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.Bindable;
+import javax.persistence.metamodel.IdentifiableType;
+import javax.persistence.metamodel.SingularAttribute;
 
 import org.hibernate.metamodel.UnsupportedMappingException;
 import org.hibernate.metamodel.mapping.EntityIdentifierMapping;

@@ -8,7 +8,7 @@ package org.hibernate.query.sqm;
 
 import java.util.Locale;
 
-import jakarta.persistence.metamodel.Bindable;
+import javax.persistence.metamodel.Bindable;
 
 import org.hibernate.metamodel.model.domain.DomainType;
 import org.hibernate.query.SemanticException;
@@ -20,7 +20,7 @@ import org.hibernate.query.sqm.tree.domain.SqmPath;
  * Represents parts of the application's domain model that can be used
  * to create {@link SqmPath} nodes.
  *
- * @apiNote Parallel to JPA's {@link jakarta.persistence.metamodel.Bindable} but
+ * @apiNote Parallel to JPA's {@link javax.persistence.metamodel.Bindable} but
  * broader mainly to support Hibernate ANY-mappings
  *
  * @author Steve Ebersole

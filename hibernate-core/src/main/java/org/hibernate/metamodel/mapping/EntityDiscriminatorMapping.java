@@ -18,8 +18,8 @@ import org.hibernate.sql.results.graph.FetchParent;
 import org.hibernate.sql.results.graph.basic.BasicFetch;
 
 /**
- * @see jakarta.persistence.DiscriminatorColumn
- * @see jakarta.persistence.DiscriminatorValue
+ * @see javax.persistence.DiscriminatorColumn
+ * @see javax.persistence.DiscriminatorValue
  *
  * @author Steve Ebersole
  */

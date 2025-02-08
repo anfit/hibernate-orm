@@ -6,10 +6,10 @@
  */
 package org.hibernate.cfg.annotations;
 
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
-import jakarta.persistence.Version;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.Version;
 import org.hibernate.AnnotationException;
 import org.hibernate.AssertionFailure;
 import org.hibernate.HibernateException;

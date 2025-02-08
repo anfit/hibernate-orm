@@ -8,7 +8,7 @@
 package org.hibernate.sql.exec.spi;
 
 import java.sql.CallableStatement;
-import jakarta.persistence.ParameterMode;
+import javax.persistence.ParameterMode;
 
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.query.BindableType;

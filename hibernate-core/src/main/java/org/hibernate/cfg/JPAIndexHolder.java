@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.StringTokenizer;
-import jakarta.persistence.Index;
+import javax.persistence.Index;
 
 /**
  * @author <a href="mailto:stliu@hibernate.org">Strong Liu</a>

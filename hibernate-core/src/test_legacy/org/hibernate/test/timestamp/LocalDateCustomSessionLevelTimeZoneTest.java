@@ -22,8 +22,8 @@ import org.hibernate.testing.orm.junit.RequiresDialect;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

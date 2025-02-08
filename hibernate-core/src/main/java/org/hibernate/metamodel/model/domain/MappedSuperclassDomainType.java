@@ -8,7 +8,7 @@ package org.hibernate.metamodel.model.domain;
 
 import org.hibernate.query.sqm.SqmPathSource;
 
-import jakarta.persistence.metamodel.MappedSuperclassType;
+import javax.persistence.metamodel.MappedSuperclassType;
 
 /**
  * Extension of the JPA {@link MappedSuperclassType} contract

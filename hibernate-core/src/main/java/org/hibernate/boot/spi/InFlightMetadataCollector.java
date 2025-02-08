@@ -7,7 +7,6 @@
 package org.hibernate.boot.spi;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -19,7 +18,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.MappingException;
 import org.hibernate.annotations.CollectionTypeRegistration;
 import org.hibernate.annotations.common.reflection.XClass;
-import org.hibernate.boot.internal.ClassmateContext;
 import org.hibernate.boot.internal.NamedProcedureCallDefinitionImpl;
 import org.hibernate.boot.model.IdentifierGeneratorDefinition;
 import org.hibernate.boot.model.TypeDefinition;
@@ -57,7 +55,7 @@ import org.hibernate.type.descriptor.jdbc.JdbcType;
 import org.hibernate.usertype.CompositeUserType;
 import org.hibernate.usertype.UserCollectionType;
 
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AttributeConverter;
 
 /**
  * An in-flight representation of Metadata while Metadata is being built.

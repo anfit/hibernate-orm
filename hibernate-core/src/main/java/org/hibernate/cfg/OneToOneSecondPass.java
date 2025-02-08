@@ -8,8 +8,8 @@ package org.hibernate.cfg;
 
 import java.util.Map;
 
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinColumns;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
 
 import org.hibernate.AnnotationException;
 import org.hibernate.MappingException;
@@ -100,7 +100,7 @@ public class OneToOneSecondPass implements SecondPass {
 		AnnotationBinder.bindForeignKeyNameAndDefinition(
 				value,
 				inferredData.getProperty(),
-				inferredData.getProperty().getAnnotation( jakarta.persistence.ForeignKey.class ),
+				inferredData.getProperty().getAnnotation( javax.persistence.ForeignKey.class ),
 				inferredData.getProperty().getAnnotation( JoinColumn.class ),
 				inferredData.getProperty().getAnnotation( JoinColumns.class),
 				buildingContext

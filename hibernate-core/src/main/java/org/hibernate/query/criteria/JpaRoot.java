@@ -6,7 +6,7 @@
  */
 package org.hibernate.query.criteria;
 
-import jakarta.persistence.criteria.Root;
+import javax.persistence.criteria.Root;
 
 import org.hibernate.metamodel.model.domain.EntityDomainType;
 

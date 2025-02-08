@@ -30,7 +30,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * non-lazy.
  * <p>
  * This annotation implies
- * {@link jakarta.persistence.ConstraintMode#NO_CONSTRAINT} for the purposes
+ * {@link javax.persistence.ConstraintMode#NO_CONSTRAINT} for the purposes
  * of DDL generation. That is, a foreign key constraint will not be included
  * in the generated DDL.
  *

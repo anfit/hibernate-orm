@@ -14,7 +14,7 @@ import org.hibernate.type.descriptor.java.JavaType;
  *
  * Conversions might be defined by:
  *
- * 		* a custom JPA {@link jakarta.persistence.AttributeConverter},
+ * 		* a custom JPA {@link javax.persistence.AttributeConverter},
  * 		* implicitly, based on the Java type (e.g., enums)
  * 	    * etc
  *

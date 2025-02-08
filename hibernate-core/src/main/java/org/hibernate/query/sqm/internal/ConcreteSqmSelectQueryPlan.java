@@ -61,7 +61,7 @@ import static org.hibernate.query.sqm.internal.QuerySqmImpl.CRITERIA_HQL_STRING;
 /**
  * Standard Hibernate implementation of SelectQueryPlan for SQM-backed
  * {@link Query} implementations, which means
- * HQL/JPQL or {@link jakarta.persistence.criteria.CriteriaQuery}
+ * HQL/JPQL or {@link javax.persistence.criteria.CriteriaQuery}
  *
  * @author Steve Ebersole
  */

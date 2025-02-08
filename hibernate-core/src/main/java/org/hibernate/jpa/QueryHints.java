@@ -11,7 +11,7 @@ import java.util.Set;
 import org.hibernate.jpa.internal.HintsCollector;
 
 /**
- * List of all supported hints that may be passed to {@link jakarta.persistence.Query#setHint(String, Object)}.
+ * List of all supported hints that may be passed to {@link javax.persistence.Query#setHint(String, Object)}.
  *
  * @see AvailableHints
  *

@@ -46,7 +46,7 @@ import org.hibernate.type.descriptor.jdbc.spi.JdbcTypeRegistry;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static org.hibernate.dialect.SimpleDatabaseVersion.ZERO_VERSION;
 import static org.hibernate.type.SqlTypes.BIGINT;

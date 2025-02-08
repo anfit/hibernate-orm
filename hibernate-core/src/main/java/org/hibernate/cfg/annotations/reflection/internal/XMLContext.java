@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import jakarta.persistence.AccessType;
-import jakarta.persistence.AttributeConverter;
+import javax.persistence.AccessType;
+import javax.persistence.AttributeConverter;
 
 import org.hibernate.AnnotationException;
 import org.hibernate.boot.internal.ClassmateContext;

@@ -10,8 +10,8 @@ import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.PersistenceException;
+import javax.persistence.AttributeConverter;
+import javax.persistence.PersistenceException;
 
 import org.hibernate.boot.model.convert.spi.ConverterDescriptor;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

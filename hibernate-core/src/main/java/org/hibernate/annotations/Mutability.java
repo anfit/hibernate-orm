@@ -52,7 +52,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  *
  * @apiNote Valid on {@link ElementType#TYPE} in very limited cases.
  * At the moment it is only supported on implementations of
- * {@link jakarta.persistence.AttributeConverter}.
+ * {@link javax.persistence.AttributeConverter}.
  *
  * @see Immutable
  *

@@ -6,7 +6,7 @@
  */
 package org.hibernate.boot.jaxb.mapping.internal;
 
-import jakarta.persistence.ConstraintMode;
+import javax.persistence.ConstraintMode;
 
 /**
  * Marshalling support for dealing with JPA ConstraintMode enums.  Plugged into JAXB for binding

@@ -8,8 +8,8 @@ package org.hibernate.annotations;
 
 import java.lang.annotation.Retention;
 
-import jakarta.persistence.DiscriminatorColumn;
-import jakarta.persistence.DiscriminatorType;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;

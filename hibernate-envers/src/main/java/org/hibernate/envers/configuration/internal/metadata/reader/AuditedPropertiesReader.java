@@ -9,7 +9,6 @@ package org.hibernate.envers.configuration.internal.metadata.reader;
 import java.lang.annotation.Annotation;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
@@ -17,12 +16,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Lob;
-import jakarta.persistence.MapKey;
-import jakarta.persistence.MapKeyEnumerated;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Version;
+import javax.persistence.ElementCollection;
+import javax.persistence.Lob;
+import javax.persistence.MapKey;
+import javax.persistence.MapKeyEnumerated;
+import javax.persistence.OneToMany;
+import javax.persistence.Version;
 
 import org.hibernate.HibernateException;
 import org.hibernate.annotations.common.reflection.ReflectionManager;

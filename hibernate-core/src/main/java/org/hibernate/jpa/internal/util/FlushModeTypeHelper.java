@@ -8,7 +8,7 @@ package org.hibernate.jpa.internal.util;
 
 
 import java.util.Locale;
-import jakarta.persistence.FlushModeType;
+import javax.persistence.FlushModeType;
 
 import org.hibernate.AssertionFailure;
 import org.hibernate.FlushMode;

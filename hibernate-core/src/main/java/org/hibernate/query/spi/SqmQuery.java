@@ -19,8 +19,8 @@ import org.hibernate.query.ParameterMetadata;
 import org.hibernate.query.QueryParameter;
 import org.hibernate.query.sqm.tree.SqmStatement;
 
-import jakarta.persistence.Parameter;
-import jakarta.persistence.TemporalType;
+import javax.persistence.Parameter;
+import javax.persistence.TemporalType;
 
 /**
  * Query based on an SQM tree.

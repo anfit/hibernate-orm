@@ -41,7 +41,7 @@ public @interface ParamDef {
 	 *         a {@link org.hibernate.usertype.UserType}
 	 *     </li>
 	 *     <li>
-	 *         an {@link jakarta.persistence.AttributeConverter}
+	 *         an {@link javax.persistence.AttributeConverter}
 	 *     </li>
 	 *     <li>
 	 *         a {@link org.hibernate.type.descriptor.java.JavaType}

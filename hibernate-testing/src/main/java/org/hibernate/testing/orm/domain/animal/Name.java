@@ -6,8 +6,8 @@
  */
 package org.hibernate.testing.orm.domain.animal;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
 @Embeddable
 public class Name {

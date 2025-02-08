@@ -8,7 +8,7 @@ package org.hibernate.query;
 
 import org.hibernate.Incubating;
 
-import jakarta.persistence.Tuple;
+import javax.persistence.Tuple;
 
 /**
  * Hibernate extension to the Jakarta Persistence {@link Tuple}

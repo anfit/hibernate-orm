@@ -6,7 +6,7 @@
  */
 package org.hibernate.resource.transaction.backend.jta.internal.synchronization;
 
-import jakarta.transaction.Synchronization;
+import javax.transaction.Synchronization;
 
 /**
  * Manages funneling JTA Synchronization callbacks back into the Hibernate transaction engine.

@@ -9,7 +9,7 @@ package org.hibernate.query.criteria;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Collection;
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.Expression;
 
 /**
  * API extension to the JPA {@link Expression} contract

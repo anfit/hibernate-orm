@@ -73,16 +73,14 @@ import org.hibernate.metamodel.CollectionClassification;
 import org.hibernate.query.sqm.function.SqmFunctionDescriptor;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.type.BasicType;
-import org.hibernate.type.descriptor.java.JavaType;
-import org.hibernate.type.descriptor.jdbc.JdbcType;
 import org.hibernate.type.spi.TypeConfiguration;
 import org.hibernate.usertype.UserType;
 
 import org.jboss.jandex.IndexView;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.ConstraintMode;
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.AttributeConverter;
+import javax.persistence.ConstraintMode;
+import javax.persistence.SharedCacheMode;
 
 /**
  * @author Steve Ebersole

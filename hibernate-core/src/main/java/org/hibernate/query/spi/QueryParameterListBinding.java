@@ -7,7 +7,7 @@
 package org.hibernate.query.spi;
 
 import java.util.Collection;
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import org.hibernate.Incubating;
 import org.hibernate.query.BindableType;

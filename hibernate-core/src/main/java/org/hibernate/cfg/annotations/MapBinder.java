@@ -53,14 +53,14 @@ import org.hibernate.resource.beans.spi.ManagedBean;
 import org.hibernate.usertype.CompositeUserType;
 import org.hibernate.usertype.UserCollectionType;
 
-import jakarta.persistence.AttributeOverride;
-import jakarta.persistence.AttributeOverrides;
-import jakarta.persistence.ConstraintMode;
-import jakarta.persistence.InheritanceType;
-import jakarta.persistence.MapKeyClass;
-import jakarta.persistence.MapKeyColumn;
-import jakarta.persistence.MapKeyJoinColumn;
-import jakarta.persistence.MapKeyJoinColumns;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.ConstraintMode;
+import javax.persistence.InheritanceType;
+import javax.persistence.MapKeyClass;
+import javax.persistence.MapKeyColumn;
+import javax.persistence.MapKeyJoinColumn;
+import javax.persistence.MapKeyJoinColumns;
 
 import static org.hibernate.cfg.PropertyHolderBuilder.buildPropertyHolder;
 
@@ -353,7 +353,7 @@ public class MapBinder extends CollectionBinder {
 			}
 
 			if ( element != null ) {
-				final jakarta.persistence.ForeignKey foreignKey = getMapKeyForeignKey( property );
+				final javax.persistence.ForeignKey foreignKey = getMapKeyForeignKey( property );
 				if ( foreignKey != null ) {
 					if ( foreignKey.value() == ConstraintMode.NO_CONSTRAINT
 							|| foreignKey.value() == ConstraintMode.PROVIDER_DEFAULT
@@ -400,7 +400,7 @@ public class MapBinder extends CollectionBinder {
 		return null;
 	}
 
-	private jakarta.persistence.ForeignKey getMapKeyForeignKey(XProperty property) {
+	private javax.persistence.ForeignKey getMapKeyForeignKey(XProperty property) {
 		final MapKeyJoinColumns mapKeyJoinColumns = property.getAnnotation( MapKeyJoinColumns.class );
 		if ( mapKeyJoinColumns != null ) {
 			return mapKeyJoinColumns.foreignKey();

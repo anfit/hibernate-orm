@@ -7,7 +7,7 @@
 
 /**
  * Package defining boot-time handling of JPA's
- * {@link jakarta.persistence.AttributeConverter}
+ * {@link javax.persistence.AttributeConverter}
  *
  * The general paradigm is that handling converters is split into a
  * boot-time piece and a run-time piece.  This package defines the

@@ -7,8 +7,8 @@
 package org.hibernate.testing.orm.domain.gambit;
 
 import java.util.Objects;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @author Chris Cranford

@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
-import jakarta.persistence.spi.PersistenceUnitInfo;
+import javax.persistence.spi.PersistenceUnitInfo;
 
 import org.hibernate.SessionFactoryObserver;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -313,7 +313,7 @@ public class EntityManagerFactoryExtension
 			this.integrationSettings = integrationSettings;
 		}
 
-		protected jakarta.persistence.EntityManagerFactory createEntityManagerFactory() {
+		protected javax.persistence.EntityManagerFactory createEntityManagerFactory() {
 			final EntityManagerFactoryBuilder emfBuilder = Bootstrap.getEntityManagerFactoryBuilder(
 					new PersistenceUnitInfoDescriptor( persistenceUnitInfo ),
 					integrationSettings

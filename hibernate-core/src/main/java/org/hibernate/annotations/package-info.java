@@ -18,10 +18,10 @@
  *             <li>{@link org.hibernate.annotations.JdbcType}</li>
  *             <li>{@link org.hibernate.annotations.JdbcTypeCode}</li>
  *             <li>{@link org.hibernate.annotations.Mutability}</li>
- *             <li>{@link jakarta.persistence.AttributeConverter} / {@link jakarta.persistence.Convert}</li>
- *             <li>{@link jakarta.persistence.Lob}</li>
- *             <li>{@link jakarta.persistence.Enumerated}</li>
- *             <li>{@link jakarta.persistence.Temporal}</li>
+ *             <li>{@link javax.persistence.AttributeConverter} / {@link javax.persistence.Convert}</li>
+ *             <li>{@link javax.persistence.Lob}</li>
+ *             <li>{@link javax.persistence.Enumerated}</li>
+ *             <li>{@link javax.persistence.Temporal}</li>
  *             <li>{@link org.hibernate.annotations.Nationalized}</li>
  *         </ul>
  *         Note that {@link org.hibernate.annotations.JavaType}, {@link org.hibernate.annotations.JdbcType},

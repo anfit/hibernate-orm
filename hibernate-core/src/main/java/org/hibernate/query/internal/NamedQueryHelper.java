@@ -17,8 +17,8 @@ import org.hibernate.internal.util.config.ConfigurationHelper;
 import org.hibernate.jpa.internal.util.FlushModeTypeHelper;
 import org.hibernate.jpa.internal.util.LockModeTypeHelper;
 
-import jakarta.persistence.FlushModeType;
-import jakarta.persistence.LockModeType;
+import javax.persistence.FlushModeType;
+import javax.persistence.LockModeType;
 
 import static org.hibernate.jpa.HibernateHints.HINT_CACHEABLE;
 import static org.hibernate.jpa.HibernateHints.HINT_CACHE_MODE;

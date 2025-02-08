@@ -6,8 +6,8 @@
  */
 package org.hibernate.spatial.predicate;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.Expression;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.Expression;
 
 import org.geolatte.geom.Envelope;
 import org.geolatte.geom.Geometry;

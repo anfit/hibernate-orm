@@ -14,7 +14,7 @@ import org.hibernate.id.factory.spi.GeneratorDefinitionResolver;
 import org.hibernate.type.Type;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.GenerationType;
+import javax.persistence.GenerationType;
 
 /**
  * Contract for a {@code factory} of {@link IdentifierGenerator} instances.

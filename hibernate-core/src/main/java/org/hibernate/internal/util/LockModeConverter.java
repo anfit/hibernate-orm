@@ -6,14 +6,14 @@
  */
 package org.hibernate.internal.util;
 
-import jakarta.persistence.LockModeType;
+import javax.persistence.LockModeType;
 
 import org.hibernate.AssertionFailure;
 import org.hibernate.LockMode;
 
 /**
  * Helper to deal with conversions (both directions) between {@link LockMode} and
- * {@link jakarta.persistence.LockModeType}.
+ * {@link javax.persistence.LockModeType}.
  *
  * @author Steve Ebersole
  */

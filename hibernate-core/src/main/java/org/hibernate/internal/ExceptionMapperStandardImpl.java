@@ -6,7 +6,7 @@
  */
 package org.hibernate.internal;
 
-import jakarta.transaction.SystemException;
+import javax.transaction.SystemException;
 
 import org.hibernate.TransactionException;
 import org.hibernate.engine.spi.SessionImplementor;

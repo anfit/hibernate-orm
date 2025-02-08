@@ -9,7 +9,7 @@ package org.hibernate.query.criteria;
 import org.hibernate.metamodel.model.domain.EntityDomainType;
 import org.hibernate.query.sqm.tree.SqmJoinType;
 
-import jakarta.persistence.criteria.From;
+import javax.persistence.criteria.From;
 
 /**
  * API extension to the JPA {@link From} contract

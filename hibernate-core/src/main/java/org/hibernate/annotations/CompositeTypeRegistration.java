@@ -19,7 +19,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Registers a custom composite user type implementation to be used
- * for all references to a particular {@link jakarta.persistence.Embeddable}.
+ * for all references to a particular {@link javax.persistence.Embeddable}.
  * <p/>
  * May be overridden for a specific embedded using {@link org.hibernate.annotations.CompositeType}
  */

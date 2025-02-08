@@ -7,7 +7,7 @@
 package org.hibernate.cfg.annotations;
 
 import java.util.Map;
-import jakarta.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMapping;
 
 import org.hibernate.MappingException;
 import org.hibernate.boot.spi.MetadataBuildingContext;

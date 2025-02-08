@@ -106,7 +106,7 @@ import org.hibernate.query.sqm.tree.update.SqmUpdateStatement;
 
 import org.jboss.logging.Logger;
 
-import jakarta.persistence.criteria.Predicate;
+import javax.persistence.criteria.Predicate;
 
 /**
  * Printer for an SQM tree - for debugging purpose

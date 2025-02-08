@@ -65,7 +65,7 @@ import org.hibernate.type.Type;
 
 /**
  * The default implementation of the {@link EntityPersister} interface.
- * Implements the {@link jakarta.persistence.InheritanceType#SINGLE_TABLE}
+ * Implements the {@link javax.persistence.InheritanceType#SINGLE_TABLE}
  * mapping strategy for an entity class and its inheritance hierarchy.
  * <p>
  * This is implemented as a single table for all classes of the hierarchy,

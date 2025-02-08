@@ -55,7 +55,7 @@ import static org.hibernate.internal.util.collections.CollectionHelper.arrayList
 import static org.hibernate.metamodel.mapping.internal.MappingModelCreationHelper.getAttributeMetadataAccess;
 
 /**
- * EmbeddableMappingType implementation describing an {@link jakarta.persistence.IdClass}
+ * EmbeddableMappingType implementation describing an {@link javax.persistence.IdClass}
  */
 public class IdClassEmbeddable extends AbstractEmbeddableMapping implements IdentifierValueMapper {
 	private final NavigableRole navigableRole;

@@ -13,7 +13,7 @@ import org.hibernate.procedure.spi.NamedCallableQueryMemento;
  * Boot-time descriptor of a named procedure/function query, as defined in
  * annotations or xml
  *
- * @see jakarta.persistence.NamedStoredProcedureQuery
+ * @see javax.persistence.NamedStoredProcedureQuery
  *
  * @author Steve Ebersole
  */

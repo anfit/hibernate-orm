@@ -6,7 +6,7 @@
  */
 package org.hibernate.jpa.boot.internal;
 
-import jakarta.persistence.PersistenceException;
+import javax.persistence.PersistenceException;
 
 import org.hibernate.jpa.boot.spi.PersistenceUnitDescriptor;
 

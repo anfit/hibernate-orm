@@ -6,9 +6,9 @@
  */
 package org.hibernate.testing.orm.domain.gambit;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Version;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Version;
 import org.hibernate.annotations.NaturalId;
 
 import java.util.Objects;

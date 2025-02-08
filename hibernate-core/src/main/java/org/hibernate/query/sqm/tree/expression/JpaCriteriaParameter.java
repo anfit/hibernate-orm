@@ -19,7 +19,7 @@ import org.hibernate.query.sqm.SqmExpressible;
 import org.hibernate.query.sqm.tree.SqmCopyContext;
 
 /**
- * {@link JpaParameterExpression} created via JPA {@link jakarta.persistence.criteria.CriteriaBuilder}.
+ * {@link JpaParameterExpression} created via JPA {@link javax.persistence.criteria.CriteriaBuilder}.
  *
  * Each occurence of a JpaParameterExpression results in a unique SqmParameter
  *

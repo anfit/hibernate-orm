@@ -6,7 +6,7 @@
  */
 package org.hibernate.graph.internal;
 
-import jakarta.persistence.EntityGraph;
+import javax.persistence.EntityGraph;
 
 import org.hibernate.cfg.NotYetImplementedException;
 import org.hibernate.graph.SubGraph;

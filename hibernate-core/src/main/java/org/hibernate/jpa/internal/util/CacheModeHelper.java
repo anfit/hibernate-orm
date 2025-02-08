@@ -6,8 +6,8 @@
  */
 package org.hibernate.jpa.internal.util;
 
-import jakarta.persistence.CacheRetrieveMode;
-import jakarta.persistence.CacheStoreMode;
+import javax.persistence.CacheRetrieveMode;
+import javax.persistence.CacheStoreMode;
 
 import org.hibernate.CacheMode;
 

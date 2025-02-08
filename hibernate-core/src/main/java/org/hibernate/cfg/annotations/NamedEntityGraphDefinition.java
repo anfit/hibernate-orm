@@ -6,7 +6,7 @@
  */
 package org.hibernate.cfg.annotations;
 
-import jakarta.persistence.NamedEntityGraph;
+import javax.persistence.NamedEntityGraph;
 
 import org.hibernate.internal.util.StringHelper;
 

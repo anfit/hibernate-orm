@@ -12,7 +12,7 @@ import java.util.SortedSet;
 import org.hibernate.Incubating;
 import org.hibernate.boot.BootLogging;
 
-import jakarta.persistence.metamodel.PluralAttribute;
+import javax.persistence.metamodel.PluralAttribute;
 
 /**
  * Classifications of the plurality.
@@ -68,7 +68,7 @@ public enum CollectionClassification {
 	 * while in memory if the contents change.  Represented
 	 * as {@link java.util.Set}.
 	 *
-	 * @see jakarta.persistence.OrderBy
+	 * @see javax.persistence.OrderBy
 	 * @see org.hibernate.annotations.OrderBy
 	 */
 	ORDERED_SET( PluralAttribute.CollectionType.SET ),
@@ -94,7 +94,7 @@ public enum CollectionClassification {
 	 * while in memory if the contents change.  Represented
 	 * as {@link java.util.Map}.
 	 *
-	 * @see jakarta.persistence.OrderBy
+	 * @see javax.persistence.OrderBy
 	 * @see org.hibernate.annotations.OrderBy
 	 */
 	ORDERED_MAP( PluralAttribute.CollectionType.MAP );

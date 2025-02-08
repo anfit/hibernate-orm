@@ -33,7 +33,7 @@ import org.hibernate.type.BasicType;
 import org.hibernate.type.StandardBasicTypes;
 import org.hibernate.type.spi.TypeConfiguration;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 import static java.util.Arrays.asList;
 import static org.hibernate.query.sqm.produce.function.FunctionParameterType.TEMPORAL;

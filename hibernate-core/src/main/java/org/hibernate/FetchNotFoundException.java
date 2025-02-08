@@ -7,7 +7,7 @@
 package org.hibernate;
 
 import java.util.Locale;
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 /**
  * Exception for {@link org.hibernate.annotations.NotFoundAction#EXCEPTION}

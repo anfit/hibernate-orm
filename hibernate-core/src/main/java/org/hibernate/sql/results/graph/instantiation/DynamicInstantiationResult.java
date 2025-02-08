@@ -10,7 +10,7 @@ import org.hibernate.sql.results.graph.DomainResult;
 
 /**
  * Specialization of DomainResult to model
- * {@linkplain jakarta.persistence.ConstructorResult dynamic instantiation}
+ * {@linkplain javax.persistence.ConstructorResult dynamic instantiation}
  *
  * @author Steve Ebersole
  */

@@ -7,10 +7,10 @@
 package org.hibernate.cfg.annotations;
 
 import java.lang.annotation.Annotation;
-import jakarta.persistence.Column;
-import jakarta.persistence.ForeignKey;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.MapKeyJoinColumn;
+import javax.persistence.Column;
+import javax.persistence.ForeignKey;
+import javax.persistence.JoinColumn;
+import javax.persistence.MapKeyJoinColumn;
 
 /**
  * @author Emmanuel Bernard

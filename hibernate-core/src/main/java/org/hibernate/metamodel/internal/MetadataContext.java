@@ -51,10 +51,10 @@ import org.hibernate.type.descriptor.java.spi.EntityJavaType;
 import org.hibernate.type.descriptor.java.spi.JavaTypeRegistry;
 import org.hibernate.type.spi.TypeConfiguration;
 
-import jakarta.persistence.metamodel.Attribute;
-import jakarta.persistence.metamodel.IdentifiableType;
-import jakarta.persistence.metamodel.SingularAttribute;
-import jakarta.persistence.metamodel.Type;
+import javax.persistence.metamodel.Attribute;
+import javax.persistence.metamodel.IdentifiableType;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.Type;
 
 /**
  * Defines a context for storing information during the building of the {@link MappingMetamodelImpl}.

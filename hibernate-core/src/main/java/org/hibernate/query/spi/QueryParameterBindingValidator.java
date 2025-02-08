@@ -16,7 +16,7 @@ import org.hibernate.query.sqm.SqmExpressible;
 import org.hibernate.type.descriptor.converter.AttributeConverterTypeAdapter;
 import org.hibernate.type.descriptor.java.JavaType;
 
-import jakarta.persistence.TemporalType;
+import javax.persistence.TemporalType;
 
 /**
  * @author Andrea Boriero

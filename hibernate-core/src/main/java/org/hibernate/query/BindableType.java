@@ -11,8 +11,8 @@ import org.hibernate.NotYetImplementedFor6Exception;
 import org.hibernate.engine.spi.SessionFactoryImplementor;
 import org.hibernate.query.sqm.SqmExpressible;
 
-import jakarta.persistence.AttributeConverter;
-import jakarta.persistence.metamodel.ManagedType;
+import javax.persistence.AttributeConverter;
+import javax.persistence.metamodel.ManagedType;
 
 /**
  * Types that can be used to handle binding {@link Query} parameters
@@ -45,7 +45,7 @@ public interface BindableType<J> {
 		throw new NotYetImplementedFor6Exception( "BindableType#parameterType" );
 	}
 
-	static <T> BindableType<? extends T> parameterType(jakarta.persistence.metamodel.Bindable<T> jpaBindable) {
+	static <T> BindableType<? extends T> parameterType(javax.persistence.metamodel.Bindable<T> jpaBindable) {
 		throw new NotYetImplementedFor6Exception( "BindableType#parameterType" );
 	}
 

@@ -18,7 +18,7 @@ import org.hibernate.envers.internal.tools.query.QueryBuilder;
 import org.hibernate.envers.query.AuditAssociationQuery;
 import org.hibernate.envers.query.criteria.AuditCriterion;
 
-import jakarta.persistence.criteria.JoinType;
+import javax.persistence.criteria.JoinType;
 
 /**
  * An {@link AuditAssociationQuery} implementation for

@@ -15,7 +15,7 @@ import org.hibernate.query.sqm.SemanticQueryWalker;
 import org.hibernate.query.sqm.SqmPathSource;
 import org.hibernate.query.sqm.tree.SqmCopyContext;
 
-import jakarta.persistence.metamodel.EntityType;
+import javax.persistence.metamodel.EntityType;
 
 /**
  * @author Andrea Boriero

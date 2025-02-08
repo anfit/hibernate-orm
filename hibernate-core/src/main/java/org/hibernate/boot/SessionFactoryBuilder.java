@@ -33,7 +33,7 @@ import org.hibernate.resource.jdbc.spi.StatementInspector;
  */
 public interface SessionFactoryBuilder {
 	/**
-	 * Specifies a Bean Validation {@link jakarta.validation.ValidatorFactory}.
+	 * Specifies a Bean Validation {@link javax.validation.ValidatorFactory}.
 	 *
 	 * @apiNote De-typed to avoid a hard dependency on the Bean Validation jar
 	 *
@@ -46,7 +46,7 @@ public interface SessionFactoryBuilder {
 	SessionFactoryBuilder applyValidatorFactory(Object validatorFactory);
 
 	/**
-	 * Specifies a CDI {@link jakarta.enterprise.inject.spi.BeanManager}.
+	 * Specifies a CDI {@link javax.enterprise.inject.spi.BeanManager}.
 	 *
 	 * @apiNote De-typed to avoid a hard dependency on the CDI jar
 	 *
@@ -385,12 +385,12 @@ public interface SessionFactoryBuilder {
 	 * If using the built-in JTA-based
 	 * {@link org.hibernate.resource.transaction.spi.TransactionCoordinator} or
 	 * {@link org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder},
-	 * should it prefer to use {@link jakarta.transaction.UserTransaction} in
-	 * preference to {@link jakarta.transaction.Transaction}?
+	 * should it prefer to use {@link javax.transaction.UserTransaction} in
+	 * preference to {@link javax.transaction.Transaction}?
 	 *
 	 * @param preferUserTransactions {@code true} indicates we should prefer
-	 * {@link jakarta.transaction.UserTransaction}; {@code false} indicates we
-	 * should prefer {@link jakarta.transaction.Transaction}
+	 * {@link javax.transaction.UserTransaction}; {@code false} indicates we
+	 * should prefer {@link javax.transaction.Transaction}
 	 *
 	 * @return {@code this}, for method chaining
 	 *
@@ -650,7 +650,7 @@ public interface SessionFactoryBuilder {
 	SessionFactoryBuilder allowOutOfTransactionUpdateOperations(boolean allow);
 
 	/**
-	 * Should resources held by an {@link jakarta.persistence.EntityManager} be
+	 * Should resources held by an {@link javax.persistence.EntityManager} be
 	 * released immediately on close?
 	 * <p/>
 	 * The other option is to release them as part of an after transaction callback.

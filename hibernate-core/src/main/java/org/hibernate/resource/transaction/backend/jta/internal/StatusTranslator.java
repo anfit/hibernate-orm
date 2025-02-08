@@ -6,7 +6,7 @@
  */
 package org.hibernate.resource.transaction.backend.jta.internal;
 
-import jakarta.transaction.Status;
+import javax.transaction.Status;
 
 import org.hibernate.TransactionException;
 import org.hibernate.resource.transaction.spi.TransactionStatus;

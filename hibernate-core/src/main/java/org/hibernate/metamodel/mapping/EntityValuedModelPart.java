@@ -21,8 +21,8 @@ import org.hibernate.sql.results.graph.FetchableContainer;
 
 /**
  * Entity-valued model part<ul>
- *     <li>{@link jakarta.persistence.ManyToOne}</li>
- *     <li>{@link jakarta.persistence.OneToOne}</li>
+ *     <li>{@link javax.persistence.ManyToOne}</li>
+ *     <li>{@link javax.persistence.OneToOne}</li>
  *     <li>entity-valued collection element</li>
  *     <li>entity-valued Map key</li>
  * </ul>

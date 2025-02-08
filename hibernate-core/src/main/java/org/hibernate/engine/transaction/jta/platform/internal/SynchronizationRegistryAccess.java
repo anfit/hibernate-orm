@@ -7,7 +7,7 @@
 package org.hibernate.engine.transaction.jta.platform.internal;
 
 import java.io.Serializable;
-import jakarta.transaction.TransactionSynchronizationRegistry;
+import javax.transaction.TransactionSynchronizationRegistry;
 
 /**
  * Provides access to a {@link TransactionSynchronizationRegistry} for use by {@link TransactionSynchronizationRegistry}-based

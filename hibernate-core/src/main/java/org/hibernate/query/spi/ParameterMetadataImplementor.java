@@ -8,7 +8,7 @@ package org.hibernate.query.spi;
 
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import jakarta.persistence.Parameter;
+import javax.persistence.Parameter;
 
 import org.hibernate.query.ParameterMetadata;
 import org.hibernate.query.QueryParameter;

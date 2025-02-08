@@ -8,7 +8,7 @@ package org.hibernate.boot.model.source.internal.hbm;
 
 import java.util.Locale;
 
-import jakarta.xml.bind.JAXBElement;
+import javax.xml.bind.JAXBElement;
 
 import org.hibernate.boot.MappingException;
 import org.hibernate.boot.jaxb.hbm.spi.JaxbHbmNamedNativeQueryType;

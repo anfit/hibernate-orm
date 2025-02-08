@@ -17,10 +17,10 @@ import org.hibernate.Transaction;
 public interface JpaCompliance {
 	/**
 	 * Controls whether Hibernate's handling of JPA's
-	 * {@link jakarta.persistence.Query} (JPQL, Criteria and native-query)
+	 * {@link javax.persistence.Query} (JPQL, Criteria and native-query)
 	 * should strictly follow the JPA spec. This includes parsing and
 	 * translating a query as JPQL instead of HQL, as well as whether calls
-	 * to the {@link jakarta.persistence.Query} methods always throw the
+	 * to the {@link javax.persistence.Query} methods always throw the
 	 * exceptions defined by the specification.
 	 *
 	 * Deviations result in an exception if enabled
@@ -34,7 +34,7 @@ public interface JpaCompliance {
 	/**
 	 * Indicates that Hibernate's {@link Transaction} should behave as
 	 * defined by the specification for JPA's
-	 * {@link jakarta.persistence.EntityTransaction} since it extends it.
+	 * {@link javax.persistence.EntityTransaction} since it extends it.
 	 *
 	 * @return {@code true} indicates to behave in the spec-defined way
 	 *
@@ -44,7 +44,7 @@ public interface JpaCompliance {
 
 	/**
 	 * Controls how Hibernate interprets a mapped {@link java.util.List}
-	 * without no {@linkplain jakarta.persistence.OrderColumn order column}
+	 * without no {@linkplain javax.persistence.OrderColumn order column}
 	 * specified. Historically Hibernate treats this as a "bag", which is a
 	 * concept JPA does not have.
 	 * <ul>
@@ -66,8 +66,8 @@ public interface JpaCompliance {
 
 	/**
 	 * JPA defines specific exceptions on specific methods when called on
-	 * {@link jakarta.persistence.EntityManager} and
-	 * {@link jakarta.persistence.EntityManagerFactory} when those objects
+	 * {@link javax.persistence.EntityManager} and
+	 * {@link javax.persistence.EntityManagerFactory} when those objects
 	 * have been closed. This setting controls whether the spec defined
 	 * behavior or Hibernate's behavior will be used.
 	 * <p>
@@ -81,7 +81,7 @@ public interface JpaCompliance {
 	boolean isJpaClosedComplianceEnabled();
 
 	/**
-	 * JPA spec says that an {@link jakarta.persistence.EntityNotFoundException}
+	 * JPA spec says that an {@link javax.persistence.EntityNotFoundException}
 	 * should be thrown when accessing an entity proxy which does not have
 	 * an associated table row in the database.
 	 * <p>
@@ -114,8 +114,8 @@ public interface JpaCompliance {
 	boolean isJpaCacheComplianceEnabled();
 
 	/**
-	 * Should the scope of {@link jakarta.persistence.TableGenerator#name()}
-	 * and {@link jakarta.persistence.SequenceGenerator#name()} be considered
+	 * Should the scope of {@link javax.persistence.TableGenerator#name()}
+	 * and {@link javax.persistence.SequenceGenerator#name()} be considered
 	 * globally or locally defined?
 	 *
 	 * @return {@code true} if the generator name scope is considered global
@@ -125,7 +125,7 @@ public interface JpaCompliance {
 	boolean isGlobalGeneratorScopeEnabled();
 
 	/**
-	 * Should we strictly handle {@link jakarta.persistence.OrderBy} expressions?
+	 * Should we strictly handle {@link javax.persistence.OrderBy} expressions?
 	 * <p>
 	 * JPA says the order-items can only be attribute references whereas
 	 * Hibernate supports a wide range of items.  With this enabled, Hibernate
@@ -137,8 +137,8 @@ public interface JpaCompliance {
 
 	/**
 	 * JPA says that the id passed to
-	 * {@link jakarta.persistence.EntityManager#getReference} and
-	 * {@link jakarta.persistence.EntityManager#find} should be exactly the
+	 * {@link javax.persistence.EntityManager#getReference} and
+	 * {@link javax.persistence.EntityManager#find} should be exactly the
 	 * expected type, allowing no type coercion.
 	 * <p>
 	 * Historically, Hibernate behaved the same way. Since 6.0 however,

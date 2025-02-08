@@ -6,8 +6,8 @@
  */
 package org.hibernate.engine.transaction.jta.platform.internal;
 
-import jakarta.transaction.TransactionManager;
-import jakarta.transaction.UserTransaction;
+import javax.transaction.TransactionManager;
+import javax.transaction.UserTransaction;
 
 /**
  * {@link org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform} implementation for Resin

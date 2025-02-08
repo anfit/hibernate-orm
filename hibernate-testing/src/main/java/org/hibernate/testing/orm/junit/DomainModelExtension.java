@@ -32,7 +32,7 @@ import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
 import org.junit.jupiter.api.extension.TestInstancePostProcessor;
 import org.junit.platform.commons.support.AnnotationSupport;
 
-import jakarta.persistence.SharedCacheMode;
+import javax.persistence.SharedCacheMode;
 
 /**
  * hibernate-testing implementation of a few JUnit5 contracts to support SessionFactory-based testing,
